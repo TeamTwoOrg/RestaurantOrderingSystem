@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/torder"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+
+        />
+
+        <EditText
+            android:id="@+id/id_text"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginRight="300dp"
+            android:drawablePadding="8dp"
+            android:hint="아이디를 입력해주세요."
+            android:paddingLeft="16dp"
+            android:textColorHint="#A9ADB4"
+            android:textCursorDrawable="@null" />
+
+        <EditText
+            android:id="@+id/password_text"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="410dp"
+            android:layout_marginRight="300dp"
+            android:drawablePadding="8dp"
+            android:hint="비밀번호를 입력해주세요."
+            android:paddingLeft="16dp"
+            android:textColorHint="#A9ADB4"
+            android:textCursorDrawable="@null"
+            tools:ignore="DuplicateIds" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_button"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginRight="300dp"
+            android:letterSpacing="-0.05"
+            android:lineSpacingExtra="3sp"
+            android:backgroundTint="#87CEFA"
+            android:background="@drawable/button_round"
+            android:text="로그인"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="-1.52sp"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/manage_button"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:paddingStart="70dp"
+            android:paddingEnd="70dp"
+            android:layout_marginTop="565dp"
+            android:layout_marginRight="300dp"
+            android:letterSpacing="-0.05"
+            android:lineSpacingExtra="3sp"
+            android:backgroundTint="#B4E5FF"
+            android:background="@drawable/button_round"
+            android:text="관리자"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="-1.52sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/user_button"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="565dp"
+            android:layout_marginLeft="300dp"
+            android:paddingStart="70dp"
+            android:paddingEnd="70dp"
+            android:letterSpacing="-0.05"
+            android:lineSpacingExtra="3sp"
+            android:backgroundTint="#B4E5FF"
+            android:background="@drawable/button_round"
+            android:text="사용자"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="-1.52sp" />
+    </RelativeLayout>
+</ScrollView>
+
+

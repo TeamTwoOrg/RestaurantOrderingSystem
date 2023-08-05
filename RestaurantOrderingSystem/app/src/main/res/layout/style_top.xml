@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#292828">
+
+    <!-- 로고 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.01"
+        android:background="@drawable/torder_logo"
+        android:layout_marginLeft="0sp"
+        android:scaleType="fitCenter" />
+
+    <!-- 공백 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"/>
+
+    <!-- 버튼 -->
+    <Button
+        android:id="@+id/topBelowButton1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_background"
+        android:text="안주"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/topBelowButton2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_background"
+        android:text="주류"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/topBelowButton3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_background"
+        android:text="음료"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"
+        android:layout_weight="1"/>
+
+    <!-- 공백 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.78"/>
+
+</LinearLayout>

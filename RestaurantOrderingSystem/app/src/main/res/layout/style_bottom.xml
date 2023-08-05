@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#292828">
+
+    <!-- 직원 호출 버튼 -->
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/call_staff"
+        android:maxHeight="35dp"
+        android:maxWidth="35dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"
+        android:contentDescription="직원호출"/>
+
+    <!-- 버튼 -->
+    <Button
+        android:id="@+id/topBelowButton1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_background"
+        android:text="추천메뉴"
+        android:textSize="21dp"
+        android:textColor="#FFFFFF"
+        android:layout_weight="1.1" />
+
+    <!-- 공백 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"/>
+
+
+    <Button
+        android:id="@+id/topBelowButton2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_background_forbottom"
+        android:text="장바구니"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"
+        android:layout_weight="1"
+
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"/>
+    <Button
+        android:id="@+id/topBelowButton3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_background_forbottom"
+        android:text="주문내역"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"
+        android:layout_weight="1"
+
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/topBelowButton4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_background_forbottom"
+        android:text="계산서"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"
+        android:layout_weight="1"
+
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+</LinearLayout>

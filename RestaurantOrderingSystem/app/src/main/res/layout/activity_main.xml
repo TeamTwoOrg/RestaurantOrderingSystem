@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/superRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:background="#F44336"
+        android:layout_weight="1.05">
+
+        <include
+            android:id="@+id/app_bar_main"
+            layout="@layout/style_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topBelow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#292828"
+        android:layout_weight="1.09">
+        <include
+            android:id="@+id/app_bar_main"
+            layout="@layout/button_style_top_below"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:layout_weight="0.4"
+        android:padding="15dp">
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/middle1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#2196F3"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/app_bar_main"
+                    layout="@layout/add_menu"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent" />
+
+                <include
+                    android:id="@+id/app_bar_main"
+                    layout="@layout/add_menu_test2"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent" />
+
+                <include
+                    android:id="@+id/app_bar_main"
+                    layout="@layout/add_menu_test3"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"/>
+
+                <include
+                    android:id="@+id/app_bar_main"
+                    layout="@layout/add_menu_test4"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"/>
+
+                <include
+                    android:id="@+id/app_bar_main"
+                    layout="@layout/add_menu_test5"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#3F51B5"
+        android:layout_weight="1.05">
+
+        <include
+            android:id="@+id/app_bar_main"
+            layout="@layout/style_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

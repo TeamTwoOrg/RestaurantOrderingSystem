@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/logo1943" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="414dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="메뉴 선택"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="50sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:text="x"
+                android:textAlignment="center"
+                android:textColor="#FEFEFE"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="635dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/foodpreparing" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="693dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="상품 준비중입니다"
+            android:textAlignment="center"
+            android:textColor="#FEFEFE"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="하고 싶은 설명"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/minus">
+
+                </ImageButton>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/textView3_for_align"
+                    android:layout_width="318dp"
+                    android:layout_height="106dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#FEFEFE"
+                        android:textSize="75sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="106dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="하고 싶은 설명"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/w1plus" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/black"
+
+                    android:text="선택 "
+                    android:textColor="#FFFFFF"
+                    android:textSize="50sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+

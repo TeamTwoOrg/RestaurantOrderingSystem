@@ -1,5 +1,6 @@
 package com.example.kiosk;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -35,9 +36,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_main);
 
-        Button manage_button = (Button) findViewById(R.id.manage_button); // 버튼아이디
-        manage_button.setEnabled(false); // 로그인 전까지 관리자 버튼 비활성화
+        Button manage_button = (Button) findViewById(R.id.manage_button); // 관리자 버튼
+        Button user_button = (Button) findViewById(R.id.user_button); // 사용자 버튼
 
+        manage_button.setVisibility(View.INVISIBLE); // 로그인 전까지 관리자 버튼 비활성화
+        user_button.setVisibility(View.INVISIBLE); // 로그인 전까지 사용자 버튼 비활성화
 
 
         manage_button.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +71,7 @@ public class LoginActivity extends AppCompatActivity {
                 // 서버에 로그인 정보 전송
                 loginToServer(name, password);
 
+                // 임시 관리자 페이지 넘어가는 버튼
                 Intent intent = new Intent(getApplicationContext(), manageActivity.class);
                 startActivity(intent);
             }
@@ -112,7 +116,7 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(Call call, Response response) throws IOException {
                     Button manage_button = (Button) findViewById(R.id.manage_button);
-
+                    Button user_button = (Button) findViewById(R.id.user_button);
 
                     if (response.isSuccessful()) {
                         String responseBody = response.body().string();
@@ -120,17 +124,34 @@ public class LoginActivity extends AppCompatActivity {
                             JSONObject jsonObject = new JSONObject(responseBody);
                             boolean ok = jsonObject.getBoolean("ok");
                             if (ok) {
+                                // 로그인 성공 시 다음 화면으로 이동하거나 액션을 취할 수 있습니다.
                                 runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
+                                        // 로그인 성공 디버그 확인용
                                         System.out.println("login success");
 
+                                        // AlertDialog 설정
+                                        AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                                        builder.setTitle("로그인 성공");
+                                        builder.setMessage("로그인에 성공하셨습니다.");
 
-                                        manage_button.setEnabled(true); // 관리자 버튼 활성화
+                                        // 확인 버튼을 설정하고 클릭시 닫는다.
+                                        builder.setPositiveButton("확인", null);
 
+                                        // AlertDialog를 보여준다.
+                                        AlertDialog dialog = builder.create();
+                                        dialog.show();
 
-                                        // 로그인 성공 시 다음 화면으로 이동하거나 액션을 취할 수 있습니다.
+                                        // 로그인 성공시 보여주는 버튼
+                                        manage_button.setVisibility(View.VISIBLE); // 관리자 버튼 활성화
+                                        user_button.setVisibility(View.VISIBLE); // 사용자 버튼 활성화
+
+                                        // 로그인 성공 후에만 manageActivity로 이동
+                                        Intent intent = new Intent(getApplicationContext(), manageActivity.class);
+                                        startActivity(intent);
                                     }
+
                                 });
                             } else {
                                 runOnUiThread(new Runnable() {
@@ -138,8 +159,8 @@ public class LoginActivity extends AppCompatActivity {
                                     public void run() {
                                         System.out.println("login fail");
                                     }
-
                                 });
+
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();

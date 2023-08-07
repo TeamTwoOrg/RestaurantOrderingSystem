@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 import android.widget.Button;
 import android.util.Log;
 
@@ -46,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
         manage_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), manageActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ManageActivity.class);
                 startActivity(intent);
             }
         });
@@ -72,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
                 loginToServer(name, password);
 
                 // 임시 관리자 페이지 넘어가는 버튼
-                Intent intent = new Intent(getApplicationContext(), manageActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ManageActivity.class);
                 startActivity(intent);
             }
         });
@@ -148,7 +147,7 @@ public class LoginActivity extends AppCompatActivity {
                                         user_button.setVisibility(View.VISIBLE); // 사용자 버튼 활성화
 
                                         // 로그인 성공 후에만 manageActivity로 이동
-                                        Intent intent = new Intent(getApplicationContext(), manageActivity.class);
+                                        Intent intent = new Intent(getApplicationContext(), ManageActivity.class);
                                         startActivity(intent);
                                     }
 

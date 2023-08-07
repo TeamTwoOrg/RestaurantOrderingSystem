@@ -22,7 +22,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/gmarketsansmedium"
         android:gravity="center"
-        android:text="주문 전체보기"
+        android:text="상품 보기"
         android:textColor="#FFFFFF"
         android:textSize="40dp" />
 
@@ -32,7 +32,7 @@
         android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/product_btn"
+            android:id="@+id/productAll_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
@@ -42,39 +42,13 @@
             android:textColor="#FFFFFF"
             android:padding="20dp"
             android:textSize="20dp"
-            android:text="상품 보기" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/order_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="20dp"
-            android:layout_marginRight="10dp"
-            android:fontFamily="@font/gmarketsansmedium"
-            android:background="@drawable/button_round"
-            android:backgroundTint="#FF1493"
-            android:textColor="#FFFFFF"
-            android:textSize="20dp"
-            android:text="주문 보기" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/waiting_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/gmarketsansmedium"
-            android:background="@drawable/button_round"
-            android:backgroundTint="#FF1493"
-            android:padding="20dp"
-            android:textSize="20dp"
-            android:textColor="#FFFFFF"
-            android:text="웨이팅 보기" />
-
+            android:text="상품 목록" />
 
 
     </LinearLayout>
 
     <ListView
-        android:id="@+id/Allorderlist"
+        android:id="@+id/productlist"
         android:layout_width="match_parent"
         android:layout_height="630dp"
         android:background="@android:color/transparent"
@@ -85,14 +59,5 @@
         android:layout_width="match_parent"
         android:layout_height="3dp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="@font/gmarketsansbold"
-        android:gravity="center"
-        android:paddingTop="10dp"
-        android:text="주문 상태         테이블 번호         주문 내역         주문 시간"
-        android:textColor="@android:color/white"
-        android:textSize="32dp" />
+
 </LinearLayout>

@@ -98,7 +98,6 @@ public class LoginActivity extends AppCompatActivity {
             jsonBody.put("password", password);
             String requestBody = jsonBody.toString();
             System.out.println(requestBody);
-
             OkHttpClient client = new OkHttpClient();
             MediaType JSON = MediaType.parse("application/json; charset=utf-8");
             RequestBody formBody = RequestBody.create(requestBody, JSON);

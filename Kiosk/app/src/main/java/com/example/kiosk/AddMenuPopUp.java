@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
@@ -74,6 +75,9 @@ public class AddMenuPopUp extends AppCompatActivity {
                     InputStream in = getContentResolver().openInputStream(data.getData());
                     Bitmap img = BitmapFactory.decodeStream(in);
                     in.close();
+
+
+
                     addImageButton.setImageBitmap(img);
                 } catch (Exception e) {
                     e.printStackTrace();

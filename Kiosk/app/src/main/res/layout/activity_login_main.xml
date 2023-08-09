@@ -50,6 +50,7 @@
             android:layout_marginRight="300dp"
             android:drawablePadding="8dp"
             android:hint="비밀번호를 입력해주세요."
+            android:inputType="textPassword"
             android:paddingLeft="16dp"
             android:textColorHint="#A9ADB4"
             android:textCursorDrawable="@null"

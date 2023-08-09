@@ -44,33 +44,6 @@
             android:textSize="20dp"
             android:text="상품 보기" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/order_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="20dp"
-            android:layout_marginRight="10dp"
-            android:fontFamily="@font/gmarketsansmedium"
-            android:background="@drawable/button_round"
-            android:backgroundTint="#FF1493"
-            android:textColor="#FFFFFF"
-            android:textSize="20dp"
-            android:text="주문 보기" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/waiting_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/gmarketsansmedium"
-            android:background="@drawable/button_round"
-            android:backgroundTint="#FF1493"
-            android:padding="20dp"
-            android:textSize="20dp"
-            android:textColor="#FFFFFF"
-            android:text="웨이팅 보기" />
-
-
-
     </LinearLayout>
 
     <ListView

@@ -19,8 +19,7 @@ public class ProductListActivity extends AppCompatActivity {
 
 
 
-        // 여기에서 UI 구성 및 동작 처리 코드 추가
-        // 예시: 리스트뷰에 상품 목록을 표시하거나 클릭 이벤트 처리 등
+
     }
 
 }

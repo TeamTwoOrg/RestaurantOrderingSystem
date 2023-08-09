@@ -27,8 +27,6 @@ public class ManageActivity extends AppCompatActivity {
 
         Allorderlist = findViewById(R.id.Allorderlist); // 안에 있는 ListView id가 list라고 지정.
         productBtn = findViewById(R.id.product_btn); // 상품보기 버튼
-        orderBtn = findViewById(R.id.order_btn); // 주문보기 버튼
-        waitingBtn = findViewById(R.id.waiting_btn); // 웨이팅보기 버튼
 
         List<String> data = new ArrayList<>();
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.list_item_custom, data); // listView의 외관을 사용자 정의

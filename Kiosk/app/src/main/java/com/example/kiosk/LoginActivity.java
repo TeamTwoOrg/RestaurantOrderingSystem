@@ -153,12 +153,18 @@ public class LoginActivity extends AppCompatActivity {
                                     @Override
                                     public void run() {
                                         // 로그인 성공 디버그 확인용
+
+                                        EditText id_text = findViewById(R.id.id_text);
+                                        EditText password_text = findViewById(R.id.password_text);
                                         System.out.println("login success");
 
                                         // AlertDialog 설정
                                         AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
                                         builder.setTitle("로그인 성공");
                                         builder.setMessage("로그인에 성공하셨습니다.");
+
+                                        id_text.setText("");
+                                        password_text.setText("");
 
                                         // 확인 버튼을 설정하고 클릭시 닫는다.
                                         builder.setPositiveButton("확인", null);

@@ -47,17 +47,40 @@
 
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/productlist"
+
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="630dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:background="@android:color/transparent"
-        android:padding="16dp"/>
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/product_layout2" />
 
-    <View
-        android:background="#FF1493"
-        android:layout_width="match_parent"
-        android:layout_height="3dp"/>
+        </LinearLayout>
 
+    </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_round"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF1493"
+        android:textSize="30sp"/>
 
 </LinearLayout>
+
+
+

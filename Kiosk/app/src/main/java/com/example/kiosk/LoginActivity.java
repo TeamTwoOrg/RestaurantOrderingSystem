@@ -25,7 +25,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public class LoginActivity extends AppCompatActivity {
-    private static final String BASE_URL = "http://172.20.10.2:4000/user/login";
+    private static final String BASE_URL = "https://sm-kiosk.kro.kr/user/login";
     EditText edt1, edt2;
     Button btn1;
     Button manage_button;
@@ -37,11 +37,12 @@ public class LoginActivity extends AppCompatActivity {
 
         Button manage_button = (Button) findViewById(R.id.manage_button); // 관리자 버튼
         Button user_button = (Button) findViewById(R.id.user_button); // 사용자 버튼
+        Button login_button = (Button) findViewById(R.id.login_button); // 로그인 버튼
 
         manage_button.setVisibility(View.INVISIBLE); // 로그인 전까지 관리자 버튼 비활성화
         user_button.setVisibility(View.INVISIBLE); // 로그인 전까지 사용자 버튼 비활성화
 
-
+        // 관리자버튼 작동
         manage_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,6 +50,19 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button logout_button = (Button) findViewById(R.id.logout_button); // 관리자 버튼
+
+        // 로그아웃 버튼 작동
+        logout_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                manage_button.setVisibility(View.INVISIBLE); // 로그인 전까지 관리자 버튼 비활성화
+                user_button.setVisibility(View.INVISIBLE); // 로그인 전까지 사용자 버튼 비활성화
+                login_button.setVisibility(View.VISIBLE); // 로그인 버튼 활성화
+            }
+        });
+
 
 
 
@@ -70,9 +84,9 @@ public class LoginActivity extends AppCompatActivity {
                 // 서버에 로그인 정보 전송
                 loginToServer(name, password);
 
-                // 임시 관리자 페이지 넘어가는 버튼
-                Intent intent = new Intent(getApplicationContext(), ManageActivity.class);
-                startActivity(intent);
+//                // 임시 관리자 페이지 넘어가는 버튼
+//                Intent intent = new Intent(getApplicationContext(), ManageActivity.class);
+//                startActivity(intent);
             }
         });
     }
@@ -108,6 +122,17 @@ public class LoginActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             System.out.println("fail");
+                            // AlertDialog 설정
+                            AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                            builder.setTitle("로그인 실패");
+                            builder.setMessage("로그인 실패 했습니다.");
+
+                            // 확인 버튼을 설정하고 클릭시 닫는다.
+                            builder.setPositiveButton("확인", null);
+
+                            // AlertDialog를 보여준다.
+                            AlertDialog dialog = builder.create();
+                            dialog.show();
                         }
                     });
                 }
@@ -116,6 +141,7 @@ public class LoginActivity extends AppCompatActivity {
                 public void onResponse(Call call, Response response) throws IOException {
                     Button manage_button = (Button) findViewById(R.id.manage_button);
                     Button user_button = (Button) findViewById(R.id.user_button);
+                    Button login_button = (Button) findViewById(R.id.login_button);
 
                     if (response.isSuccessful()) {
                         String responseBody = response.body().string();
@@ -142,13 +168,16 @@ public class LoginActivity extends AppCompatActivity {
                                         AlertDialog dialog = builder.create();
                                         dialog.show();
 
+                                        // 로그인 성공시 로그인버튼 비활성화
+                                        login_button.setVisibility(View.INVISIBLE);
+
                                         // 로그인 성공시 보여주는 버튼
                                         manage_button.setVisibility(View.VISIBLE); // 관리자 버튼 활성화
                                         user_button.setVisibility(View.VISIBLE); // 사용자 버튼 활성화
 
-                                        // 로그인 성공 후에만 manageActivity로 이동
-                                        Intent intent = new Intent(getApplicationContext(), ManageActivity.class);
-                                        startActivity(intent);
+//                                        // 로그인 성공 후에만 manageActivity로 이동
+//                                        Intent intent = new Intent(getApplicationContext(), ManageActivity.class);
+//                                        startActivity(intent);
                                     }
 
                                 });
@@ -157,6 +186,17 @@ public class LoginActivity extends AppCompatActivity {
                                     @Override
                                     public void run() {
                                         System.out.println("login fail");
+                                        // AlertDialog 설정
+                                        AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                                        builder.setTitle("로그인 실패");
+                                        builder.setMessage("로그인 실패 했습니다.");
+
+                                        // 확인 버튼을 설정하고 클릭시 닫는다.
+                                        builder.setPositiveButton("확인", null);
+
+                                        // AlertDialog를 보여준다.
+                                        AlertDialog dialog = builder.create();
+                                        dialog.show();
                                     }
                                 });
 
@@ -169,6 +209,17 @@ public class LoginActivity extends AppCompatActivity {
                             @Override
                             public void run() {
                                 System.out.println("fail");
+                                // AlertDialog 설정
+                                AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                                builder.setTitle("로그인 실패");
+                                builder.setMessage("로그인 실패 했습니다.");
+
+                                // 확인 버튼을 설정하고 클릭시 닫는다.
+                                builder.setPositiveButton("확인", null);
+
+                                // AlertDialog를 보여준다.
+                                AlertDialog dialog = builder.create();
+                                dialog.show();
                             }
                         });
                     }

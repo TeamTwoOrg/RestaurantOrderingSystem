@@ -24,6 +24,7 @@
         </activity>
         <activity android:name=".ManageActivity"/>
         <activity android:name=".ProductActivity"/>
+        <activity android:name=".AddMenuPopUp"/>
     </application>
 
 </manifest>

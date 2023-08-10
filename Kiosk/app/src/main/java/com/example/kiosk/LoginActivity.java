@@ -24,8 +24,12 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
+
+
 public class LoginActivity extends AppCompatActivity {
     private static final String BASE_URL = "https://sm-kiosk.kro.kr/user/login";
+    public static String password_text;
+    public static String id_text;
     EditText edt1, edt2;
     Button btn1;
     Button manage_button;
@@ -70,6 +74,11 @@ public class LoginActivity extends AppCompatActivity {
         edt1 = findViewById(R.id.id_text);
         edt2 = findViewById(R.id.password_text);
         btn1 = findViewById(R.id.login_button);
+
+        id_text = String.valueOf(edt1.getText());
+        password_text = String.valueOf(edt2.getText());
+
+
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override

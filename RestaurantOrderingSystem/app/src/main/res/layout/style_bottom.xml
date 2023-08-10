@@ -5,18 +5,34 @@
     android:orientation="horizontal"
     android:background="#292828">
 
-    <!-- 직원 호출 버튼 -->
     <ImageButton
+        android:id="@+id/voiceIcon"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="@drawable/call_staff"
-        android:maxHeight="35dp"
-        android:maxWidth="35dp"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:layout_marginTop="10dp"
-        android:contentDescription="직원호출"/>
+        android:background="#292828"
+        android:layout_weight="1.1"
+        android:contentDescription="음성 인식을 시작 합니다"
+        android:scaleType="centerCrop"/>
+
+    <!-- 음성 인식 버튼 -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:text="음성 인식"
+        android:textSize="24dp"
+        android:background="@drawable/button_special"
+        android:textColor="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/writingIcon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#292828"
+        android:layout_weight="1.1"
+        android:src="@drawable/sj_feather_pen_icon"
+        android:contentDescription="문자 인식을 시작 합니다"
+        android:scaleType="centerCrop"/>
 
     <!-- 버튼 -->
     <Button
@@ -24,8 +40,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/button_background"
-        android:text="추천메뉴"
-        android:textSize="21dp"
+        android:text="문자 인식"
+        android:textSize="24dp"
         android:textColor="#FFFFFF"
         android:layout_weight="1.1" />
 
@@ -34,7 +50,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.9"/>
-
 
     <Button
         android:id="@+id/topBelowButton2"

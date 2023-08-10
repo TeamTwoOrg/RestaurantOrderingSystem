@@ -22,31 +22,31 @@
 
     <!-- 버튼 -->
     <Button
-        android:id="@+id/topBelowButton1"
+        android:id="@+id/topButton1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/button_background"
         android:text="안주"
         android:textSize="24dp"
-        android:textColor="#FFFFFF"
+        android:textColor="@drawable/button_top"
+        android:backgroundTint="#292828"
         android:layout_weight="1"/>
     <Button
-        android:id="@+id/topBelowButton2"
+        android:id="@+id/topButton2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/button_background"
         android:text="주류"
         android:textSize="24dp"
-        android:textColor="#FFFFFF"
+        android:textColor="@drawable/button_top"
+        android:backgroundTint="#292828"
         android:layout_weight="1"/>
     <Button
-        android:id="@+id/topBelowButton3"
+        android:id="@+id/topButton3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/button_background"
         android:text="음료"
         android:textSize="24dp"
-        android:textColor="#FFFFFF"
+        android:textColor="@drawable/button_top"
+        android:backgroundTint="#292828"
         android:layout_weight="1"/>
 
     <!-- 공백 -->

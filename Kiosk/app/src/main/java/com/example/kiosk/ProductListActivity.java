@@ -1,10 +1,10 @@
 package com.example.kiosk;
 
-import static com.example.kiosk.LoginActivity.id_text;
-import static com.example.kiosk.LoginActivity.password_text;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -43,9 +43,18 @@ public class ProductListActivity extends AppCompatActivity {
 
             // POST 요청에 필요한 JSON 데이터 생성
             JSONObject jsonBody = new JSONObject();
+
+            // intent로 id, password 보내기
+            Intent intent = getIntent();
+            String id = intent.getStringExtra("id_text");
+            String password = intent.getStringExtra("password_text");
+
+
+
             try {
-                jsonBody.put("id", id_text);
-                jsonBody.put("password", password_text);
+                jsonBody.put("id", id);
+                jsonBody.put("password", password);
+
 
                 // 필요한 다른 데이터도 추가
             } catch (JSONException e) {

@@ -26,13 +26,13 @@ import okhttp3.Response;
 
 
 
+
 public class LoginActivity extends AppCompatActivity {
     private static final String BASE_URL = "https://sm-kiosk.kro.kr/user/login";
-    public static String password_text;
-    public static String id_text;
+
     EditText edt1, edt2;
     Button btn1;
-    Button manage_button;
+
     // 관리자 버튼
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,11 +75,6 @@ public class LoginActivity extends AppCompatActivity {
         edt2 = findViewById(R.id.password_text);
         btn1 = findViewById(R.id.login_button);
 
-        id_text = String.valueOf(edt1.getText());
-        password_text = String.valueOf(edt2.getText());
-
-
-
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
@@ -93,9 +88,12 @@ public class LoginActivity extends AppCompatActivity {
                 // 서버에 로그인 정보 전송
                 loginToServer(name, password);
 
-//                // 임시 관리자 페이지 넘어가는 버튼
-//                Intent intent = new Intent(getApplicationContext(), ManageActivity.class);
-//                startActivity(intent);
+                // 다른 클래스로 데이터 전달
+                Intent intent = new Intent(LoginActivity.this, ProductActivity.class);
+                intent.putExtra("id_text", name);
+                intent.putExtra("password_text", password);
+                startActivity(intent);
+
             }
         });
     }

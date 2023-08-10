@@ -34,6 +34,9 @@ public class LoginActivity extends AppCompatActivity {
     public static String cur_pw = "";
     EditText edt1, edt2;
     Button btn1;
+    // 약간의 불투명도를 설정합니다 (예: 0.7)
+    float originAlpha = 1.0f;
+    float desiredAlpha = 0.2f;
 
     // 관리자 버튼
     @Override
@@ -43,10 +46,28 @@ public class LoginActivity extends AppCompatActivity {
 
         Button manage_button = (Button) findViewById(R.id.manage_button); // 관리자 버튼
         Button user_button = (Button) findViewById(R.id.user_button); // 사용자 버튼
-        Button login_button = (Button) findViewById(R.id.login_button); // 로그인 버튼
+        Button logout_button = (Button) findViewById(R.id.logout_button);
+        Button login_button = (Button) findViewById(R.id.login_button);
 
-        manage_button.setVisibility(View.INVISIBLE); // 로그인 전까지 관리자 버튼 비활성화
-        user_button.setVisibility(View.INVISIBLE); // 로그인 전까지 사용자 버튼 비활성화
+        manage_button.setAlpha(desiredAlpha);
+        manage_button.setEnabled(false);
+        user_button.setAlpha(desiredAlpha);
+        user_button.setEnabled(false);
+        logout_button.setAlpha(desiredAlpha);
+        logout_button.setEnabled(false);
+
+        login_button.setAlpha(originAlpha);
+        login_button.setEnabled(true);
+
+        EditText id_text = findViewById(R.id.id_text);
+        EditText password_text = findViewById(R.id.password_text);
+        id_text.setText("");
+        password_text.setText("");
+        id_text.setAlpha(originAlpha);
+        id_text.setEnabled(true);
+        password_text.setAlpha(originAlpha);
+        password_text.setEnabled(true);
+
 
         // 관리자버튼 작동
         manage_button.setOnClickListener(new View.OnClickListener() {
@@ -57,15 +78,34 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        Button logout_button = (Button) findViewById(R.id.logout_button); // 관리자 버튼
-
         // 로그아웃 버튼 작동
         logout_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                manage_button.setVisibility(View.INVISIBLE); // 로그인 전까지 관리자 버튼 비활성화
-                user_button.setVisibility(View.INVISIBLE); // 로그인 전까지 사용자 버튼 비활성화
-                login_button.setVisibility(View.VISIBLE); // 로그인 버튼 활성화
+
+                Button manage_button = (Button) findViewById(R.id.manage_button); // 관리자 버튼
+                Button user_button = (Button) findViewById(R.id.user_button); // 사용자 버튼
+                Button logout_button = (Button) findViewById(R.id.logout_button);
+                Button login_button = (Button) findViewById(R.id.login_button);
+
+                manage_button.setAlpha(desiredAlpha);
+                manage_button.setEnabled(false);
+                user_button.setAlpha(desiredAlpha);
+                user_button.setEnabled(false);
+                logout_button.setAlpha(desiredAlpha);
+                logout_button.setEnabled(false);
+
+                login_button.setAlpha(originAlpha);
+                login_button.setEnabled(true);
+
+                EditText id_text = findViewById(R.id.id_text);
+                EditText password_text = findViewById(R.id.password_text);
+                id_text.setText("");
+                password_text.setText("");
+                id_text.setAlpha(originAlpha);
+                id_text.setEnabled(true);
+                password_text.setAlpha(originAlpha);
+                password_text.setEnabled(true);
             }
         });
 
@@ -138,6 +178,30 @@ public class LoginActivity extends AppCompatActivity {
                             // AlertDialog를 보여준다.
                             AlertDialog dialog = builder.create();
                             dialog.show();
+
+                            Button manage_button = (Button) findViewById(R.id.manage_button); // 관리자 버튼
+                            Button user_button = (Button) findViewById(R.id.user_button); // 사용자 버튼
+                            Button logout_button = (Button) findViewById(R.id.logout_button);
+                            Button login_button = (Button) findViewById(R.id.login_button);
+
+                            manage_button.setAlpha(desiredAlpha);
+                            manage_button.setEnabled(false);
+                            user_button.setAlpha(desiredAlpha);
+                            user_button.setEnabled(false);
+                            logout_button.setAlpha(desiredAlpha);
+                            logout_button.setEnabled(false);
+
+                            login_button.setAlpha(originAlpha);
+                            login_button.setEnabled(true);
+
+                            EditText id_text = findViewById(R.id.id_text);
+                            EditText password_text = findViewById(R.id.password_text);
+                            id_text.setText("");
+                            password_text.setText("");
+                            id_text.setAlpha(originAlpha);
+                            id_text.setEnabled(true);
+                            password_text.setAlpha(originAlpha);
+                            password_text.setEnabled(true);
                         }
                     });
                 }
@@ -147,6 +211,7 @@ public class LoginActivity extends AppCompatActivity {
                     Button manage_button = (Button) findViewById(R.id.manage_button);
                     Button user_button = (Button) findViewById(R.id.user_button);
                     Button login_button = (Button) findViewById(R.id.login_button);
+                    Button logout_button = (Button) findViewById(R.id.logout_button);
 
                     if (response.isSuccessful()) {
                         String responseBody = response.body().string();
@@ -179,16 +244,27 @@ public class LoginActivity extends AppCompatActivity {
                                         AlertDialog dialog = builder.create();
                                         dialog.show();
 
-                                        // 로그인 성공시 로그인버튼 비활성화
-                                        login_button.setVisibility(View.INVISIBLE);
+                                        Button manage_button = (Button) findViewById(R.id.manage_button); // 관리자 버튼
+                                        Button user_button = (Button) findViewById(R.id.user_button); // 사용자 버튼
+                                        Button logout_button = (Button) findViewById(R.id.logout_button);
+                                        Button login_button = (Button) findViewById(R.id.login_button);
 
-                                        // 로그인 성공시 보여주는 버튼
-                                        manage_button.setVisibility(View.VISIBLE); // 관리자 버튼 활성화
-                                        user_button.setVisibility(View.VISIBLE); // 사용자 버튼 활성화
+                                        manage_button.setAlpha(originAlpha);
+                                        manage_button.setEnabled(true);
+                                        user_button.setAlpha(originAlpha);
+                                        user_button.setEnabled(true);
+                                        logout_button.setAlpha(originAlpha);
+                                        logout_button.setEnabled(true);
 
-//                                        // 로그인 성공 후에만 manageActivity로 이동
-//                                        Intent intent = new Intent(getApplicationContext(), ManageActivity.class);
-//                                        startActivity(intent);
+                                        login_button.setAlpha(desiredAlpha);
+                                        login_button.setEnabled(false);
+
+                                        id_text.setText("");
+                                        password_text.setText("");
+                                        id_text.setAlpha(desiredAlpha);
+                                        id_text.setEnabled(false);
+                                        password_text.setAlpha(desiredAlpha);
+                                        password_text.setEnabled(false);
                                     }
 
                                 });
@@ -205,6 +281,30 @@ public class LoginActivity extends AppCompatActivity {
                                         // 확인 버튼을 설정하고 클릭시 닫는다.
                                         builder.setPositiveButton("확인", null);
 
+                                        Button manage_button = (Button) findViewById(R.id.manage_button); // 관리자 버튼
+                                        Button user_button = (Button) findViewById(R.id.user_button); // 사용자 버튼
+                                        Button logout_button = (Button) findViewById(R.id.logout_button);
+                                        Button login_button = (Button) findViewById(R.id.login_button);
+
+                                        manage_button.setAlpha(originAlpha);
+                                        manage_button.setEnabled(true);
+                                        user_button.setAlpha(originAlpha);
+                                        user_button.setEnabled(true);
+                                        logout_button.setAlpha(originAlpha);
+                                        logout_button.setEnabled(true);
+
+                                        login_button.setAlpha(desiredAlpha);
+                                        login_button.setEnabled(false);
+
+                                        EditText id_text = findViewById(R.id.id_text);
+                                        EditText password_text = findViewById(R.id.password_text);
+                                        id_text.setText("");
+                                        password_text.setText("");
+                                        id_text.setAlpha(originAlpha);
+                                        id_text.setEnabled(true);
+                                        password_text.setAlpha(originAlpha);
+                                        password_text.setEnabled(true);
+
                                         // AlertDialog를 보여준다.
                                         AlertDialog dialog = builder.create();
                                         dialog.show();
@@ -214,6 +314,22 @@ public class LoginActivity extends AppCompatActivity {
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
+
+                            manage_button.setAlpha(desiredAlpha);
+                            manage_button.setEnabled(false);
+                            user_button.setAlpha(desiredAlpha);
+                            user_button.setEnabled(false);
+                            logout_button.setAlpha(desiredAlpha);
+                            logout_button.setEnabled(false);
+
+                            EditText id_text = findViewById(R.id.id_text);
+                            EditText password_text = findViewById(R.id.password_text);
+                            id_text.setText("");
+                            password_text.setText("");
+                            id_text.setAlpha(originAlpha);
+                            id_text.setEnabled(true);
+                            password_text.setAlpha(originAlpha);
+                            password_text.setEnabled(true);
                         }
                     } else {
                         runOnUiThread(new Runnable() {

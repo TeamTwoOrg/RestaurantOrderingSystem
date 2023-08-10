@@ -30,6 +30,8 @@ import okhttp3.Response;
 public class LoginActivity extends AppCompatActivity {
     private static final String BASE_URL = "https://sm-kiosk.kro.kr/user/login";
 
+    public static String cur_id = "";
+    public static String cur_pw = "";
     EditText edt1, edt2;
     Button btn1;
 
@@ -85,14 +87,11 @@ public class LoginActivity extends AppCompatActivity {
                 Log.d("LoginActivity", "아이디: " + name);
                 Log.d("LoginActivity", "비밀번호: " + password);
 
+                cur_id = name;
+                cur_pw = password;
+
                 // 서버에 로그인 정보 전송
                 loginToServer(name, password);
-
-                // 다른 클래스로 데이터 전달
-                Intent intent = new Intent(LoginActivity.this, ProductActivity.class);
-                intent.putExtra("id_text", name);
-                intent.putExtra("password_text", password);
-                startActivity(intent);
 
             }
         });

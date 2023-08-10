@@ -52,8 +52,8 @@ public class ProductListActivity extends AppCompatActivity {
 
 
             try {
-                jsonBody.put("id", id);
-                jsonBody.put("password", password);
+                jsonBody.put("id", LoginActivity.cur_id);
+                jsonBody.put("password", LoginActivity.cur_pw);
 
 
                 // 필요한 다른 데이터도 추가

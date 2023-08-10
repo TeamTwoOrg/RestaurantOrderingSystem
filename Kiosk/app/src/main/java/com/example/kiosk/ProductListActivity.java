@@ -5,13 +5,22 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 import okhttp3.FormBody;
 import okhttp3.MediaType;
@@ -22,15 +31,12 @@ import okhttp3.Response;
 
 public class ProductListActivity extends AppCompatActivity {
 
-    private ListView listView;
+//    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_list);
-
-        listView = findViewById(R.id.productListView);
-
         // 서버에서 데이터 가져오는 AsyncTask 실행
         new FetchProductDataTask().execute();
     }
@@ -73,6 +79,7 @@ public class ProductListActivity extends AppCompatActivity {
                     .build();
 
             try {
+
                 Response response = client.newCall(request).execute();
                 return response.body().string();
             } catch (Exception e) {
@@ -93,8 +100,103 @@ public class ProductListActivity extends AppCompatActivity {
                         android.R.layout.simple_list_item_1,
                         products
                 );
-                listView.setAdapter(adapter);
+//                listView.setAdapter(adapter);
+                parseJSON(response);
             }
+        }
+
+        protected void parseJSON(String response) {
+            Log.d("test"," dsfdsfsdfdsfsdfff");
+            ArrayList<JSONObject> menuList = new ArrayList<>();
+
+            try {
+                JSONObject responseJson = new JSONObject(response);
+                JSONObject dataJson = responseJson.getJSONObject("data");
+                JSONArray ordersArray = dataJson.getJSONArray("menus");
+
+                for (int i = 0; i < ordersArray.length(); i++) {
+                    JSONObject order = ordersArray.getJSONObject(i);
+                    menuList.add(order);
+                }
+
+                spreadOrderData(menuList);
+//                 테스트 출력 코드
+//                for (JSONObject menuItem : menuList) {
+//                    // JSONObject를 보기 좋게 로그에 출력
+//                    String jsonMenuItem = menuItem.toString(4); // 들여쓰기 4칸으로 출력
+//                    Log.d("test", jsonMenuItem);
+////                                System.out.println(menuItem.getString("imageURL"));
+//                }
+
+            } catch (JSONException e) {
+//                            System.err.println("실패");
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void spreadOrderData(ArrayList<JSONObject> menuList) throws JSONException {
+        LinearLayout allOrderView = findViewById(R.id.allOrderView);
+        allOrderView.removeAllViews();
+
+        for(int i=0; i<menuList.size(); i++) {
+            LinearLayout newLayOut = new LinearLayout(this);
+            newLayOut.setLayoutParams(new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT,
+                    200
+            ));
+            newLayOut.setOrientation(LinearLayout.HORIZONTAL);
+            newLayOut.setGravity(Gravity.CENTER_VERTICAL);// 수직으로 가운데로 정렬
+            newLayOut.setBackgroundResource(R.drawable.bottom_border);
+
+            LinearLayout.LayoutParams defaultLayout = new LinearLayout.LayoutParams(
+                    0,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+            );
+            defaultLayout.weight = 1; // weight를 1로 설정
+
+            // 번호
+            TextView numText = new TextView(this);
+            numText.setLayoutParams(defaultLayout);
+            numText.setTextSize(18);
+            numText.setGravity(Gravity.CENTER_HORIZONTAL);
+            numText.setText(String.valueOf(i+1));
+            newLayOut.addView(numText);
+
+            // 카테고리
+            TextView cateText = new TextView(this);
+            cateText.setLayoutParams(defaultLayout);
+            cateText.setTextSize(18);
+            cateText.setGravity(Gravity.CENTER_HORIZONTAL);
+            cateText.setText(menuList.get(i).getString("category1") + " > " + menuList.get(i).getString("category2"));
+            newLayOut.addView(cateText);
+
+            // 이름
+            TextView nameText = new TextView(this);
+            nameText.setLayoutParams(defaultLayout);
+            nameText.setTextSize(18);
+            nameText.setGravity(Gravity.CENTER_HORIZONTAL);
+            nameText.setText(menuList.get(i).getString("name"));
+            newLayOut.addView(nameText);
+
+            // 가격
+            TextView timeText = new TextView(this);
+            timeText.setLayoutParams(defaultLayout);
+            timeText.setTextSize(18);
+            timeText.setGravity(Gravity.CENTER_HORIZONTAL);
+            timeText.setText(menuList.get(i).getString("price"));
+            newLayOut.addView(timeText);
+
+            // 추가 설명
+            TextView subText = new TextView(this);
+            subText.setLayoutParams(defaultLayout);
+            subText.setTextSize(18);
+            subText.setGravity(Gravity.CENTER_HORIZONTAL);
+            subText.setText(menuList.get(i).getString("text"));
+            newLayOut.addView(subText);
+
+            // 마무리
+            allOrderView.addView(newLayOut);
         }
     }
 }

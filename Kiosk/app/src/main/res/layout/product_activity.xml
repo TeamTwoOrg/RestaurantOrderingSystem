@@ -59,7 +59,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <include layout="@layout/product_layout2" />
             <ListView
                 android:id="@+id/menuListView"
                 android:layout_width="match_parent"

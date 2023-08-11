@@ -2,6 +2,8 @@ package com.example.kiosk;
 
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,9 +14,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.Space;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -49,12 +53,6 @@ public class ProductListActivity extends AppCompatActivity {
 
             // POST 요청에 필요한 JSON 데이터 생성
             JSONObject jsonBody = new JSONObject();
-
-            // intent로 id, password 보내기
-            Intent intent = getIntent();
-            String id = intent.getStringExtra("id_text");
-            String password = intent.getStringExtra("password_text");
-
 
 
             try {
@@ -139,6 +137,8 @@ public class ProductListActivity extends AppCompatActivity {
         LinearLayout allOrderView = findViewById(R.id.allOrderView);
         allOrderView.removeAllViews();
 
+        Typeface customFont = ResourcesCompat.getFont(this, R.font.gmarketsanslight);
+
         for(int i=0; i<menuList.size(); i++) {
             LinearLayout newLayOut = new LinearLayout(this);
             newLayOut.setLayoutParams(new LinearLayout.LayoutParams(
@@ -155,18 +155,33 @@ public class ProductListActivity extends AppCompatActivity {
             );
             defaultLayout.weight = 1; // weight를 1로 설정
 
+            LinearLayout.LayoutParams spaceLayout = new LinearLayout.LayoutParams(
+                    0,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+            );
+            spaceLayout.weight = 0.2f; // weight를 1로 설정
+
+            Space space1 = new Space(this);
+            space1.setLayoutParams(spaceLayout);
+            newLayOut.addView(space1);
+
             // 번호
             TextView numText = new TextView(this);
             numText.setLayoutParams(defaultLayout);
-            numText.setTextSize(18);
+            numText.setTextSize(28);
+            numText.setTextColor(Color.WHITE);
+            numText.setTypeface(customFont);
             numText.setGravity(Gravity.CENTER_HORIZONTAL);
             numText.setText(String.valueOf(i+1));
             newLayOut.addView(numText);
 
+
             // 카테고리
             TextView cateText = new TextView(this);
             cateText.setLayoutParams(defaultLayout);
-            cateText.setTextSize(18);
+            cateText.setTextSize(28);
+            cateText.setTextColor(Color.WHITE);
+            cateText.setTypeface(customFont);
             cateText.setGravity(Gravity.CENTER_HORIZONTAL);
             cateText.setText(menuList.get(i).getString("category1") + " > " + menuList.get(i).getString("category2"));
             newLayOut.addView(cateText);
@@ -174,7 +189,9 @@ public class ProductListActivity extends AppCompatActivity {
             // 이름
             TextView nameText = new TextView(this);
             nameText.setLayoutParams(defaultLayout);
-            nameText.setTextSize(18);
+            nameText.setTextSize(28);
+            nameText.setTextColor(Color.WHITE);
+            nameText.setTypeface(customFont);
             nameText.setGravity(Gravity.CENTER_HORIZONTAL);
             nameText.setText(menuList.get(i).getString("name"));
             newLayOut.addView(nameText);
@@ -182,7 +199,9 @@ public class ProductListActivity extends AppCompatActivity {
             // 가격
             TextView timeText = new TextView(this);
             timeText.setLayoutParams(defaultLayout);
-            timeText.setTextSize(18);
+            timeText.setTextSize(28);
+            timeText.setTextColor(Color.WHITE);
+            timeText.setTypeface(customFont);
             timeText.setGravity(Gravity.CENTER_HORIZONTAL);
             timeText.setText(menuList.get(i).getString("price"));
             newLayOut.addView(timeText);
@@ -190,10 +209,16 @@ public class ProductListActivity extends AppCompatActivity {
             // 추가 설명
             TextView subText = new TextView(this);
             subText.setLayoutParams(defaultLayout);
-            subText.setTextSize(18);
+            subText.setTextSize(28);
+            subText.setTextColor(Color.WHITE);
+            subText.setTypeface(customFont);
             subText.setGravity(Gravity.CENTER_HORIZONTAL);
             subText.setText(menuList.get(i).getString("text"));
             newLayOut.addView(subText);
+
+            Space space2 = new Space(this);
+            space2.setLayoutParams(spaceLayout);
+            newLayOut.addView(space2);
 
             // 마무리
             allOrderView.addView(newLayOut);

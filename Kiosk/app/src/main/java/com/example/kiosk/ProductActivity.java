@@ -55,7 +55,7 @@ public class ProductActivity extends AppCompatActivity{
                 // 예시: Toast 메시지를 표시
                 Intent intent = new Intent(ProductActivity.this, AddMenuPopUp.class);
                 startActivity(intent);
-                Toast.makeText(ProductActivity.this, "상품이 추가 되었습니다.", Toast.LENGTH_SHORT).show();
+
 
 
             }

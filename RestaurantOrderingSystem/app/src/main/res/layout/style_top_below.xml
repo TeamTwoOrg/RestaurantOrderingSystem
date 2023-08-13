@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/button_background"
         android:text="신메뉴"
-        android:textSize="17dp"
+        android:textSize="22dp"
         android:textColor="#FFFFFF"
         android:layout_weight="1"/>
     <Button
@@ -20,7 +20,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/button_background"
         android:text="탕메뉴"
-        android:textSize="17dp"
+        android:textSize="22dp"
         android:textColor="#FFFFFF"
         android:layout_weight="1"/>
     <Button
@@ -29,7 +29,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/button_background"
         android:text="튀김메뉴"
-        android:textSize="17dp"
+        android:textSize="22dp"
         android:textColor="#FFFFFF"
         android:layout_weight="1"/>
     <Button
@@ -38,7 +38,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/button_background"
         android:text="과일메뉴"
-        android:textSize="17dp"
+        android:textSize="22dp"
         android:textColor="#FFFFFF"
         android:layout_weight="1"/>
     <Button
@@ -47,7 +47,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/button_background"
         android:text="볶음메뉴"
-        android:textSize="17dp"
+        android:textSize="22dp"
         android:textColor="#FFFFFF"
         android:layout_weight="1"/>
     <Button
@@ -56,7 +56,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/button_background"
         android:text="기타메뉴"
-        android:textSize="17dp"
+        android:textSize="22dp"
         android:textColor="#FFFFFF"
         android:layout_weight="1"/>
     <Button
@@ -65,7 +65,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/button_background"
         android:text="사이드메뉴"
-        android:textSize="17dp"
+        android:textSize="22dp"
         android:textColor="#FFFFFF"
         android:layout_weight="1"/>
 </LinearLayout>

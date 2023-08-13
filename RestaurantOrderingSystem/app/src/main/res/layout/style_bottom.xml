@@ -16,6 +16,7 @@
 
     <!-- 음성 인식 버튼 -->
     <Button
+        android:id="@+id/voice_recognition_btn"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.1"
@@ -24,32 +25,13 @@
         android:background="@drawable/button_special"
         android:textColor="#FFFFFF" />
 
-    <ImageButton
-        android:id="@+id/writingIcon"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#292828"
-        android:layout_weight="1.1"
-        android:src="@drawable/sj_feather_pen_icon"
-        android:contentDescription="문자 인식을 시작 합니다"
-        android:scaleType="centerCrop"/>
-
-    <!-- 버튼 -->
-    <Button
-        android:id="@+id/topBelowButton1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/button_background"
-        android:text="문자 인식"
-        android:textSize="24dp"
-        android:textColor="#FFFFFF"
-        android:layout_weight="1.1" />
 
     <!-- 공백 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.9"/>
+        android:layout_weight="0.4"/>
+
 
     <Button
         android:id="@+id/topBelowButton2"
@@ -57,43 +39,6 @@
         android:layout_height="match_parent"
         android:background="@drawable/button_background_forbottom"
         android:text="장바구니"
-        android:textSize="24dp"
-        android:textColor="#FFFFFF"
-        android:layout_weight="1"
-
-        android:paddingTop="3dp"
-        android:paddingBottom="3dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginRight="20dp"/>
-    <Button
-        android:id="@+id/topBelowButton3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/button_background_forbottom"
-        android:text="주문내역"
-        android:textSize="24dp"
-        android:textColor="#FFFFFF"
-        android:layout_weight="1"
-
-        android:paddingTop="3dp"
-        android:paddingBottom="3dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginRight="20dp"/>
-
-    <Button
-        android:id="@+id/topBelowButton4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/button_background_forbottom"
-        android:text="계산서"
         android:textSize="24dp"
         android:textColor="#FFFFFF"
         android:layout_weight="1"

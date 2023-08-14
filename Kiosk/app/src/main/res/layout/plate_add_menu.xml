@@ -2,16 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/middle1"
     android:layout_width="match_parent"
-    android:layout_height="700dp"
+    android:layout_height="450dp"
     android:background="@color/black"
     android:orientation="vertical">
     <ImageButton
         android:background="@color/black"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="350dp"
         android:id="@+id/empty_plate"
         android:src="@drawable/empty_plate"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
         android:layout_weight="1"
         android:contentDescription="add your photo">
     </ImageButton>

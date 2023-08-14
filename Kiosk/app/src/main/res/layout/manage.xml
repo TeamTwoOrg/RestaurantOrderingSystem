@@ -17,9 +17,9 @@
 
     <TextView
         android:layout_width="700dp"
-        android:layout_height="70dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="0dp"
         android:fontFamily="@font/gmarketsansmedium"
         android:gravity="center"
         android:text="주문 전체보기"
@@ -29,6 +29,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="25dp"
         android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatButton
@@ -49,7 +50,7 @@
     <ListView
         android:id="@+id/Allorderlist"
         android:layout_width="match_parent"
-        android:layout_height="630dp"
+        android:layout_height="440dp"
         android:background="@android:color/transparent"
         android:padding="16dp"/>
 

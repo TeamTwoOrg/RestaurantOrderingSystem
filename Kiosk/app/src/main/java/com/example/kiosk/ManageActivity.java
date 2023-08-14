@@ -53,6 +53,16 @@ public class ManageActivity extends AppCompatActivity {
         productBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+
+                productBtn.setBackgroundResource(R.drawable.darker_button_background);
+
+                v.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        productBtn.setBackgroundResource(R.drawable.button_round);
+
+                    }
+                }, 200);
                 // productActivity로 전환하기 위한 intent 생성
                 Intent intent = new Intent(ManageActivity.this, ProductActivity.class);
                 startActivity(intent);

@@ -72,7 +72,17 @@ public class LoginActivity extends AppCompatActivity {
         // 관리자버튼 작동
         manage_button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
+                manage_button.setBackgroundResource(R.drawable.login_button_background);
+
+                v.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        manage_button.setBackgroundResource(R.drawable.button_round);
+
+                    }
+                }, 200);
+
                 Intent intent = new Intent(getApplicationContext(), ManageActivity.class);
                 startActivity(intent);
             }
@@ -81,7 +91,16 @@ public class LoginActivity extends AppCompatActivity {
         // 로그아웃 버튼 작동
         logout_button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
+                logout_button.setBackgroundResource(R.drawable.login_button_background);
+
+                v.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        logout_button.setBackgroundResource(R.drawable.button_round);
+
+                    }
+                }, 200);
 
                 Button manage_button = (Button) findViewById(R.id.manage_button); // 관리자 버튼
                 Button user_button = (Button) findViewById(R.id.user_button); // 사용자 버튼
@@ -112,7 +131,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-        // 로그인
+        // 로그인 버튼 작동
         edt1 = findViewById(R.id.id_text);
         edt2 = findViewById(R.id.password_text);
         btn1 = findViewById(R.id.login_button);
@@ -120,6 +139,16 @@ public class LoginActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
+                login_button.setBackgroundResource(R.drawable.login_button_background);
+
+                v.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        login_button.setBackgroundResource(R.drawable.button_round);
+
+                    }
+                }, 200);
+
                 String name = edt1.getText().toString();
                 String password = edt2.getText().toString();
 

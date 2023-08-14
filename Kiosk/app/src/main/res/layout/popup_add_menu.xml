@@ -16,7 +16,7 @@
     <EditText
         android:id="@+id/script"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:layout_below="@id/addMainInfo"
         android:layout_marginTop="5dp"
         android:layout_weight="5"
@@ -34,31 +34,26 @@
     <RelativeLayout
         android:id="@+id/spinnerLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_below="@id/script"
         android:layout_centerHorizontal="true"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="카테고리"
-            android:layout_marginTop="3dp"
-            android:layout_marginLeft="25dp"
-            android:textColor="#f5f5dc"
+            android:layout_height="match_parent"
+            android:text="카테고리 : "
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#CCCCCC"
+            android:textSize="30sp"
             android:fontFamily="@font/gmarketsansmedium"/>
         <Spinner
             android:id="@+id/category_1_spinner"
             android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:layout_marginStart="0dp"
-            android:textSize="14sp"/>
+            android:layout_height="match_parent"
+            android:layout_marginStart="200dp"
+            android:textSize="40sp"/>
 
-        <Spinner
-            android:id="@+id/category_2_spinner"
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:layout_marginStart="100dp"
-            android:textSize="14sp"/>
 
     </RelativeLayout>
 
@@ -71,8 +66,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="2dp"
         android:background="@drawable/button_background"
-        android:textSize="20sp"
-        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textColor="#FFFF00"
         android:gravity="center"
         android:fontFamily = "@font/gmarketsansmedium"
         android:text="등록 하기" />

@@ -4,7 +4,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:textSize="50dp"
-    android:textColor="#FF1493"
+    android:textSize="25dp"
+    android:textColor="#CCCCCC"
+    android:fontFamily="@font/gmarketsansmedium"
     android:padding="5dp"/>
 

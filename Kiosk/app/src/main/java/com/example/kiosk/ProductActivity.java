@@ -181,23 +181,27 @@ public class ProductActivity extends AppCompatActivity{
     }
 
     public void spreadOrderData(ArrayList<JSONObject> menuList) throws JSONException {
-        RelativeLayout allOrderView = findViewById(R.id.switching_zone);
+        LinearLayout allOrderView = findViewById(R.id.switching_zone);
         allOrderView.removeAllViews();
 
         Typeface customFont = ResourcesCompat.getFont(this, R.font.gmarketsanslight);
 
         for(int i=0; i<menuList.size(); i++) {
-            RelativeLayout newLayout = new RelativeLayout(this);
-            newLayout.setLayoutParams(new RelativeLayout.LayoutParams(
+            LinearLayout newLayout = new LinearLayout(this);
+            LinearLayout.LayoutParams newLayoutParams = new LinearLayout.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT
-            ));
+            );
+            newLayoutParams.setMargins(30, 0, 30, 0);
+            newLayout.setLayoutParams(newLayoutParams);
+            newLayout.setPadding(00, 30, 0, 30);
             newLayout.setBackgroundResource(R.drawable.bottom_border);
+
 
             // 상품 이미지 (Glide 사용)
             ImageView productImage = new ImageView(this);
             productImage.setId(View.generateViewId());
-            productImage.setLayoutParams(new RelativeLayout.LayoutParams(
+            productImage.setLayoutParams(new LinearLayout.LayoutParams(
                     400, // 이미지 너비를 원하는 값으로 설정
                     400  // 이미지 높이를 원하는 값으로 설정
             ));
@@ -207,27 +211,29 @@ public class ProductActivity extends AppCompatActivity{
             newLayout.addView(productImage);
 
             // 이름, 가격, 추가 설명
-            RelativeLayout textLayout = new RelativeLayout(this);
-            RelativeLayout.LayoutParams textLayoutParams = new RelativeLayout.LayoutParams(
+            LinearLayout textLayout = new LinearLayout(this);
+            LinearLayout.LayoutParams textLayoutParams = new LinearLayout.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT,
-                    ViewGroup.LayoutParams.WRAP_CONTENT
+                    ViewGroup.LayoutParams.MATCH_PARENT
             );
-            textLayoutParams.addRule(RelativeLayout.RIGHT_OF, productImage.getId()); // 이미지 오른쪽에 배치
+            textLayout.setGravity(Gravity.CENTER_VERTICAL);
             textLayout.setLayoutParams(textLayoutParams);
+            textLayoutParams.setMargins(30, 0, 0, 0);
+            textLayout.setOrientation(LinearLayout.VERTICAL);
 
             int textTopPadding = 20; // 각 텍스트 사이의 간격을 조절하는 값
 
             // 이름
             TextView nameText = new TextView(this);
             nameText.setId(View.generateViewId());
-            nameText.setLayoutParams(new RelativeLayout.LayoutParams(
+            nameText.setLayoutParams(new LinearLayout.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT
             ));
+            nameText.setPadding(0, 14, 0, 14);
             nameText.setTextSize(28);
             nameText.setTextColor(Color.WHITE);
             nameText.setTypeface(customFont);
-            nameText.setPadding(0, textTopPadding, 0, 0); // 상단 패딩 추가
             nameText.setText("상품 이름: " + menuList.get(i).getString("name"));
             textLayout.addView(nameText);
 
@@ -237,10 +243,10 @@ public class ProductActivity extends AppCompatActivity{
                     ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT
             ));
+            priceText.setPadding(0, 14, 0, 14);
             priceText.setTextSize(28);
             priceText.setTextColor(Color.WHITE);
             priceText.setTypeface(customFont);
-            priceText.setPadding(0, textTopPadding, 0, 0); // 상단 패딩 추가
             priceText.setText("상품 가격: " + menuList.get(i).getString("price"));
             textLayout.addView(priceText);
 
@@ -250,14 +256,16 @@ public class ProductActivity extends AppCompatActivity{
                     ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT
             ));
+            subText.setPadding(0, 14, 0, 14);
             subText.setTextSize(28);
             subText.setTextColor(Color.WHITE);
             subText.setTypeface(customFont);
-            subText.setPadding(0, textTopPadding, 0, 0); // 상단 패딩 추가
             subText.setText("상품 설명: " + menuList.get(i).getString("text"));
             textLayout.addView(subText);
 
+
             newLayout.addView(textLayout);
+
 
             allOrderView.addView(newLayout);
         }

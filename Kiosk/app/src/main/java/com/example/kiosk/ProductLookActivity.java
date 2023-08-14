@@ -33,14 +33,14 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-public class ProductListActivity extends AppCompatActivity {
+public class ProductLookActivity extends AppCompatActivity {
 
 //    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product_list);
+        setContentView(R.layout.product_activity);
         // 서버에서 데이터 가져오는 AsyncTask 실행
         new FetchProductDataTask().execute();
     }
@@ -94,7 +94,7 @@ public class ProductListActivity extends AppCompatActivity {
                 // 서버로부터 받은 데이터를 이용하여 ListView에 표시
                 String[] products = response.split(";"); // 적절한 데이터 형식에 따라 파싱
                 ArrayAdapter<String> adapter = new ArrayAdapter<>(
-                        ProductListActivity.this,
+                        ProductLookActivity.this,
                         android.R.layout.simple_list_item_1,
                         products
                 );
@@ -134,7 +134,7 @@ public class ProductListActivity extends AppCompatActivity {
     }
 
     public void spreadOrderData(ArrayList<JSONObject> menuList) throws JSONException {
-        LinearLayout allOrderView = findViewById(R.id.allOrderView);
+        LinearLayout allOrderView = findViewById(R.id.switching_zone);
         allOrderView.removeAllViews();
 
         Typeface customFont = ResourcesCompat.getFont(this, R.font.gmarketsanslight);

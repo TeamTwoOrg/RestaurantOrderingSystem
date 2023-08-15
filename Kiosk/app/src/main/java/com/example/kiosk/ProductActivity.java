@@ -39,6 +39,13 @@ import java.util.List;
 public class ProductActivity extends AppCompatActivity{
     private Button productAll_btn;
     private Button addButton;
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        new FetchProductDataTask().execute();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -163,18 +170,9 @@ public class ProductActivity extends AppCompatActivity{
                     JSONObject order = ordersArray.getJSONObject(i);
                     menuList.add(order);
                 }
-
                 spreadOrderData(menuList);
-//                 테스트 출력 코드
-//                for (JSONObject menuItem : menuList) {
-//                    // JSONObject를 보기 좋게 로그에 출력
-//                    String jsonMenuItem = menuItem.toString(4); // 들여쓰기 4칸으로 출력
-//                    Log.d("test", jsonMenuItem);
-////                                System.out.println(menuItem.getString("imageURL"));
-//                }
 
             } catch (JSONException e) {
-//                            System.err.println("실패");
                 e.printStackTrace();
             }
         }

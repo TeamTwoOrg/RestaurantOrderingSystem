@@ -47,15 +47,23 @@
 
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/Allorderlist"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="440dp"
-        android:background="@android:color/transparent"
-        android:padding="16dp"/>
+        android:layout_height="400dp" >
+
+        <!-- 수직으로 스크롤 가능한 내용을 위한 LinearLayout -->
+        <LinearLayout
+            android:id="@+id/orderZone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF1493"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
 
     <View
-        android:background="#FF1493"
+        android:background="#FFFF00"
         android:layout_width="match_parent"
         android:layout_height="3dp"/>
 
@@ -64,9 +72,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="@font/gmarketsansbold"
-        android:gravity="center"
+        android:gravity="left"
         android:paddingTop="10dp"
-        android:text="주문 상태         테이블 번호         주문 내역         주문 시간"
+        android:text="                 주문 상태            테이블 번호           주문 내역           주문 시간"
         android:textColor="@android:color/white"
         android:textSize="32dp" />
 </LinearLayout>

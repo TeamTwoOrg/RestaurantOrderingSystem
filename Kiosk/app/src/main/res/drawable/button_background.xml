@@ -17,19 +17,3 @@
         </shape>
     </item>
 </layer-list>
-<!--위에는 광혁이꺼-->
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true">
-        <shape android:shape="rectangle">
-            <corners android:radius="100dp" />
-            <solid android:color="#292828" />
-            <stroke android:width="2dp" android:color="#FF4081" />
-        </shape>
-    </item>
-    <item>
-        <shape android:shape="rectangle">
-            <corners android:radius="0dp" />
-            <solid android:color="#292828" />
-        </shape>
-    </item>
-</selector>

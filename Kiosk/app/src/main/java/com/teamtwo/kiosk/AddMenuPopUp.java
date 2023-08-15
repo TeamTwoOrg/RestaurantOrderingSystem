@@ -1,6 +1,4 @@
-package com.example.kiosk;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.teamtwo.kiosk;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -16,16 +14,13 @@ import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import org.json.JSONException;
-import org.json.JSONObject;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -31,7 +31,6 @@ public class CustomVoiceRecognitionDialog extends Dialog {
     private Context context;
     private SpeechRecognizer mRecognizer;
     private Intent intent;
-    private final int PERMISSION = 1;
 
     private TextToSpeech tts;
 

@@ -279,10 +279,14 @@ public class ManageActivity extends AppCompatActivity {
             cancelButton.setText("주문 취소");
             cancelButton.setTextColor(Color.WHITE);
             cancelButton.setBackgroundColor(Color.RED);
+            cancelButton.setTag(menuList.get(i).getString("_id"));
+            // 클릭 리스너 설정
             cancelButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    // 주문 취소 처리 로직 추가
+                    String orderId = v.getTag().toString();
+                    changeOrder(orderId, -1);
+                    new FetchProductDataTask().execute();
                 }
             });
             textLayout.addView(cancelButton);
@@ -296,16 +300,49 @@ public class ManageActivity extends AppCompatActivity {
             completeButton.setText("주문 완료");
             completeButton.setTextColor(Color.WHITE);
             completeButton.setBackgroundColor(Color.parseColor("#5d8a1e"));
+            completeButton.setTag(menuList.get(i).getString("_id"));
+            // 클릭 리스너 설정
             completeButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
+                    String orderId = v.getTag().toString();
+                    changeOrder(orderId, 1);
+                    new FetchProductDataTask().execute();
                 }
             });
             textLayout.addView(completeButton);
             newLayout.addView(textLayout);
             allOrderView.addView(newLayout);
         }
+    }
+
+    public void changeOrder(String orderId, int status) {
+        JSONObject jsonBody = new JSONObject();
+        try {
+            jsonBody.put("id", LoginActivity.cur_id);
+            jsonBody.put("password", LoginActivity.cur_pw);
+            jsonBody.put("orderId", orderId);
+            jsonBody.put("status", status);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        ServerCommunicationHelper.sendRequest(
+                "https://sm-kiosk.kro.kr/order/changeStatus",
+                ServerCommunicationHelper.HttpMethod.POST,
+                jsonBody,
+                new ServerCommunicationHelper.ResultCallback() {
+                    @Override
+                    public void onSuccess(String responseBody) {
+                        System.out.println("변경됨");
+                    }
+
+                    @Override
+                    public void onFailure(Exception e) {
+                        System.out.println("xxx");
+                    }
+                }
+        );
     }
 
 

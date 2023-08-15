@@ -13,7 +13,7 @@
         android:theme="@style/Theme.RestaurantOrderingSystem"
         tools:targetApi="31">
         <activity
-            android:name=".picturechoicepopup"
+            android:name=".MenuForUser"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

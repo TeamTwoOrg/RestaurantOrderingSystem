@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/middle2"
+    android:layout_width="320dp"
+    android:layout_height="770dp"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <ImageButton
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/menu2"
+        android:src="@drawable/gambas"
+        android:layout_marginLeft="15sp"
+        android:scaleType="centerCrop"
+        android:layout_weight="1">
+    </ImageButton>
+    <TextView
+        android:id="@+id/menu2name"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#292828"
+        android:text="감바스\n10,900원"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="28dp"
+        android:layout_weight="5"
+        android:includeFontPadding="false"
+        android:layout_marginLeft="15sp">
+
+    </TextView>
+
+
+</LinearLayout>

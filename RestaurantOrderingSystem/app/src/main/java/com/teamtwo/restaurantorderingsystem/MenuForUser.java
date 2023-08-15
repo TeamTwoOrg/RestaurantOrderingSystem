@@ -2,8 +2,10 @@ package com.teamtwo.restaurantorderingsystem;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -23,7 +25,10 @@ import androidx.fragment.app.FragmentTransaction;
 public class MenuForUser extends AppCompatActivity {
     private ImageButton voiceImageButton;
     private Button voice_recognition_btn;
-
+    private Button topButtonMeal;
+    private Button topButtonSnack;
+    private Button topButtonLiquor;
+    private Button topButtonBeverage;
     private FragmentManager fragmentManager;
 
     private FragmentTransaction transaction;
@@ -35,6 +40,15 @@ public class MenuForUser extends AppCompatActivity {
 
     final int PERMISSION = 1;
 
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName( String name ) {
+        this.name = name;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,7 +93,51 @@ public class MenuForUser extends AppCompatActivity {
                 showCustomVoiceDialog();
             }
         });
+
+//        topButtonMeal = (Button)findViewById(R.id.topButtonMeal);
+//        topButtonSnack = (Button)findViewById(R.id.topButtonSnack);
+//        topButtonLiquor = (Button)findViewById(R.id.topButtonLiquor);
+//        topButtonBeverage = (Button)findViewById(R.id.topButtonBeverage);
+//
+//        topButtonMeal.setOnClickListener(topButtonsListener);
+//        topButtonSnack.setOnClickListener(topButtonsListener);
+//        topButtonLiquor.setOnClickListener(topButtonsListener);
+//        topButtonBeverage.setOnClickListener(topButtonsListener);
+//        topButtonMeal.performClick();  //첫번째 버튼을 눌린 효과를 줌
     }
+
+//    View.OnClickListener topButtonsListener  = new View.OnClickListener(){
+//        @Override
+//        public void onClick(View view) {
+//            if (view.getId() == R.id.topButtonMeal){
+//                topButtonMeal.setSelected(true);
+//                topButtonSnack.setSelected(false);
+//                topButtonLiquor.setSelected(false);
+//                topButtonBeverage.setSelected(false);
+//            }
+//            else if(view.getId() == R.id.topButtonSnack){
+//                topButtonMeal.setSelected(false);
+//                topButtonSnack.setSelected(true);
+//                topButtonLiquor.setSelected(false);
+//                topButtonBeverage.setSelected(false);
+//            }
+//            else if(view.getId() == R.id.topButtonLiquor){
+//                topButtonMeal.setSelected(false);
+//                topButtonSnack.setSelected(false);
+//                topButtonLiquor.setSelected(true);
+//                topButtonBeverage.setSelected(false);
+//            }
+//            else if(view.getId() == R.id.topButtonBeverage){
+//                topButtonMeal.setSelected(false);
+//                topButtonSnack.setSelected(false);
+//                topButtonLiquor.setSelected(false);
+//                topButtonBeverage.setSelected(true);
+//            }
+//        }
+//    };
+
+
+
 
     public void clickHandler(View view)
     {

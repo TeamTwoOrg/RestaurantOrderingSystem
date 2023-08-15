@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/superRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:layout_weight="0.4"
+        android:padding="15dp">
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/middle1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#2196F3"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/salad"
+                    layout="@layout/add_menu"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent" />
+
+                <include
+                    android:id="@+id/gambas"
+                    layout="@layout/add_menu_test2"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent" />
+
+                <include
+                    android:id="@+id/shrimp_pong"
+                    layout="@layout/add_menu_test3"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"/>
+
+                <include
+                    android:id="@+id/squire"
+                    layout="@layout/add_menu_test4"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"/>
+
+                <include
+                    android:id="@+id/pasta"
+                    layout="@layout/add_menu_test5"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</LinearLayout>

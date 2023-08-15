@@ -64,6 +64,7 @@ public class AddMenuPopUp extends AppCompatActivity {
         registerButton = findViewById(R.id.register_button);
 
         itemList = new ArrayList<>();
+        itemList.add("식사");
         itemList.add("안주");
         itemList.add("주류");
         itemList.add("음료");

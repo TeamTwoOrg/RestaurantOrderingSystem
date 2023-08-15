@@ -16,6 +16,7 @@
 
     <!-- 음성 인식 버튼 button_special -->
     <Button
+        android:id="@+id/voice_recognition_btn_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.1"
@@ -32,7 +33,7 @@
         android:layout_weight="0.4"/>
 
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/cartbutton"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

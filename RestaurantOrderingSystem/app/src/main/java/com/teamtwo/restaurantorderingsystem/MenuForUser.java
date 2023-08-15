@@ -17,19 +17,17 @@ import com.teamtwo.restaurantorderingsystem.fragments.SnackFragment;
 
 
 import android.Manifest;
+
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 
 public class MenuForUser extends AppCompatActivity {
-    private AppCompatButton cartButton;
-    private ImageButton voiceImageButton;
-    private Button voice_recognition_btn;
-    private Button topButtonMeal;
-    private Button topButtonSnack;
-    private Button topButtonLiquor;
-    private Button topButtonBeverage;
+    private Button cartButton;
+    private Button voice_recognition_btn_text;
+    private ImageButton voice_recognition_btn;
     private FragmentManager fragmentManager;
 
     private FragmentTransaction transaction;
@@ -63,14 +61,14 @@ public class MenuForUser extends AppCompatActivity {
         }
 
         //음성 인식 버튼
-        voice_recognition_btn = findViewById(R.id.voice_recognition_btn);
+        voice_recognition_btn_text = findViewById(R.id.voice_recognition_btn_text);
 
         //음성 인식 gif
-        voiceImageButton = findViewById(R.id.voiceIcon);
+        voice_recognition_btn = findViewById(R.id.voice_recognition_btn);
 
-         cartButton = findViewById(R.id.cartbutton);
+        cartButton = findViewById(R.id.cartbutton);
 
-        Glide.with(this).load(R.drawable.white_voice).into(voiceImageButton);
+        Glide.with(this).load(R.drawable.white_voice).into(voice_recognition_btn);
 
         //Fragment 영역
         fragmentManager = getSupportFragmentManager();
@@ -89,21 +87,18 @@ public class MenuForUser extends AppCompatActivity {
                 showCartPopup();
             }
         });
-    }
-
-        voiceImageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showCustomVoiceDialog();
-            }
-        });
 
         voice_recognition_btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                showCustomVoiceDialog();
-            }
+            public void onClick(View v) { showCustomVoiceDialog();}
         });
+
+        voice_recognition_btn_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { showCustomVoiceDialog();}
+        });
+    }
+
 
 
     public void clickHandler(View view)
@@ -127,5 +122,10 @@ public class MenuForUser extends AppCompatActivity {
     private void showCustomVoiceDialog() {
         CustomVoiceRecognitionDialog dialog = new CustomVoiceRecognitionDialog(MenuForUser.this);
         dialog.show();
+    }
+
+    private void showCartPopup() {
+        ShoppingCartDialog shoppingCartDialog = new ShoppingCartDialog(MenuForUser.this);
+        shoppingCartDialog.show();
     }
 }

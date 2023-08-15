@@ -1,4 +1,4 @@
-package com.example.kiosk;
+package com.teamtwo.kiosk;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;

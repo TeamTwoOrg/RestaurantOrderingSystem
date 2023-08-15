@@ -1,4 +1,4 @@
-package com.example.kiosk;
+package com.teamtwo.kiosk;
 
 import android.os.Handler;
 import android.os.Looper;

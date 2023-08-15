@@ -1,4 +1,4 @@
-package com.example.kiosk;
+package com.teamtwo.kiosk;
 
 import org.junit.Test;
 

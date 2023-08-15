@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.kiosk'
+    namespace 'com.teamtwo.kiosk'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.kiosk"
+        applicationId "com.teamtwo.kiosk"
         minSdk 26
         targetSdk 33
         versionCode 1

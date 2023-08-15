@@ -1,23 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <shape android:shape="rectangle">
-            <solid android:color="#292828" />
-
-        </shape>
-    </item>
-    <item
-        android:top="-3dp"
-        android:right="-3dp"
-        android:left="-3dp">
-        <shape android:shape="rectangle">
-            <stroke
-                android:color="#FFFF00"
-                android:width="2dp" />
-        </shape>
-    </item>
-</layer-list>
-<!--위에는 광혁이꺼-->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true">
         <shape android:shape="rectangle">

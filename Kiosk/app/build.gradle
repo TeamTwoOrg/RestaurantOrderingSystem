@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.kiosk'
+    namespace 'com.teamtwo.kiosk'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.kiosk"
+        applicationId "com.teamtwo.kiosk"
         minSdk 26
         targetSdk 33
         versionCode 1
@@ -30,6 +30,8 @@ android {
 
 dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1' // HTTP 통신용 라이브러리
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'

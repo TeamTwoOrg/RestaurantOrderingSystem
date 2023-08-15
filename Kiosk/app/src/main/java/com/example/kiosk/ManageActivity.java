@@ -6,6 +6,8 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -42,10 +44,44 @@ public class ManageActivity extends AppCompatActivity {
     private ListView Allorderlist; // 주문 리스트
     private Button productBtn; // 상품보기 버튼
 
+    private Handler handler = new Handler(Looper.getMainLooper());
+    private Runnable runnable;
+    private boolean isRunning = false;
+
+    // 일정 시간 간격으로 주문 데이터를 로드하는 메서드 호출
+    private void startLoadingData() {
+        if (!isRunning) {
+            isRunning = true;
+            runnable = new Runnable() {
+                @Override
+                public void run() {
+                    new FetchProductDataTask().execute();
+                    handler.postDelayed(this, 1000); // 10초마다 호출
+                }
+            };
+            handler.post(runnable);
+        }
+    }
+
+    // 일정 시간 간격으로 호출 중지
+    private void stopLoadingData() {
+        if (isRunning) {
+            handler.removeCallbacks(runnable);
+            isRunning = false;
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        stopLoadingData();
+    }
+
+
     @Override
     protected void onResume() {
         super.onResume();
-        new FetchProductDataTask().execute();
+        startLoadingData();
     }
 
     // 주문 상태, 테이블 번호, 주문 내역, 주문 시간을 저장할 클래스 생성
@@ -60,7 +96,7 @@ public class ManageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.manage);
 
-        new FetchProductDataTask().execute();
+        startLoadingData();
         productBtn = findViewById(R.id.product_btn); // 상품보기 버튼
 
 

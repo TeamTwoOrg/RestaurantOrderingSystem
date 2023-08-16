@@ -340,6 +340,14 @@ public class ManageActivity extends AppCompatActivity {
                 }
             });
             textLayout.addView(completeButton);
+
+            float desiredAlpha = 0.2f;
+            if(status.equals("1") || status.equals(("-1"))){
+                completeButton.setAlpha(desiredAlpha); // 불투명하게
+                completeButton.setEnabled(false); // 클릭 안되게
+                cancelButton.setAlpha(desiredAlpha); // 불투명하게
+                cancelButton.setEnabled(false); // 클릭 안되게
+            }
             newLayout.addView(textLayout);
             allOrderView.addView(newLayout);
         }

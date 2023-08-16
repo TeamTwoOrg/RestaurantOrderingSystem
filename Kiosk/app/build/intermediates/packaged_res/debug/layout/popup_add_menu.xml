@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMenuPopUp"
+    android:background="#292828"
+    android:id="@+id/addMenuSuperLayout">
+
+    <include
+        android:id="@+id/addMainInfo"
+        layout="@layout/plate_add_menu"
+        android:layout_width="match_parent"
+        android:layout_height="450dp" />
+
+    <EditText
+        android:id="@+id/script"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/addMainInfo"
+        android:layout_marginTop="5dp"
+        android:layout_weight="5"
+        android:background="@drawable/redbox"
+        android:gravity="center"
+        android:hint="부가 설명을 입력하세요"
+        android:includeFontPadding="false"
+        android:maxLines="30"
+        android:overScrollMode="ifContentScrolls"
+        android:textColor="@color/white"
+        android:textColorHint="#A3A3A3"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/spinnerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/script"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="카테고리 : "
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#CCCCCC"
+            android:textSize="30sp"
+            android:fontFamily="@font/gmarketsansmedium"/>
+        <Spinner
+            android:id="@+id/category_1_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="200dp"
+            android:textSize="40sp"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/button_background"
+        android:textSize="35sp"
+        android:textColor="#FFFF00"
+        android:gravity="center"
+        android:fontFamily = "@font/gmarketsansmedium"
+        android:text="등록 하기" />
+
+</RelativeLayout>

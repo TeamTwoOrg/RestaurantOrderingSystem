@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- ScrollView로 전체 화면 스크롤 가능하게 만듦 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 수직으로 스크롤 가능한 내용을 위한 LinearLayout -->
+        <LinearLayout
+            android:id="@+id/allOrderView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF1493"
+            android:orientation="vertical">
+
+            <!-- 여기에 원하는 내용을 추가 -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

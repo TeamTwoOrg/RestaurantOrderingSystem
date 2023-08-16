@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_frame_zone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/included_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:layout_weight="0.4"
+        android:padding="15dp">
+
+        <HorizontalScrollView
+            android:id="@+id/user_menu_scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/beverage_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#2196F3"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/picture"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

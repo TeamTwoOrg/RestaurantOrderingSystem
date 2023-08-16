@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -60,6 +61,8 @@ public class MenuForUser extends AppCompatActivity {
     final int PERMISSION = 1;
 
     private String name;
+
+    public static ArrayList<JSONObject> menyList = new ArrayList<>();
 
     public String getName() {
         return name;
@@ -114,8 +117,11 @@ public class MenuForUser extends AppCompatActivity {
         fragmentSnack = new SnackFragment();
         fragmentMeal = new MealFragment();
 
+
         transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.user_switching_zone, fragmentSnack).commitAllowingStateLoss();
+        transaction.replace(R.id.user_switching_zone, fragmentMeal).commitAllowingStateLoss();
+
+
 
         cartButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -133,6 +139,8 @@ public class MenuForUser extends AppCompatActivity {
             @Override
             public void onClick(View v) { showCustomVoiceDialog();}
         });
+
+
     }
 
     private class FetchProductDataTask extends AsyncTask<Void, Void, String> {
@@ -187,7 +195,7 @@ public class MenuForUser extends AppCompatActivity {
 
         protected void parseJSON(String response) {
             Log.d("test"," dsfdsfsdfdsfsdfff");
-            ArrayList<JSONObject> menuList = new ArrayList<>();
+            menyList = new ArrayList<>();
 
             try {
                 JSONObject responseJson = new JSONObject(response);
@@ -196,9 +204,10 @@ public class MenuForUser extends AppCompatActivity {
 
                 for (int i = 0; i < ordersArray.length(); i++) {
                     JSONObject order = ordersArray.getJSONObject(i);
-                    menuList.add(order);
+                    menyList.add(order);
                 }
-                spreadOrderData(menuList);
+                fragmentMeal.spreadMenu();
+//                spreadOrderData(menuList);
 
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -209,18 +218,29 @@ public class MenuForUser extends AppCompatActivity {
     public void spreadOrderData(ArrayList<JSONObject> menuList) throws JSONException {
         LinearLayout user_switching_zone = findViewById(R.id.user_switching_zone);
 
-        menuImageButton = findViewById(R.id.menu_img);
-        menuNameTextView = findViewById(R.id.user_menu_name);
-        menuPriceTextView = findViewById(R.id.user_menu_price);
-        userMenuScrollView = findViewById(R.id.user_menu_scroll_view);
-        fragment_meal_zone = findViewById(R.id.fragment_meal_zone);
-        fragment_snack_zone = findViewById(R.id.fragment_snack_zone);
-        fragment_liquor_zone = findViewById(R.id.fragment_liquor_zone);
-        fragment_beverage_zone = findViewById(R.id.fragment_beverage_zone);
+
+        fragment_meal_zone = fragmentMeal.getView().findViewById(R.id.fragment_meal_zone);
+//        fragment_snack_zone = findViewById(R.id.fragment_snack_zone);
+//        fragment_liquor_zone = findViewById(R.id.fragment_liquor_zone);
+//        fragment_beverage_zone = findViewById(R.id.fragment_beverage_zone);
 
         Typeface customFont = ResourcesCompat.getFont(this, R.font.gmarketsanslight);
 
         for(int i=0; i<menuList.size(); i++) {
+
+            // 레이아웃 인플레이터 생성
+            LayoutInflater inflater = LayoutInflater.from(this);
+            // add_menu 레이아웃 인플레이션
+            View addMenuLayout = inflater.inflate(R.layout.add_menu, null, false);
+
+            menuImageButton = addMenuLayout.findViewById(R.id.menu_img);
+            menuNameTextView = addMenuLayout.findViewById(R.id.user_menu_name);
+            menuPriceTextView = addMenuLayout.findViewById(R.id.user_menu_price);
+            View scrollMenuLayout = inflater.inflate(R.layout.fragment_frame, null, false);
+
+            userMenuScrollView = scrollMenuLayout.findViewById(R.id.user_menu_scroll_view);
+
+
             LinearLayout newLayout = new LinearLayout(this);
             LinearLayout.LayoutParams newLayoutParams = new LinearLayout.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT,
@@ -304,15 +324,15 @@ public class MenuForUser extends AppCompatActivity {
             if(menuList.get(i).getString("category1").equals("식사")){
                 fragment_meal_zone.addView(midOuterLayout);
             }
-            else if(menuList.get(i).getString("category1").equals("안주")){
-                fragment_snack_zone.addView(midOuterLayout);
-            }
-            else if(menuList.get(i).getString("category1").equals("주류")){
-                fragment_liquor_zone.addView(midOuterLayout);
-            }
-            else if(menuList.get(i).getString("category1").equals("음료")){
-                fragment_beverage_zone.addView(midOuterLayout);
-            }
+//            else if(menuList.get(i).getString("category1").equals("안주")){
+//                fragment_snack_zone.addView(midOuterLayout);
+//            }
+//            else if(menuList.get(i).getString("category1").equals("주류")){
+//                fragment_liquor_zone.addView(midOuterLayout);
+//            }
+//            else if(menuList.get(i).getString("category1").equals("음료")){
+//                fragment_beverage_zone.addView(midOuterLayout);
+//            }
 
         }
     }

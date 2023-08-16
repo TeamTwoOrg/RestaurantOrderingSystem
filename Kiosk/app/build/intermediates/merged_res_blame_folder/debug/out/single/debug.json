@@ -1,318 +1,474 @@
 [
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_button_top.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/button_top.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_chicken_pasta.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/chicken_pasta.png"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_minus.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/minus.png"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_redbox.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/redbox.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_beverge.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/fragment_beverge.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_style_top.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/style_top.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/ic_launcher_background.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart_item_test3.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/shoppingcart_item_test3.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_spinner_list_item.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/spinner_list_item.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_user_for_menu.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/user_for_menu.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_vector_feather_pen_icon.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/vector_feather_pen_icon.png"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/add_menu.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_background.jpg.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/background.jpg"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_top.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_top.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_popup_add_menu.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/popup_add_menu.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/font_gmarketsanslight.otf.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/font/gmarketsanslight.otf"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_esc.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/esc.png"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_empty_plate.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/empty_plate.png"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_button_round.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/button_round.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_style_bottom.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/style_bottom.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_heinekeni.jpeg.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/heinekeni.jpeg"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_shop_plus.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/shop_plus.png"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_style_top.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/style_top.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_soy_bean_soup.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/soy_bean_soup.png"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_button_background.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/button_background.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_beverage3.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_beverage3.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_button_back.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/button_back.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_squid.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/squid.png"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_list_item_custom.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/list_item_custom.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_test4.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_test4.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_kimchi_soup.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/kimchi_soup.png"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/font_gmarketsansbold.otf.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/font/gmarketsansbold.otf"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_meal.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/fragment_meal.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_meal3.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_meal3.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart_item_test1.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/shoppingcart_item_test1.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_activity_product_list.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/activity_product_list.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_special.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_special.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_budweiser.jpeg.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/budweiser.jpeg"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_activity_login_main.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/activity_login_main.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_meal4.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_meal4.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_button_background_sj.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/button_background_sj.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_plate_add_menu.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/plate_add_menu.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_menu2.jpg.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/menu2.jpg"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_spinner_list_item.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/spinner_list_item.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/xml_data_extraction_rules.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/xml/data_extraction_rules.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_button_background_clicked.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/button_background_clicked.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_liquor.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/fragment_liquor.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_omurice.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/omurice.png"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/shoppingcart.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_logo.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/logo.png"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart_item_test4.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/shoppingcart_item_test4.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_button_cancle.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/button_cancle.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_logo.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/logo.png"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_login_button_background.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/login_button_background.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_test3.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_test3.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/shoppingcart.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_snack.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/fragment_snack.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_default_product_image.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/default_product_image.png"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_cass.jpeg.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/cass.jpeg"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_beer.jpeg.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/beer.jpeg"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/xml_backup_rules.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_beverage4.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_beverage4.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_tofu_stew.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/tofu_stew.png"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_voice_recognition_img.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/voice_recognition_img.png"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_product_activity.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/product_activity.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_torder_logo.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/torder_logo.png"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_esc.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/esc.png"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_choco_eh_mong.jpeg.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/choco_eh_mong.jpeg"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_darker_button_background.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/darker_button_background.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_ic_down.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/ic_down.png"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_meal5.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_meal5.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart_item.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/shoppingcart_item.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_egg_stew.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/egg_stew.png"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_beverge.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/fragment_beverge.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_beer_usa.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_beer_usa.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_egg_custard.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/egg_custard.png"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_my_feather_pen_icon_removebg.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/my_feather_pen_icon_removebg.png"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_beeftomatosalad.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/beeftomatosalad.png"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_list_item_custom.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/list_item_custom.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_background_forbottom.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_background_forbottom.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart_item_test2.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/shoppingcart_item_test2.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_meal2.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_meal2.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_soju.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_soju.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_cancle.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_cancle.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_background.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_background.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_call_staff.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/call_staff.png"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_round.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_round.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_meal.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/fragment_meal.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_menu1.jpg.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/menu1.jpg"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_activity_login_main.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/activity_login_main.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_frame.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/fragment_frame.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_login_button_background.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/login_button_background.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_torder.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/torder.png"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_style_bottom.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/style_bottom.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_gambas.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/gambas.png"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_cider_zero.jpeg.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/cider_zero.jpeg"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_background_sj.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_background_sj.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_balentine.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/balentine.png"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_esc_1.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/esc_1.png"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_cola_zero.jpeg.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/cola_zero.jpeg"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_soju.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/soju.png"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/font_gmarketsansmedium.otf.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/font/gmarketsansmedium.otf"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_popup_add_menu.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/popup_add_menu.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_beverage1.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_beverage1.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_background_clicked.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_background_clicked.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
         "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_user_for_menu.xml.flat",
         "source": "com.teamtwo.kiosk.app-main-31:/layout/user_for_menu.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart_item_test2.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/shoppingcart_item_test2.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_beer_japan.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_beer_japan.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_product_activity.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/product_activity.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_cola.jpeg.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/cola.jpeg"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_beer.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_beer.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_white_voice.gif.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/white_voice.gif"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart_item_test1.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/shoppingcart_item_test1.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_snack.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/fragment_snack.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_vector_feather_pen_icon.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/vector_feather_pen_icon.png"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_ic_down.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/ic_down.png"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_meal1.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_meal1.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_microphone_active_unscreen.gif.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/microphone_active_unscreen.gif"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_minus.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/minus.png"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_custom_voice_dialog.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/custom_voice_dialog.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/xml_backup_rules.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/xml/backup_rules.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_omurice.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/omurice.png"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_manage.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/manage.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_menu1.jpg.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/menu1.jpg"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_default_product_image.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/default_product_image.png"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_beverage5.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_beverage5.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_bottom_border.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/bottom_border.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_shrimpphondue.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/shrimpphondue.png"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_esc_1.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/esc_1.png"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_budweiser.jpeg.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/budweiser.jpeg"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart_item.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/shoppingcart_item.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart_item_test3.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/shoppingcart_item_test3.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_back.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_back.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_plate_add_menu.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/plate_add_menu.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_menu2.jpg.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/menu2.jpg"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_liquor.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/fragment_liquor.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_test2.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_test2.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/font_gmarketsansmedium.otf.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/font/gmarketsansmedium.otf"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_redbox.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/redbox.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_microphone_active_unscreen.gif.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/microphone_active_unscreen.gif"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_torder_logo.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/torder_logo.png"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_balentine.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_balentine.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_activity_product_list.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/activity_product_list.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_button_background_forbottom.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/button_background_forbottom.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_beverage2.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_beverage2.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_bottom_border.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/bottom_border.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_my_feather_pen_icon_removebg.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/my_feather_pen_icon_removebg.png"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_button_special.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/button_special.xml"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_kimchi_soup.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/kimchi_soup.png"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_cider.jpeg.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/cider.jpeg"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/font_gmarketsanslight.otf.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/font/gmarketsanslight.otf"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu_test5.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu_test5.xml"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_white_voice.gif.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/white_voice.gif"
-    },
-    {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_empty_plate.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/empty_plate.png"
-    },
-    {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_call_staff.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/call_staff.png"
-    },
-    {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_darker_button_background.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/darker_button_background.xml"
-    },
-    {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart_item_test4.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/shoppingcart_item_test4.xml"
-    },
-    {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_manage.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/manage.xml"
-    },
-    {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_torder.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/torder.png"
-    },
-    {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_background.jpg.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/background.jpg"
-    },
-    {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_custom_voice_dialog.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/custom_voice_dialog.xml"
-    },
-    {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_voice_recognition_img.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/voice_recognition_img.png"
-    },
-    {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/font_gmarketsansbold.otf.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/font/gmarketsansbold.otf"
-    },
-    {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_frame.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/fragment_frame.xml"
-    },
-    {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_shop_plus.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/shop_plus.png"
-    },
-    {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_sj_feather_pen_icon.png.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/sj_feather_pen_icon.png"
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_sj_feather_pen_icon.png.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/sj_feather_pen_icon.png"
     }
 ]

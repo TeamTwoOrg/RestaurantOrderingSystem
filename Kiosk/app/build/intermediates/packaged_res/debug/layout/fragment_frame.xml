@@ -17,20 +17,14 @@
         <HorizontalScrollView
             android:id="@+id/user_menu_scroll_view"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:id="@+id/beverage_list"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="#2196F3"
                 android:orientation="horizontal">
-
-                <LinearLayout
-                    android:id="@+id/picture"
-                    android:layout_width="320dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"/>
 
             </LinearLayout>
 

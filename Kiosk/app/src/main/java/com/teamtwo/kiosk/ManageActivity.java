@@ -36,7 +36,9 @@ public class ManageActivity extends AppCompatActivity {
 
     private ListView Allorderlist; // 주문 리스트
     private Button productBtn; // 상품보기 버튼
-
+    private Button orderPending; // 주문대기 버튼
+    private Button orderCanceled; // 주문취소 버튼
+    private Button orderCompleted; // 주문완료 버튼
     private Handler handler = new Handler(Looper.getMainLooper());
     private Runnable runnable;
     private boolean isRunning = false;
@@ -91,22 +93,77 @@ public class ManageActivity extends AppCompatActivity {
 
         startLoadingData();
         productBtn = findViewById(R.id.product_btn); // 상품보기 버튼
+        orderPending = findViewById(R.id.Order_Pending); // 주문대기 버튼
+        orderCanceled = findViewById(R.id.Order_Canceled); // 주문취소 버튼
+        orderCompleted = findViewById(R.id.Order_Completed); // 주문완료 버튼
 
+        // 주문대기 버튼 클릭 리스너
+        orderPending.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                orderPending.setBackgroundResource(R.drawable.darker_button_half_background);
+
+                // 주문대기 버튼을 제외한 다른 버튼들의 배경색을 원래대로 되돌림
+                orderCanceled.setBackgroundResource(R.drawable.button_round_half);
+                orderCompleted.setBackgroundResource(R.drawable.button_round_half);
+                productBtn.setBackgroundResource(R.drawable.button_round_half);
+
+                // productActivity로 전환하기 위한 intent 생성
+                Intent intent = new Intent(ManageActivity.this, ProductActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // 주문취소 버튼 클릭 리스너
+        orderCanceled.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                orderCanceled.setBackgroundResource(R.drawable.darker_button_half_background);
+
+                // 주문대기 버튼을 제외한 다른 버튼들의 배경색을 원래대로 되돌림
+                orderPending.setBackgroundResource(R.drawable.button_round_half);
+                orderCompleted.setBackgroundResource(R.drawable.button_round_half);
+                productBtn.setBackgroundResource(R.drawable.button_round_half);
+
+                // productActivity로 전환하기 위한 intent 생성
+                Intent intent = new Intent(ManageActivity.this, ProductActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // 주문완료 버튼 클릭 리스너
+        orderCompleted.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                orderCompleted.setBackgroundResource(R.drawable.darker_button_half_background);
+
+                orderPending.setBackgroundResource(R.drawable.button_round_half);
+                orderCanceled.setBackgroundResource(R.drawable.button_round_half);
+                productBtn.setBackgroundResource(R.drawable.button_round_half);
+
+                // productActivity로 전환하기 위한 intent 생성
+                Intent intent = new Intent(ManageActivity.this, ProductActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // 상품보기 버튼 클릭 리스너
         productBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
 
-                productBtn.setBackgroundResource(R.drawable.darker_button_background);
+                productBtn.setBackgroundResource(R.drawable.darker_button_half_diff_background);
 
                 v.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        productBtn.setBackgroundResource(R.drawable.button_round);
+                        productBtn.setBackgroundResource(R.drawable.button_round_half);
 
                     }
-                }, 200);
+                }, 30);
                 // productActivity로 전환하기 위한 intent 생성
                 Intent intent = new Intent(ManageActivity.this, ProductActivity.class);
                 startActivity(intent);

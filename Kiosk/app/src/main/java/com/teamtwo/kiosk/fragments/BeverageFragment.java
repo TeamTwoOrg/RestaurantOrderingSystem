@@ -86,8 +86,8 @@ public class BeverageFragment extends Fragment{
 
                 LinearLayout inner = addMenuLayout.findViewById(R.id.middle_inner);
                 inner.setLayoutParams(new LinearLayout.LayoutParams(
-                        570,
-                        1516
+                        430,
+                        1016
                 ));
                 inner.setOrientation(LinearLayout.VERTICAL);
 
@@ -96,7 +96,7 @@ public class BeverageFragment extends Fragment{
                 menuImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
                 menuImageView.setLayoutParams(new LinearLayout.LayoutParams(
                         ViewGroup.LayoutParams.MATCH_PARENT,
-                        870
+                        670
                 ));
                 Glide.with(this)
                         .load(menuList.get(i).getString("imageURL"))

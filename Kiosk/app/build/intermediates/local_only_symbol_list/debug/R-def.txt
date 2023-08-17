@@ -12,7 +12,9 @@ drawable button_background
 drawable button_background_clicked
 drawable button_background_forbottom
 drawable button_background_sj
-drawable button_hot_pink
+drawable button_cancle
+drawable button_hot_pink_gradient
+drawable button_hot_pink_gradient_no_round_edge
 drawable button_round
 drawable button_special
 drawable button_top

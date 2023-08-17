@@ -16,7 +16,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="로제파스타치킨"
-            android:textSize="50sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/white"/>
 
@@ -26,7 +26,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="19900"
-            android:textSize="50sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/white"/>
     </LinearLayout>
@@ -49,17 +49,19 @@
            android:layout_width="match_parent"
            android:layout_height="match_parent"
            android:layout_weight="5"
-           android:background="#FF4040"
+           android:background="@drawable/button_cancle"
            android:text="삭제"
            android:textColor="#FFFFFF"
            android:textSize="30sp"
-           android:textStyle="bold"/>
+           android:textStyle="bold"
+           android:layout_margin="5dp"/>
 
        <LinearLayout
            android:layout_width="match_parent"
            android:layout_height="match_parent"
            android:layout_weight="4"
-           android:orientation="horizontal">
+           android:orientation="horizontal"
+           android:layout_margin="5dp">
 
 
            <LinearLayout
@@ -74,9 +76,8 @@
                    android:background="?android:attr/selectableItemBackground"
                    android:contentDescription="빼기"
                    android:scaleType="fitCenter"
-                   android:src="@drawable/minus">
-
-               </ImageButton>
+                   android:src="@drawable/minus"
+                   android:layout_margin="5dp"/>
 
 
            </LinearLayout>
@@ -109,7 +110,7 @@
                        android:gravity="center"
                        android:text="1"
                        android:textColor="@color/white"
-                       android:textSize="60sp" />
+                       android:textSize="50sp" />
                </LinearLayout>
            </LinearLayout>
 
@@ -127,7 +128,8 @@
                    android:background="?android:attr/selectableItemBackground"
                    android:contentDescription="더하기"
                    android:scaleType="fitCenter"
-                   android:src="@drawable/shop_plus" />
+                   android:src="@drawable/shop_plus"
+                   android:layout_margin="5dp"/>
 
            </LinearLayout>
 

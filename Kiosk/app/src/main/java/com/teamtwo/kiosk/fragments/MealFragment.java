@@ -40,16 +40,15 @@ public class MealFragment extends Fragment {
     }
 
     @Override
-    public void onViewStateRestored(@Nullable Bundle savedInstanceState) {
-        super.onViewStateRestored(savedInstanceState);
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
         try {
             spreadMenu();
         } catch(Exception e) {
             Log.e("error", e.getMessage());
         }
-
-
     }
+
 
     public void spreadMenu() throws JSONException {
         LinearLayout fragment_meal_zone = getView().findViewById(R.id.fragment_meal_zone);

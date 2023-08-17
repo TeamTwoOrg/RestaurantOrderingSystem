@@ -1,5 +1,6 @@
 package com.teamtwo.kiosk;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -36,10 +37,15 @@ public class ManageActivity extends AppCompatActivity {
 
     private ListView Allorderlist; // 주문 리스트
     private Button productBtn; // 상품보기 버튼
-
+    private Button orderAll; // 전체보기 버튼
+    private Button orderPending; // 주문대기 버튼
+    private Button orderCanceled; // 주문취소 버튼
+    private Button orderCompleted; // 주문완료 버튼
     private Handler handler = new Handler(Looper.getMainLooper());
     private Runnable runnable;
     private boolean isRunning = false;
+    private int orderViewSelect;
+    public static ArrayList<JSONObject> menuList;
 
     // 일정 시간 간격으로 주문 데이터를 로드하는 메서드 호출
     private void startLoadingData() {
@@ -84,32 +90,122 @@ public class ManageActivity extends AppCompatActivity {
         String owner;
         String createdAt;
     }
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        orderViewSelect = 0;
         setContentView(R.layout.manage);
 
         startLoadingData();
-        productBtn = findViewById(R.id.product_btn); // 상품보기 버튼
 
+        productBtn = findViewById(R.id.product_btn); // 상품보기 버튼
+        orderAll = findViewById(R.id.Order_All); // 전체보기 버튼
+        orderPending = findViewById(R.id.Order_Pending); // 주문대기 버튼
+        orderCanceled = findViewById(R.id.Order_Canceled); // 주문취소 버튼
+        orderCompleted = findViewById(R.id.Order_Completed); // 주문완료 버튼
+
+        // 처음에 주문대기 버튼 색 채워짐
+        orderPending.setBackgroundResource(R.drawable.darker_button_half_background);
+
+        // 전체보기 버튼 클릭 리스너
+        orderAll.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                orderViewSelect = 2;
+                orderAll.setBackgroundResource(R.drawable.darker_button_half_background);
+
+                // 주문대기 버튼을 제외한 다른 버튼들의 배경색을 원래대로 되돌림
+                orderCanceled.setBackgroundResource(R.drawable.button_round_half);
+                orderPending.setBackgroundResource(R.drawable.button_round_half);
+                orderCompleted.setBackgroundResource(R.drawable.button_round_half);
+                productBtn.setBackgroundResource(R.drawable.button_round_half);
+                try {
+                    spreadOrderData(ManageActivity.menuList);
+                } catch (Exception e) {
+                    Log.e("error", e.getMessage());
+                }
+            }
+        });
+
+        // 주문대기 버튼 클릭 리스너
+        orderPending.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                orderViewSelect = 0;
+                orderPending.setBackgroundResource(R.drawable.darker_button_half_background);
+
+                // 주문대기 버튼을 제외한 다른 버튼들의 배경색을 원래대로 되돌림
+                orderAll.setBackgroundResource(R.drawable.button_round_half);
+                orderCanceled.setBackgroundResource(R.drawable.button_round_half);
+                orderCompleted.setBackgroundResource(R.drawable.button_round_half);
+                productBtn.setBackgroundResource(R.drawable.button_round_half);
+                try {
+                    spreadOrderData(ManageActivity.menuList);
+                } catch (Exception e) {
+                    Log.e("error", e.getMessage());
+                }
+
+
+            }
+        });
+
+        // 주문취소 버튼 클릭 리스너
+        orderCanceled.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                orderViewSelect = -1;
+                orderCanceled.setBackgroundResource(R.drawable.darker_button_half_background);
+
+                // 주문대기 버튼을 제외한 다른 버튼들의 배경색을 원래대로 되돌림
+                orderAll.setBackgroundResource(R.drawable.button_round_half);
+                orderPending.setBackgroundResource(R.drawable.button_round_half);
+                orderCompleted.setBackgroundResource(R.drawable.button_round_half);
+                productBtn.setBackgroundResource(R.drawable.button_round_half);
+                try {
+                    spreadOrderData(ManageActivity.menuList);
+                } catch (Exception e) {
+                    Log.e("error", e.getMessage());
+                }
+            }
+        });
+
+        // 주문완료 버튼 클릭 리스너
+        orderCompleted.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                orderViewSelect = 1;
+                orderCompleted.setBackgroundResource(R.drawable.darker_button_half_background);
+
+                orderAll.setBackgroundResource(R.drawable.button_round_half);
+                orderPending.setBackgroundResource(R.drawable.button_round_half);
+                orderCanceled.setBackgroundResource(R.drawable.button_round_half);
+                productBtn.setBackgroundResource(R.drawable.button_round_half);
+                try {
+                    spreadOrderData(ManageActivity.menuList);
+                } catch (Exception e) {
+                    Log.e("error", e.getMessage());
+                }
+            }
+        });
 
         // 상품보기 버튼 클릭 리스너
         productBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
 
-                productBtn.setBackgroundResource(R.drawable.darker_button_background);
+                productBtn.setBackgroundResource(R.drawable.darker_button_half_diff_background);
 
                 v.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        productBtn.setBackgroundResource(R.drawable.button_round);
-
+                        productBtn.setBackgroundResource(R.drawable.button_round_half);
+                        // productActivity로 전환하기 위한 intent 생성
+                        Intent intent = new Intent(ManageActivity.this, ProductActivity.class);
+                        startActivity(intent);
                     }
-                }, 200);
-                // productActivity로 전환하기 위한 intent 생성
-                Intent intent = new Intent(ManageActivity.this, ProductActivity.class);
-                startActivity(intent);
+                }, 30);
+
             }
         });
     }
@@ -186,6 +282,7 @@ public class ManageActivity extends AppCompatActivity {
                     JSONObject order = ordersArray.getJSONObject(i);
                     menuList.add(order);
                 }
+                ManageActivity.menuList = menuList;
                 spreadOrderData(menuList);
 
             } catch (JSONException e) {
@@ -201,6 +298,14 @@ public class ManageActivity extends AppCompatActivity {
         Typeface customFont = ResourcesCompat.getFont(this, R.font.gmarketsanslight);
 
         for(int i=menuList.size()-1; i>=0; i--) { // 최신 주문이 위로
+            String status = menuList.get(i).getString("status");
+            int statusInt = Integer.parseInt(status);
+            if (orderViewSelect != 2) {
+                if (statusInt != orderViewSelect) {
+                    continue;
+                }
+            }
+
             LinearLayout newLayout = new LinearLayout(this);
             LinearLayout.LayoutParams newLayoutParams = new LinearLayout.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT,
@@ -239,7 +344,6 @@ public class ManageActivity extends AppCompatActivity {
             statusText.setTextColor(Color.WHITE);
             statusText.setTypeface(customFont);
 
-            String status = menuList.get(i).getString("status");
             if(status.equals("0")){
                 statusText.setText("주문 대기");
             }else if(status.equals("1")){
@@ -340,6 +444,14 @@ public class ManageActivity extends AppCompatActivity {
                 }
             });
             textLayout.addView(completeButton);
+
+            float desiredAlpha = 0.2f;
+            if(status.equals("1") || status.equals(("-1"))){
+                completeButton.setAlpha(desiredAlpha); // 불투명하게
+                completeButton.setEnabled(false); // 클릭 안되게
+                cancelButton.setAlpha(desiredAlpha); // 불투명하게
+                cancelButton.setEnabled(false); // 클릭 안되게
+            }
             newLayout.addView(textLayout);
             allOrderView.addView(newLayout);
         }

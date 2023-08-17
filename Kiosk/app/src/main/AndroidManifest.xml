@@ -28,11 +28,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ManageActivity" />
-        <activity android:name=".ProductActivity" />
-        <activity android:name=".AddMenuPopUp" />
-        <activity android:name=".ProductListActivity" />
-        <activity android:name=".MenuForUser" />
+        <activity android:name=".ManageActivity"/>
+        <activity android:name=".ProductActivity"/>
+        <activity android:name=".AddMenuPopUp"/>
+        <activity android:name=".ProductListActivity"/>
+        <activity android:name=".MenuForUser"/>
+        <activity android:name=".SalesActivity"/>
         <activity
             android:name=".PaySuccessActivity"
             android:exported="false" />

@@ -34,8 +34,16 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public class ProductActivity extends AppCompatActivity{
+    private Button mealLook; // 카테고리 식사 버튼
+    private Button snackLook; // 카테고리 안주 버튼
+    private Button LiquorLook; // 카테고리 주류 버튼
+    private Button beverageLook; // 카테고리 음료 버튼
+    private Button saleslook; // 매출보기 버튼
     private Button productAll_btn;
     private Button addButton;
+
+    private String categoryView;
+    public static ArrayList<JSONObject> menuList;
 
     @Override
     protected void onResume() {
@@ -48,23 +56,116 @@ public class ProductActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.product_activity);
 
+        categoryView = "식사";
+
         new FetchProductDataTask().execute();
         productAll_btn = findViewById(R.id.productAll_btn);
         addButton = findViewById(R.id.addButton);
 
+        mealLook = findViewById(R.id.meal_look); // 카테고리 식사 버튼
+        snackLook = findViewById(R.id.snack_look); // 카테고리 안주 버튼
+        LiquorLook = findViewById(R.id.Liquor_look); // 카테고리 주류 버튼
+        beverageLook = findViewById(R.id.beverage_look); // 카테고리 음료 버튼
+        saleslook = findViewById(R.id.saleslook); // 매출보기 버튼
 
+        // 처음에 전체보기 버튼 색 채워짐
+        mealLook.setBackgroundResource(R.drawable.darker_button_half_background);
+
+        // 식사 버튼 클릭 리스너
+        mealLook.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                categoryView = "식사";
+
+                mealLook.setBackgroundResource(R.drawable.darker_button_half_background);
+
+                // 주문대기 버튼을 제외한 다른 버튼들의 배경색을 원래대로 되돌림
+                snackLook.setBackgroundResource(R.drawable.button_round_half);
+                LiquorLook.setBackgroundResource(R.drawable.button_round_half);
+                beverageLook.setBackgroundResource(R.drawable.button_round_half);
+                productAll_btn.setBackgroundResource(R.drawable.button_round_half);
+                try {
+                    spreadOrderData(ProductActivity.menuList);
+                } catch (Exception e) {
+                    Log.e("error", e.getMessage());
+                }
+            }
+        });
+
+        // 안주 버튼 클릭 리스너
+        snackLook.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                categoryView = "안주";
+                snackLook.setBackgroundResource(R.drawable.darker_button_half_background);
+
+                // 주문대기 버튼을 제외한 다른 버튼들의 배경색을 원래대로 되돌림
+                mealLook.setBackgroundResource(R.drawable.button_round_half);
+                productAll_btn.setBackgroundResource(R.drawable.button_round_half);
+                LiquorLook.setBackgroundResource(R.drawable.button_round_half);
+                beverageLook.setBackgroundResource(R.drawable.button_round_half);
+                try {
+                    spreadOrderData(ProductActivity.menuList);
+                } catch (Exception e) {
+                    Log.e("error", e.getMessage());
+                }
+
+
+            }
+        });
+
+        // 주류 버튼 클릭 리스너
+        LiquorLook.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                categoryView = "주류";
+                LiquorLook.setBackgroundResource(R.drawable.darker_button_half_background);
+
+                // 주문대기 버튼을 제외한 다른 버튼들의 배경색을 원래대로 되돌림
+                mealLook.setBackgroundResource(R.drawable.button_round_half);
+                productAll_btn.setBackgroundResource(R.drawable.button_round_half);
+                beverageLook.setBackgroundResource(R.drawable.button_round_half);
+                snackLook.setBackgroundResource(R.drawable.button_round_half);
+                try {
+                    spreadOrderData(ProductActivity.menuList);
+                } catch (Exception e) {
+                    Log.e("error", e.getMessage());
+                }
+            }
+        });
+
+        // 음료 버튼 클릭 리스너
+        beverageLook.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                categoryView = "음료";
+                beverageLook.setBackgroundResource(R.drawable.darker_button_half_background);
+
+                mealLook.setBackgroundResource(R.drawable.button_round_half);
+                productAll_btn.setBackgroundResource(R.drawable.button_round_half);
+                snackLook.setBackgroundResource(R.drawable.button_round_half);
+                LiquorLook.setBackgroundResource(R.drawable.button_round_half);
+                try {
+                    spreadOrderData(ProductActivity.menuList);
+                } catch (Exception e) {
+                    Log.e("error", e.getMessage());
+                }
+            }
+        });
+
+        // 상품 목록
         productAll_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // "상품 목록" 버튼이 클릭되었을 때 동작
                 // 상품 목록 화면을 표시하는 로직을 추가
                 // 예시: Intent로 다음 화면으로 이동
-                productAll_btn.setBackgroundResource(R.drawable.darker_button_background);
+                productAll_btn.setBackgroundResource(R.drawable.darker_button_half_diff_background);
 
                 v.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        productAll_btn.setBackgroundResource(R.drawable.button_round);
+                        productAll_btn.setBackgroundResource(R.drawable.button_round_half);
 
                     }
                 }, 200);
@@ -74,6 +175,31 @@ public class ProductActivity extends AppCompatActivity{
 
             }
         });
+
+        // 매출 보기
+        saleslook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // "상품 목록" 버튼이 클릭되었을 때 동작
+                // 상품 목록 화면을 표시하는 로직을 추가
+                // 예시: Intent로 다음 화면으로 이동
+                saleslook.setBackgroundResource(R.drawable.darker_button_half_diff_background);
+
+                v.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        saleslook.setBackgroundResource(R.drawable.button_round_half);
+
+                    }
+                }, 200);
+
+                Intent intent = new Intent(ProductActivity.this, SalesActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -167,6 +293,7 @@ public class ProductActivity extends AppCompatActivity{
                     JSONObject order = ordersArray.getJSONObject(i);
                     menuList.add(order);
                 }
+                ProductActivity.menuList = menuList; // 전역변수에 저장.
                 spreadOrderData(menuList);
 
             } catch (JSONException e) {
@@ -182,6 +309,12 @@ public class ProductActivity extends AppCompatActivity{
         Typeface customFont = ResourcesCompat.getFont(this, R.font.gmarketsanslight);
 
         for(int i=0; i<menuList.size(); i++) {
+
+            String category = menuList.get(i).getString("category1");
+            if(categoryView.equals(category) == false){
+                continue;
+            }
+
             LinearLayout newLayout = new LinearLayout(this);
             LinearLayout.LayoutParams newLayoutParams = new LinearLayout.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT,

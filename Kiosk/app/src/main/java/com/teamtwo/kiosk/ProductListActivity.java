@@ -204,7 +204,7 @@ public class ProductListActivity extends AppCompatActivity {
             // 추가 설명
             TextView subText = new TextView(this);
             subText.setLayoutParams(defaultLayout);
-            subText.setTextSize(28);
+            subText.setTextSize(17);
             subText.setTextColor(Color.WHITE);
             subText.setTypeface(customFont);
             subText.setGravity(Gravity.CENTER_HORIZONTAL);

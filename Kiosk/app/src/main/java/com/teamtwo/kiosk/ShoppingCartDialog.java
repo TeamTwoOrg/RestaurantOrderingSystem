@@ -2,6 +2,7 @@ package com.teamtwo.kiosk;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -57,11 +59,34 @@ public class ShoppingCartDialog extends Dialog {
         setContentView(R.layout.shoppingcart);
 
         ImageButton escDialogButton = findViewById(R.id.escDialogButton); // 추가된 부분
+        Button paymentButton = findViewById(R.id.paymentButton);
 
         escDialogButton.setOnClickListener(new View.OnClickListener() { // 추가된 부분
             @Override
             public void onClick(View view) {
                 dismiss();
+            }
+        });
+
+        paymentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TextView totalPriceTextView = findViewById(R.id.totalPrice);
+                int totalPrice = Integer.parseInt(totalPriceTextView.getText().toString());
+
+                if (ShoppingCartDialog.addInfo.isEmpty()) {
+                    String message = "장바구니가 비어있습니다.";
+                    Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                dismiss();
+
+                // 결제 해야함
+                PayActivity payActivity = new PayActivity("주문", String.valueOf(totalPrice));
+
+                Intent intent = new Intent(context, payActivity.getClass());
+                context.startActivity(intent);
             }
         });
 

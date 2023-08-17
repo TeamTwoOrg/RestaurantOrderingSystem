@@ -4,6 +4,10 @@
         "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/redbox.xml"
     },
     {
+        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_activity_pay_fail.xml.flat",
+        "source": "com.teamtwo.kiosk.app-main-31:/layout/activity_pay_fail.xml"
+    },
+    {
         "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_activity_login_main.xml.flat",
         "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/activity_login_main.xml"
     },
@@ -88,6 +92,10 @@
         "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/esc_1.png"
     },
     {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_activity_pay.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/activity_pay.xml"
+    },
+    {
         "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-hdpi/ic_launcher_round.webp"
     },
@@ -130,10 +138,6 @@
     {
         "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_liquor.xml.flat",
         "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/fragment_liquor.xml"
-    },
-    {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/layout/shoppingcart.xml"
     },
     {
         "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart.xml.flat",
@@ -230,6 +234,10 @@
     {
         "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_custom_voice_dialog.xml.flat",
         "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/custom_voice_dialog.xml"
+    },
+    {
+        "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_activity_pay_success.xml.flat",
+        "source": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/activity_pay_success.xml"
     },
     {
         "merged": "/Users/owo/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_manage.xml.flat",

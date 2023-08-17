@@ -124,7 +124,11 @@ id voiceIcon_ImageView
 id voice_recognition_btn
 id voice_recognition_btn_text
 id voice_recognition_esc_btn
+id webView
 layout activity_login_main
+layout activity_pay
+layout activity_pay_fail
+layout activity_pay_success
 layout activity_product_list
 layout add_menu
 layout custom_voice_dialog

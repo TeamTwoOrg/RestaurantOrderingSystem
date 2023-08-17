@@ -1,5 +1,6 @@
 package com.teamtwo.kiosk;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -36,6 +37,7 @@ public class ManageActivity extends AppCompatActivity {
 
     private ListView Allorderlist; // 주문 리스트
     private Button productBtn; // 상품보기 버튼
+    private Button orderAll; // 전체보기 버튼
     private Button orderPending; // 주문대기 버튼
     private Button orderCanceled; // 주문취소 버튼
     private Button orderCompleted; // 주문완료 버튼
@@ -88,17 +90,43 @@ public class ManageActivity extends AppCompatActivity {
         String owner;
         String createdAt;
     }
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        orderViewSelect = 2;
+        orderViewSelect = 0;
         setContentView(R.layout.manage);
 
         startLoadingData();
+
         productBtn = findViewById(R.id.product_btn); // 상품보기 버튼
+        orderAll = findViewById(R.id.Order_All); // 전체보기 버튼
         orderPending = findViewById(R.id.Order_Pending); // 주문대기 버튼
         orderCanceled = findViewById(R.id.Order_Canceled); // 주문취소 버튼
         orderCompleted = findViewById(R.id.Order_Completed); // 주문완료 버튼
+
+        // 처음에 주문대기 버튼 색 채워짐
+        orderPending.setBackgroundResource(R.drawable.darker_button_half_background);
+
+        // 전체보기 버튼 클릭 리스너
+        orderAll.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                orderViewSelect = 2;
+                orderAll.setBackgroundResource(R.drawable.darker_button_half_background);
+
+                // 주문대기 버튼을 제외한 다른 버튼들의 배경색을 원래대로 되돌림
+                orderCanceled.setBackgroundResource(R.drawable.button_round_half);
+                orderPending.setBackgroundResource(R.drawable.button_round_half);
+                orderCompleted.setBackgroundResource(R.drawable.button_round_half);
+                productBtn.setBackgroundResource(R.drawable.button_round_half);
+                try {
+                    spreadOrderData(ManageActivity.menuList);
+                } catch (Exception e) {
+                    Log.e("error", e.getMessage());
+                }
+            }
+        });
 
         // 주문대기 버튼 클릭 리스너
         orderPending.setOnClickListener(new View.OnClickListener(){
@@ -108,6 +136,7 @@ public class ManageActivity extends AppCompatActivity {
                 orderPending.setBackgroundResource(R.drawable.darker_button_half_background);
 
                 // 주문대기 버튼을 제외한 다른 버튼들의 배경색을 원래대로 되돌림
+                orderAll.setBackgroundResource(R.drawable.button_round_half);
                 orderCanceled.setBackgroundResource(R.drawable.button_round_half);
                 orderCompleted.setBackgroundResource(R.drawable.button_round_half);
                 productBtn.setBackgroundResource(R.drawable.button_round_half);
@@ -129,6 +158,7 @@ public class ManageActivity extends AppCompatActivity {
                 orderCanceled.setBackgroundResource(R.drawable.darker_button_half_background);
 
                 // 주문대기 버튼을 제외한 다른 버튼들의 배경색을 원래대로 되돌림
+                orderAll.setBackgroundResource(R.drawable.button_round_half);
                 orderPending.setBackgroundResource(R.drawable.button_round_half);
                 orderCompleted.setBackgroundResource(R.drawable.button_round_half);
                 productBtn.setBackgroundResource(R.drawable.button_round_half);
@@ -147,6 +177,7 @@ public class ManageActivity extends AppCompatActivity {
                 orderViewSelect = 1;
                 orderCompleted.setBackgroundResource(R.drawable.darker_button_half_background);
 
+                orderAll.setBackgroundResource(R.drawable.button_round_half);
                 orderPending.setBackgroundResource(R.drawable.button_round_half);
                 orderCanceled.setBackgroundResource(R.drawable.button_round_half);
                 productBtn.setBackgroundResource(R.drawable.button_round_half);
@@ -169,7 +200,9 @@ public class ManageActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         productBtn.setBackgroundResource(R.drawable.button_round_half);
-
+                        // productActivity로 전환하기 위한 intent 생성
+                        Intent intent = new Intent(ManageActivity.this, ProductActivity.class);
+                        startActivity(intent);
                     }
                 }, 30);
 

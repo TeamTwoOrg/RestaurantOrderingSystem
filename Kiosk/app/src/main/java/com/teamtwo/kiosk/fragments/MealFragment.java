@@ -153,7 +153,7 @@ public class MealFragment extends Fragment {
                                 boolean addCartStatus = ShoppingCartDialog.addToCart(selectedMenuName, new int[]{selectedMenuPrice, selectedMenuCnt});
                                 if (addCartStatus == false) {
                                     int curCnt = ShoppingCartDialog.addInfo.get(selectedMenuName)[1];
-                                    String message = "10개이상 장바구니에 초과할 수 없습니다. (현재 " + curCnt + "개 담겨있습니다.)";
+                                    String message = "10개 이상 장바구니에 추가할 수 없습니다. (현재 " + curCnt + "개 담겨있습니다.)";
                                     Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
                                     return;
                                 }

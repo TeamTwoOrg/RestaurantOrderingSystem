@@ -6,115 +6,115 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="26"
-8-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml
+8-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml
+9-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml
 10
 11    <!-- 인터넷 오디오 권한 설정 -->
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:6:5-67
-12-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:6:22-64
+12-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:6:5-67
+12-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:6:22-64
 13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-13-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:7:5-71
-13-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:7:22-68
+13-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:7:5-71
+13-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:7:22-68
 14
 15    <permission
-15-->[androidx.core:core:1.9.0] /Users/owo/.gradle/caches/transforms-3/55dedc70b95a473650eda30d4efd0f99/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+15-->[androidx.core:core:1.9.0] /Users/seungju/.gradle/caches/transforms-3/55dedc70b95a473650eda30d4efd0f99/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
 16        android:name="com.teamtwo.kiosk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-16-->[androidx.core:core:1.9.0] /Users/owo/.gradle/caches/transforms-3/55dedc70b95a473650eda30d4efd0f99/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+16-->[androidx.core:core:1.9.0] /Users/seungju/.gradle/caches/transforms-3/55dedc70b95a473650eda30d4efd0f99/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
 17        android:protectionLevel="signature" />
-17-->[androidx.core:core:1.9.0] /Users/owo/.gradle/caches/transforms-3/55dedc70b95a473650eda30d4efd0f99/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+17-->[androidx.core:core:1.9.0] /Users/seungju/.gradle/caches/transforms-3/55dedc70b95a473650eda30d4efd0f99/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
 18
 19    <uses-permission android:name="com.teamtwo.kiosk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-19-->[androidx.core:core:1.9.0] /Users/owo/.gradle/caches/transforms-3/55dedc70b95a473650eda30d4efd0f99/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
-19-->[androidx.core:core:1.9.0] /Users/owo/.gradle/caches/transforms-3/55dedc70b95a473650eda30d4efd0f99/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+19-->[androidx.core:core:1.9.0] /Users/seungju/.gradle/caches/transforms-3/55dedc70b95a473650eda30d4efd0f99/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.9.0] /Users/seungju/.gradle/caches/transforms-3/55dedc70b95a473650eda30d4efd0f99/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 20
 21    <application
-21-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:9:5-34:19
+21-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:9:5-34:19
 22        android:allowBackup="true"
-22-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:11:9-35
+22-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:11:9-35
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-23-->[androidx.core:core:1.9.0] /Users/owo/.gradle/caches/transforms-3/55dedc70b95a473650eda30d4efd0f99/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+23-->[androidx.core:core:1.9.0] /Users/seungju/.gradle/caches/transforms-3/55dedc70b95a473650eda30d4efd0f99/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 24        android:dataExtractionRules="@xml/data_extraction_rules"
-24-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:12:9-65
+24-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:12:9-65
 25        android:debuggable="true"
 26        android:extractNativeLibs="false"
 27        android:fullBackupContent="@xml/backup_rules"
-27-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:13:9-54
+27-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:13:9-54
 28        android:icon="@mipmap/ic_launcher"
-28-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:14:9-43
+28-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:14:9-43
 29        android:label="@string/app_name"
-29-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:15:9-41
+29-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:15:9-41
 30        android:roundIcon="@mipmap/ic_launcher_round"
-30-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:16:9-54
+30-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:16:9-54
 31        android:supportsRtl="true"
-31-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:17:9-35
+31-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:17:9-35
 32        android:testOnly="true"
 33        android:theme="@style/Theme.Kiosk"
-33-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:18:9-43
+33-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:18:9-43
 34        android:usesCleartextTraffic="true" >
-34-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:10:9-44
+34-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:10:9-44
 35        <activity
-35-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:20:9-28:20
+35-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:20:9-28:20
 36            android:name="com.teamtwo.kiosk.LoginActivity"
-36-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:21:13-42
+36-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:21:13-42
 37            android:exported="true" >
-37-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:22:13-36
+37-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:22:13-36
 38            <intent-filter>
-38-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:23:13-27:29
+38-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:23:13-27:29
 39                <action android:name="android.intent.action.MAIN" />
-39-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:24:17-69
-39-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:24:25-66
+39-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:24:17-69
+39-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:24:25-66
 40
 41                <category android:name="android.intent.category.LAUNCHER" />
-41-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:26:17-77
-41-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:26:27-74
+41-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:26:17-77
+41-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:26:27-74
 42            </intent-filter>
 43        </activity>
 44        <activity android:name="com.teamtwo.kiosk.ManageActivity" />
-44-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:29:9-51
-44-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:29:19-49
+44-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:29:9-51
+44-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:29:19-49
 45        <activity android:name="com.teamtwo.kiosk.ProductActivity" />
-45-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:30:9-52
-45-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:30:19-50
+45-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:30:9-52
+45-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:30:19-50
 46        <activity android:name="com.teamtwo.kiosk.AddMenuPopUp" />
-46-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:31:9-49
-46-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:31:19-47
+46-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:31:9-49
+46-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:31:19-47
 47        <activity android:name="com.teamtwo.kiosk.ProductListActivity" />
-47-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:32:9-56
-47-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:32:19-54
+47-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:32:9-56
+47-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:32:19-54
 48        <activity android:name="com.teamtwo.kiosk.MenuForUser" />
-48-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:33:9-48
-48-->/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:33:19-46
+48-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:33:9-48
+48-->/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/AndroidManifest.xml:33:19-46
 49
 50        <provider
-50-->[com.squareup.picasso:picasso:2.71828] /Users/owo/.gradle/caches/transforms-3/34707bfca2bc75fa253289b2206ed362/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+50-->[com.squareup.picasso:picasso:2.71828] /Users/seungju/.gradle/caches/transforms-3/34707bfca2bc75fa253289b2206ed362/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
 51            android:name="com.squareup.picasso.PicassoProvider"
-51-->[com.squareup.picasso:picasso:2.71828] /Users/owo/.gradle/caches/transforms-3/34707bfca2bc75fa253289b2206ed362/transformed/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+51-->[com.squareup.picasso:picasso:2.71828] /Users/seungju/.gradle/caches/transforms-3/34707bfca2bc75fa253289b2206ed362/transformed/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
 52            android:authorities="com.teamtwo.kiosk.com.squareup.picasso"
-52-->[com.squareup.picasso:picasso:2.71828] /Users/owo/.gradle/caches/transforms-3/34707bfca2bc75fa253289b2206ed362/transformed/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+52-->[com.squareup.picasso:picasso:2.71828] /Users/seungju/.gradle/caches/transforms-3/34707bfca2bc75fa253289b2206ed362/transformed/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
 53            android:exported="false" />
-53-->[com.squareup.picasso:picasso:2.71828] /Users/owo/.gradle/caches/transforms-3/34707bfca2bc75fa253289b2206ed362/transformed/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+53-->[com.squareup.picasso:picasso:2.71828] /Users/seungju/.gradle/caches/transforms-3/34707bfca2bc75fa253289b2206ed362/transformed/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
 54        <provider
-54-->[androidx.emoji2:emoji2:1.2.0] /Users/owo/.gradle/caches/transforms-3/69262e6e1ef2f549fc8371faf15c8c5f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+54-->[androidx.emoji2:emoji2:1.2.0] /Users/seungju/.gradle/caches/transforms-3/69262e6e1ef2f549fc8371faf15c8c5f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
 55            android:name="androidx.startup.InitializationProvider"
-55-->[androidx.emoji2:emoji2:1.2.0] /Users/owo/.gradle/caches/transforms-3/69262e6e1ef2f549fc8371faf15c8c5f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+55-->[androidx.emoji2:emoji2:1.2.0] /Users/seungju/.gradle/caches/transforms-3/69262e6e1ef2f549fc8371faf15c8c5f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
 56            android:authorities="com.teamtwo.kiosk.androidx-startup"
-56-->[androidx.emoji2:emoji2:1.2.0] /Users/owo/.gradle/caches/transforms-3/69262e6e1ef2f549fc8371faf15c8c5f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+56-->[androidx.emoji2:emoji2:1.2.0] /Users/seungju/.gradle/caches/transforms-3/69262e6e1ef2f549fc8371faf15c8c5f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
 57            android:exported="false" >
-57-->[androidx.emoji2:emoji2:1.2.0] /Users/owo/.gradle/caches/transforms-3/69262e6e1ef2f549fc8371faf15c8c5f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+57-->[androidx.emoji2:emoji2:1.2.0] /Users/seungju/.gradle/caches/transforms-3/69262e6e1ef2f549fc8371faf15c8c5f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
 58            <meta-data
-58-->[androidx.emoji2:emoji2:1.2.0] /Users/owo/.gradle/caches/transforms-3/69262e6e1ef2f549fc8371faf15c8c5f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+58-->[androidx.emoji2:emoji2:1.2.0] /Users/seungju/.gradle/caches/transforms-3/69262e6e1ef2f549fc8371faf15c8c5f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
 59                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-59-->[androidx.emoji2:emoji2:1.2.0] /Users/owo/.gradle/caches/transforms-3/69262e6e1ef2f549fc8371faf15c8c5f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+59-->[androidx.emoji2:emoji2:1.2.0] /Users/seungju/.gradle/caches/transforms-3/69262e6e1ef2f549fc8371faf15c8c5f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
 60                android:value="androidx.startup" />
-60-->[androidx.emoji2:emoji2:1.2.0] /Users/owo/.gradle/caches/transforms-3/69262e6e1ef2f549fc8371faf15c8c5f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+60-->[androidx.emoji2:emoji2:1.2.0] /Users/seungju/.gradle/caches/transforms-3/69262e6e1ef2f549fc8371faf15c8c5f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
 61            <meta-data
-61-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/owo/.gradle/caches/transforms-3/d792cfc6337e3c8fbac3183f5288f77a/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+61-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/seungju/.gradle/caches/transforms-3/d792cfc6337e3c8fbac3183f5288f77a/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
 62                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-62-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/owo/.gradle/caches/transforms-3/d792cfc6337e3c8fbac3183f5288f77a/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+62-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/seungju/.gradle/caches/transforms-3/d792cfc6337e3c8fbac3183f5288f77a/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
 63                android:value="androidx.startup" />
-63-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/owo/.gradle/caches/transforms-3/d792cfc6337e3c8fbac3183f5288f77a/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+63-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/seungju/.gradle/caches/transforms-3/d792cfc6337e3c8fbac3183f5288f77a/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
 64        </provider>
 65    </application>
 66

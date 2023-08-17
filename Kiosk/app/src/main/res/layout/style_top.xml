@@ -9,16 +9,17 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1.01"
+        android:layout_weight="1"
         android:background="@drawable/torder_logo"
         android:layout_marginLeft="0sp"
-        android:scaleType="fitCenter" />
+        android:layout_marginRight="25dp"
+        android:scaleType="centerCrop" />
 
     <!-- 공백 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.9"/>
+        android:layout_weight="0.85"/>
 
     <!-- 버튼 -->
 
@@ -28,8 +29,8 @@
         android:layout_height="match_parent"
         android:text="식사"
         android:textSize="30dp"
-        android:textColor="@drawable/button_top"
-        android:backgroundTint="#292828"
+        android:textColor="@color/white"
+        android:background="#00ff0000"
         android:layout_weight="1"
         android:onClick="clickHandler"/>
 
@@ -39,8 +40,8 @@
         android:layout_height="match_parent"
         android:text="안주"
         android:textSize="30dp"
-        android:textColor="@drawable/button_top"
-        android:backgroundTint="#292828"
+        android:textColor="@color/white"
+        android:background="#00ff0000"
         android:layout_weight="1"
         android:onClick="clickHandler"/>
     <Button
@@ -49,8 +50,8 @@
         android:layout_height="match_parent"
         android:text="주류"
         android:textSize="30dp"
-        android:textColor="@drawable/button_top"
-        android:backgroundTint="#292828"
+        android:textColor="@color/white"
+        android:background="#00ff0000"
         android:layout_weight="1"
         android:onClick="clickHandler"/>
     <Button
@@ -59,8 +60,8 @@
         android:layout_height="match_parent"
         android:text="음료"
         android:textSize="30dp"
-        android:textColor="@drawable/button_top"
-        android:backgroundTint="#292828"
+        android:textColor="@color/white"
+        android:background="#00ff0000"
         android:layout_weight="1"
         android:onClick="clickHandler"/>
 

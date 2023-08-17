@@ -10,7 +10,7 @@
         android:id="@+id/voiceIconPosition"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#292828"
+        android:background="#00ff0000"
         android:layout_weight="1.1"
         android:orientation="vertical"/>
 
@@ -22,7 +22,7 @@
         android:layout_weight="1.1"
         android:text="음성 인식"
         android:textSize="24dp"
-        android:background="@drawable/button_special"
+        android:background="#00ff0000"
         android:textColor="#FFFFFF" />
 
 

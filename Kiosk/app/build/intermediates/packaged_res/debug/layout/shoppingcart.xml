@@ -28,31 +28,7 @@
                 <include
                     layout="@layout/shoppingcart_item"
                     android:layout_width="match_parent"
-                    android:layout_height="159dp"
-                    android:layout_margin="30dp"/>
-
-                <include
-                    layout="@layout/shoppingcart_item_test1"
-                    android:layout_width="match_parent"
                     android:layout_height="157dp"
-                    android:layout_margin="30dp" />
-
-                <include
-                    layout="@layout/shoppingcart_item_test2"
-                    android:layout_width="match_parent"
-                    android:layout_height="157dp"
-                    android:layout_margin="30dp" />
-
-                <include
-                    android:layout_height="150dp"
-                    android:layout_width="match_parent"
-                    layout="@layout/shoppingcart_item_test3"
-                    android:layout_margin="30dp"/>
-
-                <include
-                    layout="@layout/shoppingcart_item_test4"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
                     android:layout_margin="30dp"/>
 
             </LinearLayout>
@@ -62,7 +38,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:layout_weight="10"
+    android:layout_weight="13"
     android:background="#505050">
     <TextView
         android:id="@+id/totalPrice"
@@ -70,7 +46,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:text="0"
-        android:textSize="77dp"
+        android:textSize="50dp"
         android:textColor="@color/white"
         android:textAlignment="center"/>
     <Button
@@ -78,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@drawable/button_cancle"
+        android:background="#FF4040"
         android:text="결제"
         android:textColor="@color/white"
         android:textSize="50dp"/>

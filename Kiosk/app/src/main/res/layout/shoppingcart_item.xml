@@ -49,7 +49,7 @@
            android:layout_width="match_parent"
            android:layout_height="match_parent"
            android:layout_weight="5"
-           android:background="@drawable/button_cancle"
+           android:background="#FF4040"
            android:text="삭제"
            android:textColor="#FFFFFF"
            android:textSize="30sp"

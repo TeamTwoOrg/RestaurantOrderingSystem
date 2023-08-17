@@ -99,6 +99,11 @@ public class MenuForUser extends AppCompatActivity {
                     Manifest.permission.RECORD_AUDIO}, PERMISSION);
         }
 
+        Button topButtonSnack =  findViewById(R.id.topButtonSnack);
+        Button topButtonLiquor = findViewById(R.id.topButtonLiquor);
+        Button topButtonBeverage = findViewById(R.id.topButtonBeverage);
+        Button topButtonMeal = findViewById(R.id.topButtonMeal);
+
         //음성 인식 버튼
         voice_recognition_btn_text = findViewById(R.id.voice_recognition_btn_text);
 
@@ -120,7 +125,6 @@ public class MenuForUser extends AppCompatActivity {
 
         transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.user_switching_zone, fragmentMeal).commitAllowingStateLoss();
-
 
 
         cartButton.setOnClickListener(new View.OnClickListener() {
@@ -321,9 +325,9 @@ public class MenuForUser extends AppCompatActivity {
             midInnerLayout.addView(userMenuScrollView);
             midOuterLayout.addView(midInnerLayout);
 
-            if(menuList.get(i).getString("category1").equals("식사")){
-                fragment_meal_zone.addView(midOuterLayout);
-            }
+//            if(menuList.get(i).getString("category1").equals("식사")){
+//                fragment_meal_zone.addView(midOuterLayout);
+//            }
 //            else if(menuList.get(i).getString("category1").equals("안주")){
 //                fragment_snack_zone.addView(midOuterLayout);
 //            }
@@ -353,8 +357,6 @@ public class MenuForUser extends AppCompatActivity {
         }
     }
 
-
-
     private void showCustomVoiceDialog() {
         CustomVoiceRecognitionDialog dialog = new CustomVoiceRecognitionDialog(MenuForUser.this);
         dialog.show();
@@ -364,4 +366,5 @@ public class MenuForUser extends AppCompatActivity {
         ShoppingCartDialog shoppingCartDialog = new ShoppingCartDialog(MenuForUser.this);
         shoppingCartDialog.show();
     }
+
 }

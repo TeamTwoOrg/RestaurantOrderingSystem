@@ -4,26 +4,7 @@
             "outputFile": "com.teamtwo.kiosk.app-mergeDebugResources-27:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/owo/Documents/dev/RestaurantOrderingSystem/Kiosk/app/src/main/res/values-night/themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "312"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "163"
-                    }
-                },
-                {
-                    "source": "/Users/owo/.gradle/caches/transforms-3/a965dbd46dad388efad08cc8f6d01086/transformed/material-1.5.0/res/values-night-v8/values-night-v8.xml",
+                    "source": "/Users/seungju/.gradle/caches/transforms-3/a965dbd46dad388efad08cc8f6d01086/transformed/material-1.5.0/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/owo/.gradle/caches/transforms-3/f519227ce83c25a4daf72bc8b7b65062/transformed/appcompat-1.6.1/res/values-night-v8/values-night-v8.xml",
+                    "source": "/Users/seungju/.gradle/caches/transforms-3/f519227ce83c25a4daf72bc8b7b65062/transformed/appcompat-1.6.1/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -54,6 +35,25 @@
                         "startOffsets": "168,238,322,406,502,604,706,3454",
                         "endColumns": "69,83,83,95,101,101,93,88",
                         "endOffsets": "233,317,401,497,599,701,795,3538"
+                    }
+                },
+                {
+                    "source": "/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/res/values-night/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "312"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "163"
                     }
                 }
             ]

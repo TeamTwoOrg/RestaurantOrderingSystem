@@ -2,6 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="darker_button_background">#808080</color>
+    <color name="hot_pink">#FF4081</color>
     <color name="normal_button_background">#808080</color>
     <color name="white">#FFFFFFFF</color>
     <item name="cartButton" type="id"/>

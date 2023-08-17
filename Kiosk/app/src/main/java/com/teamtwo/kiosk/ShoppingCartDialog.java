@@ -8,8 +8,11 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.util.HashMap;
+
 public class ShoppingCartDialog extends Dialog {
 
+    public static HashMap<String, Integer> addInfo = new HashMap<>();
     private TextView count_nums;
     private int price;
     private TextView itemPriceTextView;
@@ -71,9 +74,4 @@ public class ShoppingCartDialog extends Dialog {
         });
     }
 
-    @Override
-    public void onBackPressed() {
-        // 뒤로 가기 버튼을 눌렀을 때도 팝업 창을 닫도록 처리
-
-    }
 }

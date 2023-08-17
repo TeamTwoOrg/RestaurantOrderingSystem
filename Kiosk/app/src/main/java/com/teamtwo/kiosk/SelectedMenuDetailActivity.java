@@ -55,8 +55,10 @@ public class SelectedMenuDetailActivity extends Dialog {
         plusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                currentValue++;
-                count_num.setText(String.valueOf(currentValue));
+                if (currentValue < 9) {
+                    currentValue++;
+                    count_num.setText(String.valueOf(currentValue));
+                }
             }
         });
 

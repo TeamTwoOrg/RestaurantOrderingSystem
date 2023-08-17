@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -86,13 +87,11 @@ public class MealFragment extends Fragment {
                 TextView menuPriceTextView = addMenuLayout.findViewById(R.id.user_menu_price);
                 TextView menuDetailTextView = addMenuLayout.findViewById(R.id.user_menu_detail);
                 Button orderingBtn_temp = detail_selecting_window_activity.findViewById(R.id.orderingBtn_temp);
-                TextView count_num = detail_selecting_window_activity.findViewById(R.id.count_num);
 
-                Log.d("test", "1");
                 LinearLayout inner = addMenuLayout.findViewById(R.id.middle_inner);
                 inner.setLayoutParams(new LinearLayout.LayoutParams(
-                        470,
-                        1016
+                        570,
+                        1516
                 ));
                 inner.setOrientation(LinearLayout.VERTICAL);
 
@@ -101,7 +100,7 @@ public class MealFragment extends Fragment {
                 menuImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
                 menuImageView.setLayoutParams(new LinearLayout.LayoutParams(
                         ViewGroup.LayoutParams.MATCH_PARENT,
-                        670
+                        870
                 ));
                 Glide.with(this)
                         .load(menuList.get(i).getString("imageURL"))
@@ -114,15 +113,11 @@ public class MealFragment extends Fragment {
                 inner.addView(menuImageView, 0);
 
 
-
-
-                Log.d("test", "2");
                 menuNameTextView.setText(menuList.get(i).getString("name"));
                 menuNameTextView.setTextColor(getResources().getColor(R.color.white));
                 menuNameTextView.setTextSize(20);
                 menuNameTextView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
                 menuNameTextView.setIncludeFontPadding(false);
-                Log.d("test", "3");
 
                 menuDetailTextView.setText( menuList.get(i).getString("text"));
 
@@ -131,10 +126,8 @@ public class MealFragment extends Fragment {
                 menuPriceTextView.setTextSize(20);
                 menuPriceTextView.setGravity(Gravity.CENTER);
                 menuPriceTextView.setIncludeFontPadding(false);
-                Log.d("test", "4");
 
                 userMenuScrollView.addView(addMenuLayout);
-                Log.d("test", "5");
 
                 menuImageView.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -145,20 +138,30 @@ public class MealFragment extends Fragment {
                         selectedMenuDetailActivity.setDetailPopupImage(menuImageView);
                         selectedMenuDetailActivity.setDetail_popup_name(menuNameTextView);
                         selectedMenuDetailActivity.setDetail_popup_script(menuDetailTextView);
-                    }
-                });
 
-                orderingBtn_temp.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        SelectedMenuDetailActivity selectedMenuDetailActivity = new SelectedMenuDetailActivity(getContext());
-                        String selectedMenuName = menuNameTextView.getText().toString();
-                        Integer selectedMenuCnt = Integer.parseInt(count_num.getText().toString());
+                        Button addToCart = selectedMenuDetailActivity.findViewById(R.id.orderingBtn_temp);
+                        TextView count_num = selectedMenuDetailActivity.findViewById(R.id.count_num);
 
-                        Log.v("name: ",selectedMenuName);
-                        Log.v("cnt: ",selectedMenuCnt.toString());
-                        ShoppingCartDialog.addInfo.put(selectedMenuName,selectedMenuCnt);
-                        selectedMenuDetailActivity.dismiss();
+                        addToCart.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                String selectedMenuName = menuNameTextView.getText().toString();
+                                Integer selectedMenuPrice = Integer.parseInt(menuPriceTextView.getText().toString());
+                                Integer selectedMenuCnt = Integer.parseInt(count_num.getText().toString());
+
+                                Log.v("name: ",selectedMenuName);
+                                Log.v("cnt: ",selectedMenuCnt.toString());
+                                boolean addCartStatus = ShoppingCartDialog.addToCart(selectedMenuName, new int[]{selectedMenuPrice, selectedMenuCnt});
+                                if (addCartStatus == false) {
+                                    int curCnt = ShoppingCartDialog.addInfo.get(selectedMenuName)[1];
+                                    String message = "10개이상 장바구니에 초과할 수 없습니다. (현재 " + curCnt + "개 담겨있습니다.)";
+                                    Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
+                                    return;
+                                }
+
+                                selectedMenuDetailActivity.dismiss();
+                            }
+                        });
                     }
                 });
             }

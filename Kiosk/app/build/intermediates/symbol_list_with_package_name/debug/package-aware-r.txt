@@ -2960,6 +2960,7 @@ id selected
 id selection_type
 id sharedValueSet
 id sharedValueUnset
+id shoppingcart_linear
 id shortcut
 id showCustom
 id showHome

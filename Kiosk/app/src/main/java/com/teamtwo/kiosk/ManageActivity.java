@@ -42,6 +42,8 @@ public class ManageActivity extends AppCompatActivity {
     private Handler handler = new Handler(Looper.getMainLooper());
     private Runnable runnable;
     private boolean isRunning = false;
+    private int orderViewSelect;
+    public static ArrayList<JSONObject> menuList;
 
     // 일정 시간 간격으로 주문 데이터를 로드하는 메서드 호출
     private void startLoadingData() {
@@ -89,6 +91,7 @@ public class ManageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        orderViewSelect = 2;
         setContentView(R.layout.manage);
 
         startLoadingData();
@@ -101,17 +104,20 @@ public class ManageActivity extends AppCompatActivity {
         orderPending.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-
+                orderViewSelect = 0;
                 orderPending.setBackgroundResource(R.drawable.darker_button_half_background);
 
                 // 주문대기 버튼을 제외한 다른 버튼들의 배경색을 원래대로 되돌림
                 orderCanceled.setBackgroundResource(R.drawable.button_round_half);
                 orderCompleted.setBackgroundResource(R.drawable.button_round_half);
                 productBtn.setBackgroundResource(R.drawable.button_round_half);
+                try {
+                    spreadOrderData(ManageActivity.menuList);
+                } catch (Exception e) {
+                    Log.e("error", e.getMessage());
+                }
 
-                // productActivity로 전환하기 위한 intent 생성
-                Intent intent = new Intent(ManageActivity.this, ProductActivity.class);
-                startActivity(intent);
+
             }
         });
 
@@ -119,17 +125,18 @@ public class ManageActivity extends AppCompatActivity {
         orderCanceled.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-
+                orderViewSelect = -1;
                 orderCanceled.setBackgroundResource(R.drawable.darker_button_half_background);
 
                 // 주문대기 버튼을 제외한 다른 버튼들의 배경색을 원래대로 되돌림
                 orderPending.setBackgroundResource(R.drawable.button_round_half);
                 orderCompleted.setBackgroundResource(R.drawable.button_round_half);
                 productBtn.setBackgroundResource(R.drawable.button_round_half);
-
-                // productActivity로 전환하기 위한 intent 생성
-                Intent intent = new Intent(ManageActivity.this, ProductActivity.class);
-                startActivity(intent);
+                try {
+                    spreadOrderData(ManageActivity.menuList);
+                } catch (Exception e) {
+                    Log.e("error", e.getMessage());
+                }
             }
         });
 
@@ -137,16 +144,17 @@ public class ManageActivity extends AppCompatActivity {
         orderCompleted.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-
+                orderViewSelect = 1;
                 orderCompleted.setBackgroundResource(R.drawable.darker_button_half_background);
 
                 orderPending.setBackgroundResource(R.drawable.button_round_half);
                 orderCanceled.setBackgroundResource(R.drawable.button_round_half);
                 productBtn.setBackgroundResource(R.drawable.button_round_half);
-
-                // productActivity로 전환하기 위한 intent 생성
-                Intent intent = new Intent(ManageActivity.this, ProductActivity.class);
-                startActivity(intent);
+                try {
+                    spreadOrderData(ManageActivity.menuList);
+                } catch (Exception e) {
+                    Log.e("error", e.getMessage());
+                }
             }
         });
 
@@ -164,9 +172,7 @@ public class ManageActivity extends AppCompatActivity {
 
                     }
                 }, 30);
-                // productActivity로 전환하기 위한 intent 생성
-                Intent intent = new Intent(ManageActivity.this, ProductActivity.class);
-                startActivity(intent);
+
             }
         });
     }
@@ -243,6 +249,7 @@ public class ManageActivity extends AppCompatActivity {
                     JSONObject order = ordersArray.getJSONObject(i);
                     menuList.add(order);
                 }
+                ManageActivity.menuList = menuList;
                 spreadOrderData(menuList);
 
             } catch (JSONException e) {
@@ -258,6 +265,14 @@ public class ManageActivity extends AppCompatActivity {
         Typeface customFont = ResourcesCompat.getFont(this, R.font.gmarketsanslight);
 
         for(int i=menuList.size()-1; i>=0; i--) { // 최신 주문이 위로
+            String status = menuList.get(i).getString("status");
+            int statusInt = Integer.parseInt(status);
+            if (orderViewSelect != 2) {
+                if (statusInt != orderViewSelect) {
+                    continue;
+                }
+            }
+
             LinearLayout newLayout = new LinearLayout(this);
             LinearLayout.LayoutParams newLayoutParams = new LinearLayout.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT,
@@ -296,7 +311,6 @@ public class ManageActivity extends AppCompatActivity {
             statusText.setTextColor(Color.WHITE);
             statusText.setTypeface(customFont);
 
-            String status = menuList.get(i).getString("status");
             if(status.equals("0")){
                 statusText.setText("주문 대기");
             }else if(status.equals("1")){

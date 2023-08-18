@@ -1,326 +1,346 @@
 [
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_add_menu.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/add_menu.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_white_voice.gif.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\white_voice.gif"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_wlminus.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/wlminus.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_round_border.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\round_border.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_user_for_menu.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/user_for_menu.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_liquor.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/fragment_liquor.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_darker_button_half_diff_background.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\darker_button_half_diff_background.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/font_gmarketsansmedium.otf.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/font/gmarketsansmedium.otf"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_add_menu.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\add_menu.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_default_product_image.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\default_product_image.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_style_bottom.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/style_bottom.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_login_button_background.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/login_button_background.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_sales_activity.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\sales_activity.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_button_round_half.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\button_round_half.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_bottom_border.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/bottom_border.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_cancle.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_cancle.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_button_special.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\button_special.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_style_top.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/style_top.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/font_gmarketsansbold.otf.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/font/gmarketsansbold.otf"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_redbox.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\redbox.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_menu2.jpg.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/menu2.jpg"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_login_button_background.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\login_button_background.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_background.jpg.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/background.jpg"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_ic_down.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\ic_down.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_activity_pay.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/activity_pay.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_top.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_top.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_torder.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\torder.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart_item.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/shoppingcart_item.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_style_bottom.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\style_bottom.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_manage.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/manage.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_activity_login_main.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\activity_login_main.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/font_gmarketsanslight.otf.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/font/gmarketsanslight.otf"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_wlminus.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\wlminus.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_activity_pay.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\activity_pay.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_product_activity.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\product_activity.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_logo.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/logo.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_plate_add_menu.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\plate_add_menu.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_voice_recognition_img.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/voice_recognition_img.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_style_top.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\style_top.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_meal.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/fragment_meal.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_activity_pay_success.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\activity_pay_success.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_torder.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/torder.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_torder_logo.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\torder_logo.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_esc.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/esc.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_fragment_snack.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\fragment_snack.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_redbox.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/redbox.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_spinner_list_item.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\spinner_list_item.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_empty_plate.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/empty_plate.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\font_gmarketsansmedium.otf.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\font\\gmarketsansmedium.otf"
     },
     {
-        "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_button_cancle.xml.flat",
-        "source": "com.teamtwo.kiosk.app-main-31:/drawable/button_cancle.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_voice_recognition_img.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\voice_recognition_img.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_menu2.jpg.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\menu2.jpg"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_button_round.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\button_round.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_button_background_clicked.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\button_background_clicked.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_round.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_round.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_button_hot_pink_gradient.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\button_hot_pink_gradient.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_logo1943.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/logo1943.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_logo1943.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\logo1943.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_special.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_special.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_activity_product_list.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/activity_product_list.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_popup_add_menu.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\popup_add_menu.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_fragment_liquor.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\fragment_liquor.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_shoppingcart.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\shoppingcart.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_fragment_beverge.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\fragment_beverge.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_background_sj.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_background_sj.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_background_clicked.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_background_clicked.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\logo.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_minus.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/minus.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_button_cancle.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\button_cancle.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_back.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_back.xml"
+        "merged": "com.teamtwo.kiosk.app-merged_res-29:/layout_sales_activity.xml.flat",
+        "source": "com.teamtwo.kiosk.app-main-31:/layout/sales_activity.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_frame.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/fragment_frame.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_button_background.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\button_background.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_activity_pay_fail.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/activity_pay_fail.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_bottom_border.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\bottom_border.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/xml_backup_rules.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\font_gmarketsansbold.otf.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\font\\gmarketsansbold.otf"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_white_voice.gif.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/white_voice.gif"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_list_item_custom.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\list_item_custom.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_esc_1.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/esc_1.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_sj_feather_pen_icon.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\sj_feather_pen_icon.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_darker_button_background.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/darker_button_background.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_shop_plus.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\shop_plus.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_hot_pink_gradient_no_round_edge.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_hot_pink_gradient_no_round_edge.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_ic_down.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/ic_down.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_microphone_active_unscreen.gif.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\microphone_active_unscreen.gif"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_vector_feather_pen_icon.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/vector_feather_pen_icon.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_minus.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\minus.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_activity_login_main.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/activity_login_main.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_button_hot_pink_gradient_no_round_edge.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\button_hot_pink_gradient_no_round_edge.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_microphone_active_unscreen.gif.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/microphone_active_unscreen.gif"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_menu1.jpg.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/menu1.jpg"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_background.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_background.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_user_for_menu.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\user_for_menu.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_detail_seleting_window_activity.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/detail_seleting_window_activity.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_button_background_sj.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\button_background_sj.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_background_forbottom.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_background_forbottom.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_button_back.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\button_back.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_button_hot_pink_gradient.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/button_hot_pink_gradient.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_activity_pay_fail.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\activity_pay_fail.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_spinner_list_item.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/spinner_list_item.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\font_gmarketsanslight.otf.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\font\\gmarketsanslight.otf"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_shop_plus.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/shop_plus.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_menu1.jpg.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\menu1.jpg"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_w1plus.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/w1plus.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_my_feather_pen_icon_removebg.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\my_feather_pen_icon_removebg.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_background.jpg.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\background.jpg"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_beverge.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/fragment_beverge.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_shoppingcart_item.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\shoppingcart_item.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_fragment_meal.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\fragment_meal.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_plate_add_menu.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/plate_add_menu.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_detail_seleting_window_activity.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\detail_seleting_window_activity.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_shoppingcart.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/shoppingcart.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_button_background_forbottom.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\button_background_forbottom.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_default_product_image.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/default_product_image.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_darker_button_half_background.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\darker_button_half_background.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_custom_voice_dialog.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/custom_voice_dialog.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_esc.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\esc.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_list_item_custom.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/list_item_custom.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_esc_1.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\esc_1.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_popup_add_menu.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/popup_add_menu.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_w1plus.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\w1plus.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_sj_feather_pen_icon.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/sj_feather_pen_icon.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_darker_button_background.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\darker_button_background.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_activity_pay_success.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/activity_pay_success.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_button_top.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\button_top.xml"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_product_activity.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/product_activity.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_empty_plate.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\empty_plate.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/layout_fragment_snack.xml.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/layout/fragment_snack.xml"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\drawable_vector_feather_pen_icon.png.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\drawable\\vector_feather_pen_icon.png"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_my_feather_pen_icon_removebg.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/my_feather_pen_icon_removebg.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-merged_res-29:/drawable_torder_logo.png.flat",
-        "source": "/Users/seungju/.gradle/daemon/8.0/com.teamtwo.kiosk.app-main-31:/drawable/torder_logo.png"
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_fragment_frame.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\fragment_frame.xml"
+    },
+    {
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_custom_voice_dialog.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\custom_voice_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_manage.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\manage.xml"
+    },
+    {
+        "merged": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-merged_res-29:\\layout_activity_product_list.xml.flat",
+        "source": "C:\\Users\\choikwanghyeok\\.gradle\\daemon\\8.0\\com.teamtwo.kiosk.app-main-31:\\layout\\activity_product_list.xml"
     }
 ]

@@ -85,6 +85,7 @@ public class SalesActivity extends AppCompatActivity {
         int startDay = 1;
         int numberOfDay = 31;
 
+        itemList3.add(String.valueOf("전체"));
         for(int i = 0; i < numberOfDay; i++){
             itemList3.add(String.valueOf(startDay + i));
         }

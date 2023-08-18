@@ -16,9 +16,12 @@ drawable button_cancle
 drawable button_hot_pink_gradient
 drawable button_hot_pink_gradient_no_round_edge
 drawable button_round
+drawable button_round_half
 drawable button_special
 drawable button_top
 drawable darker_button_background
+drawable darker_button_half_background
+drawable darker_button_half_diff_background
 drawable default_product_image
 drawable empty_plate
 drawable esc
@@ -35,6 +38,7 @@ drawable microphone_active_unscreen
 drawable minus
 drawable my_feather_pen_icon_removebg
 drawable redbox
+drawable round_border
 drawable shop_plus
 drawable sj_feather_pen_icon
 drawable torder
@@ -47,11 +51,17 @@ drawable wlminus
 font gmarketsansbold
 font gmarketsanslight
 font gmarketsansmedium
+id Liquor_look
+id Order_All
+id Order_Canceled
+id Order_Completed
+id Order_Pending
 id addButton
 id addMainInfo
 id addMenuSuperLayout
 id allOrderView
 id app_bar_main
+id beverage_look
 id bottom
 id bottom_btn
 id cartButton
@@ -60,6 +70,7 @@ id category_1_spinner
 id countTextView
 id count_num
 id count_nums
+id day_spinner
 id deleteButton
 id detail_popup_image
 id detail_popup_name
@@ -82,6 +93,7 @@ id listView
 id login_button
 id logout_button
 id manage_button
+id meal_look
 id menu_detail_window_bottom_layer
 id menu_detail_window_middle_layer
 id menu_detail_window_top_layer
@@ -92,6 +104,7 @@ id middle
 id middle1
 id middle_inner
 id minus
+id month_spinner
 id orderZone
 id orderingBtn_temp
 id password_text
@@ -101,9 +114,12 @@ id price
 id productAll_btn
 id product_btn
 id register_button
+id sales
+id saleslook
 id script
 id shoppingcart_linear
 id sminusButton
+id snack_look
 id spinnerLayout
 id splusButton
 id superRL
@@ -127,6 +143,7 @@ id voice_recognition_btn
 id voice_recognition_btn_text
 id voice_recognition_esc_btn
 id webView
+id year_spinner
 layout activity_login_main
 layout activity_pay
 layout activity_pay_fail
@@ -145,6 +162,7 @@ layout manage
 layout plate_add_menu
 layout popup_add_menu
 layout product_activity
+layout sales_activity
 layout shoppingcart
 layout shoppingcart_item
 layout spinner_list_item
@@ -155,6 +173,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
 style Base.Theme.Kiosk
+style SpinnerTextStyle
 style Theme.Kiosk
 xml backup_rules
 xml data_extraction_rules

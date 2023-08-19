@@ -3067,6 +3067,7 @@ id topButtonMeal
 id topButtonSnack
 id topPanel
 id totalPrice
+id totalprice
 id touch_outside
 id transitionToEnd
 id transitionToStart

@@ -131,6 +131,7 @@ id topButtonLiquor
 id topButtonMeal
 id topButtonSnack
 id totalPrice
+id totalprice
 id user_button
 id user_menu_detail
 id user_menu_name

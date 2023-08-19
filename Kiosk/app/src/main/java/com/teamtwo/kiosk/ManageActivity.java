@@ -361,7 +361,7 @@ public class ManageActivity extends AppCompatActivity {
                     ViewGroup.LayoutParams.WRAP_CONTENT,
                     1 // 가로 가중치를 1로 설정하여 화면을 꽉 채우도록 함
             ));
-            tableText.setPadding(80, 14, 0, 14);
+            tableText.setPadding(100, 14, 0, 14);
             tableText.setTextSize(28);
             tableText.setTextColor(Color.WHITE);
             tableText.setTypeface(customFont);
@@ -375,11 +375,12 @@ public class ManageActivity extends AppCompatActivity {
                     ViewGroup.LayoutParams.WRAP_CONTENT,
                     1 // 가로 가중치를 1로 설정하여 화면을 꽉 채우도록 함
             ));
-            nameText.setPadding(40, 14, 0, 14);
-            nameText.setTextSize(28);
+            nameText.setPadding(0, 14, 70, 14);
+            nameText.setTextSize(23);
             nameText.setTextColor(Color.WHITE);
             nameText.setTypeface(customFont);
             nameText.setText(menuList.get(i).getJSONObject("menu").getString("name"));
+            nameText.setGravity(Gravity.CENTER);
             textLayout.addView(nameText);
 
             // 주문 시간
@@ -389,8 +390,8 @@ public class ManageActivity extends AppCompatActivity {
                     ViewGroup.LayoutParams.WRAP_CONTENT,
                     1 // 가로 가중치를 1로 설정하여 화면을 꽉 채우도록 함
             ));
-            timeText.setPadding(40, 14, 0, 14);
-            timeText.setTextSize(28);
+            timeText.setPadding(60, 14, 0, 14);
+            timeText.setTextSize(20);
             timeText.setTextColor(Color.WHITE);
             timeText.setTypeface(customFont);
             String time = menuList.get(i).getString("createdAt").substring(11, 19);

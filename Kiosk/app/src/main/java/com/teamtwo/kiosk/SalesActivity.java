@@ -48,7 +48,7 @@ public class SalesActivity extends AppCompatActivity {
     List<String> itemList;
     List<String> itemList2;
     List<String> itemList3;
-    private Button saleslook;
+    Button salesSlipbtn;
 
 
     @SuppressLint("MissingInflatedId")
@@ -63,6 +63,8 @@ public class SalesActivity extends AppCompatActivity {
         monthSpinner = findViewById(R.id.month_spinner);
         // 일 스피너
         daySpinner = findViewById(R.id.day_spinner);
+        // 그래프 버튼
+        salesSlipbtn = findViewById(R.id.salesSlipbtn);
 
         itemList = new ArrayList<>();
         itemList2 = new ArrayList<>();
@@ -107,7 +109,7 @@ public class SalesActivity extends AppCompatActivity {
         Calendar calendar = Calendar.getInstance(); // 캘린더 객체 생성하여 현재 시간 가져오기
         int curYear = calendar.get(Calendar.YEAR); // 현재 년도 가져오기
         int curMonth = calendar.get(Calendar.MONTH) + 1; // 현재 월 가져오기 (+1 더해주는 이유는 Calendar.MONTH가 0~11 값을 반환하기 때문입니다.)
-        int curDay = calendar.get(Calendar.DAY_OF_MONTH); // 현재 일자 가져오기
+        int curDay = calendar.get(Calendar.DAY_OF_MONTH) + 1; // 현재 일자 가져오기
 
         // 현재 날짜에 해당하는 항목을 선택하도록 설정
         yearSpinner.setSelection(itemList.indexOf(String.valueOf(curYear)));
@@ -179,6 +181,28 @@ public class SalesActivity extends AppCompatActivity {
             }
         });
 
+        // 매출통계
+        salesSlipbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // "매출 통계" 버튼이 클릭되었을 때 동작
+                // 상품 목록 화면을 표시하는 로직을 추가
+                // 예시: Intent로 다음 화면으로 이동
+                salesSlipbtn.setBackgroundResource(R.drawable.darker_button_half_diff_background);
+
+                v.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        salesSlipbtn.setBackgroundResource(R.drawable.button_round_half);
+
+                    }
+                }, 200);
+
+                Intent intent = new Intent(SalesActivity.this, SalesSlipActivity.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
     public void getSales(int year, int month, int day) {
@@ -249,6 +273,7 @@ public class SalesActivity extends AppCompatActivity {
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT
         );
+        layoutParams.setMargins(115, 0, 0, 0); // 마진 추가 (위, 왼쪽, 아래, 오른쪽)
         layoutParams.gravity = Gravity.CENTER; // TextView를 가운데로 정렬하기 위해 gravity 설정
         menuTextView.setLayoutParams(layoutParams);
         menuTextView.setTextSize(40);
@@ -268,7 +293,7 @@ public class SalesActivity extends AppCompatActivity {
                 ViewGroup.LayoutParams.WRAP_CONTENT
         );
 
-        layoutParams.setMargins(115, 30, 0, 10); // 마진 추가 (위, 왼쪽, 아래, 오른쪽)
+        layoutParams.setMargins(115, 30, 0, 30); // 마진 추가 (위, 왼쪽, 아래, 오른쪽)
         menuTextView.setLayoutParams(layoutParams);
         menuTextView.setTextSize(25);
         menuTextView.setTextColor(Color.WHITE);

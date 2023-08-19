@@ -109,12 +109,14 @@ id orderZone
 id orderingBtn_temp
 id password_text
 id paymentButton
+id piechart
 id plus
 id price
 id productAll_btn
 id product_btn
 id register_button
 id sales
+id salesSlipbtn
 id saleslook
 id script
 id shoppingcart_linear
@@ -124,6 +126,7 @@ id spinnerLayout
 id splusButton
 id superRL
 id switching_zone
+id textTotalPrice
 id textView3_for_align
 id top
 id topButtonBeverage
@@ -150,6 +153,7 @@ layout activity_pay
 layout activity_pay_fail
 layout activity_pay_success
 layout activity_product_list
+layout activity_sales_slip
 layout add_menu
 layout custom_voice_dialog
 layout detail_seleting_window_activity

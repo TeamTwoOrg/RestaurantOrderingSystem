@@ -79,7 +79,7 @@
             android:textSize="40sp"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/saleslook"
+            android:id="@+id/salesSlipbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/gmarketsansmedium"

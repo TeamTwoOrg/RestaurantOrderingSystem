@@ -2929,6 +2929,7 @@ id pathRelative
 id paymentButton
 id peekHeight
 id percent
+id piechart
 id pin
 id plus
 id position
@@ -2950,6 +2951,7 @@ id right_side
 id rounded
 id row_index_key
 id sales
+id salesSlipbtn
 id saleslook
 id save_non_transition_alpha
 id save_overlay_view
@@ -3045,6 +3047,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textTotalPrice
 id textView3_for_align
 id text_input_end_icon
 id text_input_error_icon
@@ -3203,6 +3206,7 @@ layout activity_pay
 layout activity_pay_fail
 layout activity_pay_success
 layout activity_product_list
+layout activity_sales_slip
 layout add_menu
 layout custom_dialog
 layout custom_voice_dialog

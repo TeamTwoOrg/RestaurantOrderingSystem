@@ -294,15 +294,24 @@ public class ManageActivity extends AppCompatActivity {
         }
     }
 
+    public static int waitingCnt = -1;
+
     public void spreadOrderData(ArrayList<JSONObject> menuList) throws JSONException {
         LinearLayout allOrderView = findViewById(R.id.orderZone);
         allOrderView.removeAllViews();
 
         Typeface customFont = ResourcesCompat.getFont(this, R.font.gmarketsanslight);
 
+        int curWaitingCnt = 0;
         for(int i=menuList.size()-1; i>=0; i--) { // 최신 주문이 위로
             String status = menuList.get(i).getString("status");
             int statusInt = Integer.parseInt(status);
+
+            // 대기가 몇개인지 센다.
+            if (statusInt == 0) {
+                curWaitingCnt += 1;
+            }
+
             if (orderViewSelect != 2) {
                 if (statusInt != orderViewSelect) {
                     continue;
@@ -458,6 +467,19 @@ public class ManageActivity extends AppCompatActivity {
             }
             newLayout.addView(textLayout);
             allOrderView.addView(newLayout);
+        }
+
+        Log.v("Need Code", "last: " + waitingCnt + " | cur: "+ curWaitingCnt);
+        // 이전 대기 개수와 비교하기
+        if (waitingCnt < 0) { // 한번도 초기화 안된 상태라면
+            waitingCnt = curWaitingCnt;
+        } else if (waitingCnt < curWaitingCnt) { // 대기 개수가 늘어났다면
+            // 띵동~ 소리내기
+            // 여기에 소리내는 코드를 추가해야함.
+            waitingCnt = curWaitingCnt;
+            Log.v("Need Code", "띵동~");
+        } else {
+            waitingCnt = curWaitingCnt;
         }
     }
 

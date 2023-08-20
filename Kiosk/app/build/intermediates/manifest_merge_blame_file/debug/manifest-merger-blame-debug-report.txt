@@ -1,0 +1,144 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.teamtwo.kiosk"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml
+10    <!-- 인터넷 오디오 권한 설정 -->
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:6:5-71
+12-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:6:22-68
+13
+14    <permission
+14-->[androidx.core:core:1.9.0] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+15        android:name="com.teamtwo.kiosk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.9.0] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.9.0] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.teamtwo.kiosk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.9.0] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.9.0] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:8:5-44:19
+21        android:allowBackup="true"
+21-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:9:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.9.0] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+23        android:dataExtractionRules="@xml/data_extraction_rules"
+23-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:10:9-65
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:fullBackupContent="@xml/backup_rules"
+26-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:11:9-54
+27        android:icon="@mipmap/ic_launcher"
+27-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:12:9-43
+28        android:label="@string/app_name"
+28-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:13:9-41
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:14:9-54
+30        android:supportsRtl="true"
+30-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:15:9-35
+31        android:testOnly="true"
+32        android:theme="@style/Theme.Kiosk"
+32-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:16:9-43
+33        android:usesCleartextTraffic="true" >
+33-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:17:9-44
+34        <activity
+34-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:19:9-21:40
+35            android:name="com.teamtwo.kiosk.PayFailActivity"
+35-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:20:13-44
+36            android:exported="false" />
+36-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:21:13-37
+37        <activity
+37-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:22:9-30:20
+38            android:name="com.teamtwo.kiosk.LoginActivity"
+38-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:23:13-42
+39            android:exported="true" >
+39-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:24:13-36
+40            <intent-filter>
+40-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:25:13-29:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:26:17-69
+41-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:26:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:28:17-77
+43-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:28:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity android:name="com.teamtwo.kiosk.ManageActivity" />
+46-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:31:9-51
+46-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:31:19-49
+47        <activity android:name="com.teamtwo.kiosk.ProductActivity" />
+47-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:32:9-52
+47-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:32:19-50
+48        <activity android:name="com.teamtwo.kiosk.AddMenuPopUp" />
+48-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:33:9-49
+48-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:33:19-47
+49        <activity android:name="com.teamtwo.kiosk.ProductListActivity" />
+49-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:34:9-56
+49-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:34:19-54
+50        <activity android:name="com.teamtwo.kiosk.MenuForUser" />
+50-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:35:9-48
+50-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:35:19-46
+51        <activity android:name="com.teamtwo.kiosk.SalesActivity" />
+51-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:36:9-50
+51-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:36:19-48
+52        <activity android:name="com.teamtwo.kiosk.SalesSlipActivity" />
+52-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:37:9-54
+52-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:37:19-52
+53        <activity
+53-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:38:9-40:40
+54            android:name="com.teamtwo.kiosk.PaySuccessActivity"
+54-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:39:13-47
+55            android:exported="false" />
+55-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:40:13-37
+56        <activity
+56-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:41:9-43:40
+57            android:name="com.teamtwo.kiosk.PayActivity"
+57-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:42:13-40
+58            android:exported="false" />
+58-->C:\Users\choikwanghyeok\AndroidStudioProjects\RestaurantOrderingSystem\Kiosk\app\src\main\AndroidManifest.xml:43:13-37
+59
+60        <provider
+60-->[com.squareup.picasso:picasso:2.71828] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\34707bfca2bc75fa253289b2206ed362\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+61            android:name="com.squareup.picasso.PicassoProvider"
+61-->[com.squareup.picasso:picasso:2.71828] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\34707bfca2bc75fa253289b2206ed362\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+62            android:authorities="com.teamtwo.kiosk.com.squareup.picasso"
+62-->[com.squareup.picasso:picasso:2.71828] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\34707bfca2bc75fa253289b2206ed362\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+63            android:exported="false" />
+63-->[com.squareup.picasso:picasso:2.71828] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\34707bfca2bc75fa253289b2206ed362\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+64        <provider
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\69262e6e1ef2f549fc8371faf15c8c5f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+65            android:name="androidx.startup.InitializationProvider"
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\69262e6e1ef2f549fc8371faf15c8c5f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+66            android:authorities="com.teamtwo.kiosk.androidx-startup"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\69262e6e1ef2f549fc8371faf15c8c5f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+67            android:exported="false" >
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\69262e6e1ef2f549fc8371faf15c8c5f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+68            <meta-data
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\69262e6e1ef2f549fc8371faf15c8c5f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\69262e6e1ef2f549fc8371faf15c8c5f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+70                android:value="androidx.startup" />
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\69262e6e1ef2f549fc8371faf15c8c5f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\d792cfc6337e3c8fbac3183f5288f77a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+72                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+72-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\d792cfc6337e3c8fbac3183f5288f77a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+73                android:value="androidx.startup" />
+73-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\choikwanghyeok\.gradle\caches\transforms-3\d792cfc6337e3c8fbac3183f5288f77a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+74        </provider>
+75    </application>
+76
+77</manifest>

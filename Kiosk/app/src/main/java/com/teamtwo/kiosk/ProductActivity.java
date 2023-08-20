@@ -176,7 +176,7 @@ public class ProductActivity extends AppCompatActivity{
             }
         });
 
-        // 매출 보기
+        // 매출 전표 보기
         saleslook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

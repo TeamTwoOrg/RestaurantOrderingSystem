@@ -304,6 +304,10 @@
         "source": "com.teamtwo.kiosk.app-main-31:/layout/manage.xml"
     },
     {
+        "merged": "com.teamtwo.kiosk.app-merged_res-29:/raw_bell.mp3.flat",
+        "source": "com.teamtwo.kiosk.app-main-31:/raw/bell.mp3"
+    },
+    {
         "merged": "com.teamtwo.kiosk.app-merged_res-29:/drawable_torder.png.flat",
         "source": "com.teamtwo.kiosk.app-main-31:/drawable/torder.png"
     },

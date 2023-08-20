@@ -476,13 +476,20 @@ public class ManageActivity extends AppCompatActivity {
         } else if (waitingCnt < curWaitingCnt) { // 대기 개수가 늘어났다면
             // 띵동~ 소리내기
             // 여기에 소리내는 코드를 추가해야함.
+            playNewOrderSound();
             waitingCnt = curWaitingCnt;
             Log.v("Need Code", "띵동~");
         } else {
             waitingCnt = curWaitingCnt;
         }
     }
-
+    // 소리나는 코드
+    private void playNewOrderSound() {
+        if (mediaPlayer == null) {
+            mediaPlayer = MediaPlayer.create(this, R.raw.bell);
+        }
+        mediaPlayer.start();
+    }
     public void changeOrder(String orderId, int status) {
         JSONObject jsonBody = new JSONObject();
         try {

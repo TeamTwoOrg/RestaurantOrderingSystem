@@ -176,6 +176,7 @@ layout style_top
 layout user_for_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw bell
 string app_name
 style Base.Theme.Kiosk
 style SpinnerTextStyle

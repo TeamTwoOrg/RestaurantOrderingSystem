@@ -92,13 +92,13 @@ public class SalesSlipActivity extends AppCompatActivity {
 
         // 파이애 색상 적용
         int[] colors = new int[]{
-                Color.rgb(255, 0, 0),     // Red
-                Color.rgb(255, 165, 0),   // Orange
-                Color.rgb(255, 204, 0),   // Yellow
-                Color.rgb(0, 128, 0),     // Green
-                Color.rgb(0, 0, 255),     // Blue
-                Color.rgb(75, 0, 130),    // Indigo
-                Color.rgb(128, 0, 128),   // Purple
+            Color.parseColor("#C0392B"), // 빨강
+            Color.parseColor("#D35400"), // 주황
+            Color.parseColor("#F1C40F"), // 노랑
+            Color.parseColor("#27AE60"), // 초록
+            Color.parseColor("#2980B9"), // 파랑
+            Color.parseColor("#4A148C"), // 남색
+            Color.parseColor("#9B59B6"), // 보라
         };
 
         dataSet.setColors(colors);
@@ -158,11 +158,11 @@ public class SalesSlipActivity extends AppCompatActivity {
                             JSONObject responseJson = new JSONObject(responseBody);
                             JSONObject data = responseJson.getJSONObject("data");
                             JSONObject count = data.getJSONObject("count");
-                            int totalPriceValue = data.getInt("totalPrice");
+                            String totalPriceValue = data.getString("totalPrice");
 
                             // 서버로부터 가져온 totalPrice 값을 텍스트뷰에 업데이트합니다.
                             TextView textTotalPrice = findViewById(R.id.textTotalPrice);
-                            textTotalPrice.setText("총 매출 : " + totalPriceValue);
+                            textTotalPrice.setText("총 매출 : " + totalPriceValue + "원");
 
                             Iterator<String> keysIterator = count.keys();
 

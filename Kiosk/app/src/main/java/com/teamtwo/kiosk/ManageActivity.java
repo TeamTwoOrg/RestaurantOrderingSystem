@@ -32,7 +32,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
-
+import android.media.MediaPlayer;
 public class ManageActivity extends AppCompatActivity {
 
     private ListView Allorderlist; // 주문 리스트
@@ -47,6 +47,8 @@ public class ManageActivity extends AppCompatActivity {
     private int orderViewSelect;
     public static ArrayList<JSONObject> menuList;
 
+    private MediaPlayer mediaPlayer; // 소리 파일
+
     // 일정 시간 간격으로 주문 데이터를 로드하는 메서드 호출
     private void startLoadingData() {
         if (!isRunning) {
@@ -55,7 +57,8 @@ public class ManageActivity extends AppCompatActivity {
                 @Override
                 public void run() {
                     new FetchProductDataTask().execute();
-                    handler.postDelayed(this, 1000); // 10초마다 호출
+                    handler.postDelayed(this, 1000); // 1초마다 호출
+
                 }
             };
             handler.post(runnable);

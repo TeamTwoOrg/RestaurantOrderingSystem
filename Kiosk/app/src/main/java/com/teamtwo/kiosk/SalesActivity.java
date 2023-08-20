@@ -91,7 +91,7 @@ public class SalesActivity extends AppCompatActivity {
         int startDay = 1;
         int numberOfDay = 31;
 
-        //itemList3.add(String.valueOf("전체"));
+        itemList3.add(String.valueOf("전체"));
         for (int i = 0; i < numberOfDay; i++) {
             itemList3.add(String.valueOf(startDay + i));
         }
@@ -109,7 +109,7 @@ public class SalesActivity extends AppCompatActivity {
         Calendar calendar = Calendar.getInstance(); // 캘린더 객체 생성하여 현재 시간 가져오기
         int curYear = calendar.get(Calendar.YEAR); // 현재 년도 가져오기
         int curMonth = calendar.get(Calendar.MONTH) + 1; // 현재 월 가져오기 (+1 더해주는 이유는 Calendar.MONTH가 0~11 값을 반환하기 때문입니다.)
-        int curDay = calendar.get(Calendar.DAY_OF_MONTH) + 1; // 현재 일자 가져오기
+        int curDay = calendar.get(Calendar.DAY_OF_MONTH); // 현재 일자 가져오기
 
         // 현재 날짜에 해당하는 항목을 선택하도록 설정
         yearSpinner.setSelection(itemList.indexOf(String.valueOf(curYear)));
@@ -127,8 +127,11 @@ public class SalesActivity extends AppCompatActivity {
                 // 선택된 값을 int 형으로 변환하기
                 int year = Integer.parseInt(yearSpinner.getSelectedItem().toString());
                 int month = Integer.parseInt(monthSpinner.getSelectedItem().toString());
+                if(daySpinner.getSelectedItem().toString().equals("전체")) {
+                    getSales_month(year, month);
+                    return;
+                }
                 int day = Integer.parseInt(daySpinner.getSelectedItem().toString());
-
                 // getSales 함수 호출하기
                 getSales(year, month, day); // year, month, day를 매개변수로 전달
             }
@@ -148,6 +151,10 @@ public class SalesActivity extends AppCompatActivity {
                 // 선택된 값을 int 형으로 변환하기
                 int year = Integer.parseInt(yearSpinner.getSelectedItem().toString());
                 int month = Integer.parseInt(monthSpinner.getSelectedItem().toString());
+                if(daySpinner.getSelectedItem().toString().equals("전체")) {
+                    getSales_month(year, month);
+                    return;
+                }
                 int day = Integer.parseInt(daySpinner.getSelectedItem().toString());
 
                 // getSales 함수 호출하기
@@ -169,6 +176,10 @@ public class SalesActivity extends AppCompatActivity {
                 // 선택된 값을 int 형으로 변환하기
                 int year = Integer.parseInt(yearSpinner.getSelectedItem().toString());
                 int month = Integer.parseInt(monthSpinner.getSelectedItem().toString());
+                if(daySpinner.getSelectedItem().toString().equals("전체")) {
+                    getSales_month(year, month);
+                    return;
+                }
                 int day = Integer.parseInt(daySpinner.getSelectedItem().toString());
 
                 // getSales 함수 호출하기
@@ -229,7 +240,7 @@ public class SalesActivity extends AppCompatActivity {
                             JSONObject responseJson = new JSONObject(responseBody);
                             JSONObject data = responseJson.getJSONObject("data");
                             JSONObject count = data.getJSONObject("count");
-                            int totalPrice = data.getInt("totalPrice");
+                            String totalPrice = data.getString("totalPrice");
 
 
                             // JSONObject에서 키들을 Iterator로 가져오기
@@ -264,7 +275,65 @@ public class SalesActivity extends AppCompatActivity {
         );
     }
 
-    private void displaytotal(int totalPrice) {
+    public void getSales_month(int year, int month) {
+        JSONObject jsonBody = new JSONObject();
+        try {
+            jsonBody.put("id", LoginActivity.cur_id);
+            jsonBody.put("password", LoginActivity.cur_pw);
+            jsonBody.put("year", year);
+            jsonBody.put("month", month);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        ServerCommunicationHelper.sendRequest(
+                "https://sm-kiosk.kro.kr/order/monthOrder",
+                ServerCommunicationHelper.HttpMethod.POST,
+                jsonBody,
+                new ServerCommunicationHelper.ResultCallback() {
+                    @Override
+                    public void onSuccess(String responseBody) {
+                        try {
+                            // 받아온 JSON 데이터를 파싱
+                            JSONObject responseJson = new JSONObject(responseBody);
+                            JSONObject data = responseJson.getJSONObject("data");
+                            JSONObject count = data.getJSONObject("count");
+                            String totalPrice = data.getString("totalPrice");
+
+
+                            // JSONObject에서 키들을 Iterator로 가져오기
+                            Iterator<String> keysIterator = count.keys();
+                            LinearLayout salesLayout = findViewById(R.id.sales); // sales LinearLayout
+                            LinearLayout totalLayout = findViewById(R.id.totalprice); // total LinearLayout
+                            salesLayout.removeAllViews();// 하나만 나와야하는데 계속나오는거 수정
+                            totalLayout.removeAllViews();// 하나만 나와야하는데 계속나오는거 수정.
+
+                            // 모든 키와 값 출력하기
+                            while (keysIterator.hasNext()) {
+                                String menu = keysIterator.next(); // 메뉴
+                                String value = count.getString(menu); // 값
+
+                                // 데이터를 활용하여 화면에 표시하는 로직을 작성
+                                displaySalesData(menu, value);
+                            }
+
+                            displaytotal(totalPrice);
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+
+                    @Override
+                    public void onFailure(Exception e) {
+                        System.out.println("xxx");
+                    }
+                }
+        );
+    }
+
+    private void displaytotal(String totalPrice) {
         LinearLayout totalLayout = findViewById(R.id.totalprice); // total LinearLayout
 
         // TextView를 생성하고 데이터를 설정하여 추가

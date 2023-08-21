@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
-INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
-INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
-INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
 MERGED from [com.android.volley:volley:1.2.1] /Users/seungju/.gradle/caches/transforms-3/8ea072cbdcc3dd02ed860e9547d87b8d/transformed/jetified-volley-1.2.1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/seungju/.gradle/caches/transforms-3/34707bfca2bc75fa253289b2206ed362/transformed/jetified-picasso-2.71828/AndroidManifest.xml:2:1-14:12
 MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/seungju/.gradle/caches/transforms-3/e942d7c88c17f4a036feb0bc5b62c648/transformed/jetified-glide-4.12.0/AndroidManifest.xml:2:1-12:12
@@ -49,35 +49,35 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/seungju/.gradle/ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/seungju/.gradle/caches/transforms-3/3720f74479d1bf1b71b3563ead82bc28/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/seungju/.gradle/caches/transforms-3/89d7c0a63c4c68190d59f33c4abce116/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/seungju/.gradle/caches/transforms-3/17cba7b38a0751cd1f4e29bcbc56ae96/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
-INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
-INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
 	package
-		INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
-		INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
+		INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
-		INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
+		INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
-		INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:2:1-47:12
+		INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:6:5-71
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:6:5-71
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:6:22-68
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:6:22-68
 application
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:8:5-45:19
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:8:5-45:19
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/seungju/.gradle/caches/transforms-3/34707bfca2bc75fa253289b2206ed362/transformed/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/seungju/.gradle/caches/transforms-3/34707bfca2bc75fa253289b2206ed362/transformed/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
 MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/seungju/.gradle/caches/transforms-3/e942d7c88c17f4a036feb0bc5b62c648/transformed/jetified-glide-4.12.0/AndroidManifest.xml:10:5-20
@@ -101,95 +101,95 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/seungju/.gradle/cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] /Users/seungju/.gradle/caches/transforms-3/55dedc70b95a473650eda30d4efd0f99/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:13:9-41
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:13:9-41
 	android:fullBackupContent
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:11:9-54
 	android:roundIcon
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:14:9-54
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:14:9-54
 	tools:targetApi
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:18:9-29
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:18:9-29
 	android:icon
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:16:9-43
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:16:9-43
 	android:dataExtractionRules
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:10:9-65
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:10:9-65
 	android:usesCleartextTraffic
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:17:9-44
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:17:9-44
 activity#com.teamtwo.kiosk.PayFailActivity
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:19:9-21:40
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:19:9-21:40
 	android:exported
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:21:13-37
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:20:13-44
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:20:13-44
 activity#com.teamtwo.kiosk.LoginActivity
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:22:9-30:20
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:22:9-30:20
 	android:exported
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:24:13-36
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:24:13-36
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:23:13-42
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:23:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:25:13-29:29
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:26:17-69
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:26:25-66
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:28:17-77
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:28:27-74
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:28:27-74
 activity#com.teamtwo.kiosk.ManageActivity
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:31:9-51
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:31:9-51
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:31:19-49
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:31:19-49
 activity#com.teamtwo.kiosk.ProductActivity
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:32:9-52
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:32:9-52
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:32:19-50
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:32:19-50
 activity#com.teamtwo.kiosk.AddMenuPopUp
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:33:9-49
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:33:9-49
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:33:19-47
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:33:19-47
 activity#com.teamtwo.kiosk.ProductListActivity
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:34:9-56
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:34:9-56
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:34:19-54
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:34:19-54
 activity#com.teamtwo.kiosk.TableNumberActivity
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:35:9-56
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:35:9-56
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:35:19-54
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:35:19-54
 activity#com.teamtwo.kiosk.MenuForUser
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:36:9-48
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:36:9-48
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:36:19-46
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:36:19-46
 activity#com.teamtwo.kiosk.SalesActivity
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:37:9-50
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:37:9-50
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:37:19-48
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:37:19-48
 activity#com.teamtwo.kiosk.SalesSlipActivity
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:38:9-54
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:38:9-54
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:38:19-52
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:38:19-52
 activity#com.teamtwo.kiosk.PaySuccessActivity
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:39:9-41:40
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:39:9-41:40
 	android:exported
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:41:13-37
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:40:13-47
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:40:13-47
 activity#com.teamtwo.kiosk.PayActivity
-ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:42:9-44:40
+ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:42:9-44:40
 	android:exported
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:44:13-37
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml:43:13-40
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml:43:13-40
 uses-sdk
-INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
-INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
+INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
+INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
 MERGED from [com.android.volley:volley:1.2.1] /Users/seungju/.gradle/caches/transforms-3/8ea072cbdcc3dd02ed860e9547d87b8d/transformed/jetified-volley-1.2.1/AndroidManifest.xml:5:5-43
 MERGED from [com.android.volley:volley:1.2.1] /Users/seungju/.gradle/caches/transforms-3/8ea072cbdcc3dd02ed860e9547d87b8d/transformed/jetified-volley-1.2.1/AndroidManifest.xml:5:5-43
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/seungju/.gradle/caches/transforms-3/34707bfca2bc75fa253289b2206ed362/transformed/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
@@ -280,16 +280,16 @@ MERGED from [androidx.print:print:1.0.0] /Users/seungju/.gradle/caches/transform
 MERGED from [androidx.print:print:1.0.0] /Users/seungju/.gradle/caches/transforms-3/89d7c0a63c4c68190d59f33c4abce116/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/seungju/.gradle/caches/transforms-3/17cba7b38a0751cd1f4e29bcbc56ae96/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/seungju/.gradle/caches/transforms-3/17cba7b38a0751cd1f4e29bcbc56ae96/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
-INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
-INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
+INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
+INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
-		ADDED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
+		ADDED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/seungju/Desktop/github_desktop/무제/Kiosk/app/src/main/AndroidManifest.xml
 provider#com.squareup.picasso.PicassoProvider
 ADDED from [com.squareup.picasso:picasso:2.71828] /Users/seungju/.gradle/caches/transforms-3/34707bfca2bc75fa253289b2206ed362/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
 	android:authorities

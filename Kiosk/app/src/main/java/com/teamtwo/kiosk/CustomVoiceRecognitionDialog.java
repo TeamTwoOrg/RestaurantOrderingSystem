@@ -206,6 +206,21 @@ public class CustomVoiceRecognitionDialog extends Dialog {
                 } catch (JSONException e) {
                     throw new RuntimeException(e);
                 }
+                LayoutInflater inflater = LayoutInflater.from(getContext());
+                View addMenuLayout = inflater.inflate(R.layout.add_menu, null, false);
+                View detail_selecting_window_activity = inflater.inflate(R.layout.detail_seleting_window_activity, null, false);
+                TextView menuNameTextView = addMenuLayout.findViewById(R.id.user_menu_name);
+                TextView menuPriceTextView = addMenuLayout.findViewById(R.id.user_menu_price);
+                TextView menuDetailTextView = addMenuLayout.findViewById(R.id.user_menu_detail);
+                Button orderingBtn_temp = detail_selecting_window_activity.findViewById(R.id.orderingBtn_temp);
+
+
+                LinearLayout inner = addMenuLayout.findViewById(R.id.middle_inner);
+                inner.setLayoutParams(new LinearLayout.LayoutParams(
+                        430,
+                        1016
+                ));
+                inner.setOrientation(LinearLayout.VERTICAL);
 
                 ImageView menuImageView = new ImageView(getContext());
                 menuImageView.setId(View.generateViewId());
@@ -218,7 +233,7 @@ public class CustomVoiceRecognitionDialog extends Dialog {
                         .load(imageURL)
                         .into(menuImageView);
 
-
+                inner.addView(menuImageView, 0);
                 if (searchedMenuString.equals(menuNameFromMenyListString)){
 
 
@@ -229,7 +244,7 @@ public class CustomVoiceRecognitionDialog extends Dialog {
                     menuNameTextView.setText(menuNameFromMenyListString);
                     menuPriceTextView.setText(price_menu);
 
-                    selectedMenuDetailActivity.setDetailPopupImage(menuImageView);
+                    selectedMenuDetailActivity.setDetailPopupImage(imageURL);
                     selectedMenuDetailActivity.setDetail_popup_name(menuNameFromMenyListString);
                     selectedMenuDetailActivity.setDetail_popup_script(menuTextFromMenyListString);
 

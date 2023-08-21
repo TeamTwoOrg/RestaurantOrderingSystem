@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import com.bumptech.glide.Glide;
+
 public class SelectedMenuDetailActivity extends Dialog {
     private ImageView detail_popup_image;
     private TextView detail_popup_name;
@@ -74,6 +76,14 @@ public class SelectedMenuDetailActivity extends Dialog {
     }
     public void setDetailPopupImage(ImageView menuImageVIew) {
         detail_popup_image.setImageDrawable(menuImageVIew.getDrawable());
+    }
+
+    public void setDetailPopupImage(String menuImageVIew) {
+        ImageView detailPopupImage = findViewById(R.id.detail_popup_image); // 이미지를 표시할 ImageView 찾기
+
+        Glide.with(getContext())
+                .load(menuImageVIew)
+                .into(detailPopupImage); // Glide를 사용하여 이미지 설정
     }
 
     public void setDetail_popup_name(TextView detail_popup_name){

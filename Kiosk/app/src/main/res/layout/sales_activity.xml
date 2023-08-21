@@ -44,7 +44,6 @@
             android:id="@+id/year_spinner"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:theme="@style/SpinnerTextStyle"
             android:layout_marginBottom="0dp"
             android:textSize="40sp"/>
 
@@ -60,7 +59,6 @@
             android:id="@+id/month_spinner"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:theme="@style/SpinnerTextStyle"
             android:layout_marginBottom="0dp"
             android:textSize="40sp"/>
 
@@ -76,13 +74,12 @@
             android:id="@+id/day_spinner"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:theme="@style/SpinnerTextStyle"
             android:layout_marginBottom="0dp"
             android:layout_marginRight="500dp"
             android:textSize="40sp"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/saleslook"
+            android:id="@+id/salesSlipbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/gmarketsansmedium"
@@ -97,18 +94,32 @@
 
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
+        <LinearLayout
+            android:id="@+id/sales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF1493"
+            android:background="@drawable/round_border"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </ScrollView>
 
     <LinearLayout
-        android:id="@+id/sales"
+        android:id="@+id/totalprice"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:backgroundTint="#FF1493"
-        android:background="@drawable/round_border"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
     </LinearLayout>
 
 </LinearLayout>
+
+
 
 
 

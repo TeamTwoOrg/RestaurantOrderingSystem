@@ -32,8 +32,10 @@
         <activity android:name=".ProductActivity"/>
         <activity android:name=".AddMenuPopUp"/>
         <activity android:name=".ProductListActivity"/>
+        <activity android:name=".TableNumberActivity"/>
         <activity android:name=".MenuForUser"/>
         <activity android:name=".SalesActivity"/>
+        <activity android:name=".SalesSlipActivity"/>
         <activity
             android:name=".PaySuccessActivity"
             android:exported="false" />

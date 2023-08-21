@@ -2,6 +2,7 @@ package com.teamtwo.kiosk;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -79,8 +80,15 @@ public class SelectedMenuDetailActivity extends Dialog {
         this.detail_popup_name.setText(detail_popup_name.getText().toString());
     }
 
+    public void setDetail_popup_name(String detail_popup_name){
+        this.detail_popup_name.setText(detail_popup_name);
+    }
+
     public void setDetail_popup_script(TextView detail_popup_script){
         this.detail_popup_script.setText(detail_popup_script.getText().toString());
+    }
+    public void setDetail_popup_script(String detail_popup_script){
+        this.detail_popup_script.setText(detail_popup_script);
     }
 
 }

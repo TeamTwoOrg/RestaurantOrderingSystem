@@ -47,8 +47,10 @@
         <activity android:name="com.teamtwo.kiosk.ProductActivity" />
         <activity android:name="com.teamtwo.kiosk.AddMenuPopUp" />
         <activity android:name="com.teamtwo.kiosk.ProductListActivity" />
+        <activity android:name="com.teamtwo.kiosk.TableNumberActivity" />
         <activity android:name="com.teamtwo.kiosk.MenuForUser" />
         <activity android:name="com.teamtwo.kiosk.SalesActivity" />
+        <activity android:name="com.teamtwo.kiosk.SalesSlipActivity" />
         <activity
             android:name="com.teamtwo.kiosk.PaySuccessActivity"
             android:exported="false" />

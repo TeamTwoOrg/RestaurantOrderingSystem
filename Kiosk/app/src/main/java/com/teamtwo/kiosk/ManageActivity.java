@@ -32,7 +32,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
-
+import android.media.MediaPlayer;
 public class ManageActivity extends AppCompatActivity {
 
     private ListView Allorderlist; // 주문 리스트
@@ -47,6 +47,8 @@ public class ManageActivity extends AppCompatActivity {
     private int orderViewSelect;
     public static ArrayList<JSONObject> menuList;
 
+    private MediaPlayer mediaPlayer; // 소리 파일
+
     // 일정 시간 간격으로 주문 데이터를 로드하는 메서드 호출
     private void startLoadingData() {
         if (!isRunning) {
@@ -55,7 +57,8 @@ public class ManageActivity extends AppCompatActivity {
                 @Override
                 public void run() {
                     new FetchProductDataTask().execute();
-                    handler.postDelayed(this, 1000); // 10초마다 호출
+                    handler.postDelayed(this, 1000); // 1초마다 호출
+
                 }
             };
             handler.post(runnable);
@@ -291,15 +294,24 @@ public class ManageActivity extends AppCompatActivity {
         }
     }
 
+    public static int waitingCnt = -1;
+
     public void spreadOrderData(ArrayList<JSONObject> menuList) throws JSONException {
         LinearLayout allOrderView = findViewById(R.id.orderZone);
         allOrderView.removeAllViews();
 
         Typeface customFont = ResourcesCompat.getFont(this, R.font.gmarketsanslight);
 
+        int curWaitingCnt = 0;
         for(int i=menuList.size()-1; i>=0; i--) { // 최신 주문이 위로
             String status = menuList.get(i).getString("status");
             int statusInt = Integer.parseInt(status);
+
+            // 대기가 몇개인지 센다.
+            if (statusInt == 0) {
+                curWaitingCnt += 1;
+            }
+
             if (orderViewSelect != 2) {
                 if (statusInt != orderViewSelect) {
                     continue;
@@ -361,7 +373,7 @@ public class ManageActivity extends AppCompatActivity {
                     ViewGroup.LayoutParams.WRAP_CONTENT,
                     1 // 가로 가중치를 1로 설정하여 화면을 꽉 채우도록 함
             ));
-            tableText.setPadding(80, 14, 0, 14);
+            tableText.setPadding(100, 14, 0, 14);
             tableText.setTextSize(28);
             tableText.setTextColor(Color.WHITE);
             tableText.setTypeface(customFont);
@@ -375,11 +387,12 @@ public class ManageActivity extends AppCompatActivity {
                     ViewGroup.LayoutParams.WRAP_CONTENT,
                     1 // 가로 가중치를 1로 설정하여 화면을 꽉 채우도록 함
             ));
-            nameText.setPadding(40, 14, 0, 14);
-            nameText.setTextSize(28);
+            nameText.setPadding(0, 14, 70, 14);
+            nameText.setTextSize(23);
             nameText.setTextColor(Color.WHITE);
             nameText.setTypeface(customFont);
             nameText.setText(menuList.get(i).getJSONObject("menu").getString("name"));
+            nameText.setGravity(Gravity.CENTER);
             textLayout.addView(nameText);
 
             // 주문 시간
@@ -389,8 +402,8 @@ public class ManageActivity extends AppCompatActivity {
                     ViewGroup.LayoutParams.WRAP_CONTENT,
                     1 // 가로 가중치를 1로 설정하여 화면을 꽉 채우도록 함
             ));
-            timeText.setPadding(40, 14, 0, 14);
-            timeText.setTextSize(28);
+            timeText.setPadding(60, 14, 0, 14);
+            timeText.setTextSize(20);
             timeText.setTextColor(Color.WHITE);
             timeText.setTypeface(customFont);
             String time = menuList.get(i).getString("createdAt").substring(11, 19);
@@ -455,8 +468,28 @@ public class ManageActivity extends AppCompatActivity {
             newLayout.addView(textLayout);
             allOrderView.addView(newLayout);
         }
-    }
 
+        Log.v("Need Code", "last: " + waitingCnt + " | cur: "+ curWaitingCnt);
+        // 이전 대기 개수와 비교하기
+        if (waitingCnt < 0) { // 한번도 초기화 안된 상태라면
+            waitingCnt = curWaitingCnt;
+        } else if (waitingCnt < curWaitingCnt) { // 대기 개수가 늘어났다면
+            // 띵동~ 소리내기
+            // 여기에 소리내는 코드를 추가해야함.
+            playNewOrderSound();
+            waitingCnt = curWaitingCnt;
+            Log.v("Need Code", "띵동~");
+        } else {
+            waitingCnt = curWaitingCnt;
+        }
+    }
+    // 소리나는 코드
+    private void playNewOrderSound() {
+        if (mediaPlayer == null) {
+            mediaPlayer = MediaPlayer.create(this, R.raw.bell);
+        }
+        mediaPlayer.start();
+    }
     public void changeOrder(String orderId, int status) {
         JSONObject jsonBody = new JSONObject();
         try {

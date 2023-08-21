@@ -67,6 +67,7 @@ public class PayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay);
+
 //        baseURL = "http://192.168.3.49:4000";
         baseURL = "https://sm-kiosk.kro.kr";
         // 초기화

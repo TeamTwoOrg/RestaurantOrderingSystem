@@ -4,6 +4,9 @@
     <shared>
       <config>
         <device id="_device_class_tablet" />
+        <device id="automotive_1024p_landscape" />
+        <device id="desktop_large" />
+        <device id="desktop_medium" />
         <device id="_device_class_desktop" />
         <device id="Nexus 9" />
       </config>
@@ -13,16 +16,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6d79a36-e53d-4f5b-85cd-abc2f57e97ba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-    </list>
+    <list default="true" id="b6d79a36-e53d-4f5b-85cd-abc2f57e97ba" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/seungju/.android/avd/GalaxyT3_API_28.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[R9JT103Y2WR]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -69,10 +69,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
-        <option value="Class" />
-        <option value="layoutResourceFile" />
         <option value="valueResourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -86,6 +86,7 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2U1UveNcr8YftR16Hd7zCGtooXC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -97,8 +98,8 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/res/drawable",
-    "memory.settings.postsync.last.time.stamp": "1692323087223",
+    "last_opened_file_path": "/Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/res/drawable",
+    "memory.settings.postsync.last.time.stamp": "1692541720972",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "show.migrate.to.gradle.popup": "false"
   }
@@ -113,6 +114,7 @@
       <recent name="com.teamtwo.kiosk" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.teamtwo.kiosk.fragments" />
       <recent name="com.teamtwo.kiosk" />
     </key>
   </component>
@@ -197,20 +199,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/teamtwo/kiosk/fragments/SnackFragment.java</url>
-          <line>34</line>
-          <properties class="com.teamtwo.kiosk.fragments.SnackFragment">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -2437,10 +2437,24 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable background
 drawable bottom_border
+drawable btn_back_space
+drawable btn_backspace
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
 drawable btn_checkbox_unchecked_to_checked_mtrl_animation
+drawable btn_checked
+drawable btn_delete_all
+drawable btn_number_0
+drawable btn_number_1
+drawable btn_number_2
+drawable btn_number_3
+drawable btn_number_4
+drawable btn_number_5
+drawable btn_number_6
+drawable btn_number_7
+drawable btn_number_8
+drawable btn_number_9
 drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
@@ -2457,6 +2471,7 @@ drawable button_round
 drawable button_round_half
 drawable button_special
 drawable button_top
+drawable dancing_muji
 drawable darker_button_background
 drawable darker_button_half_background
 drawable darker_button_half_diff_background
@@ -2469,6 +2484,8 @@ drawable design_snackbar_background
 drawable empty_plate
 drawable esc
 drawable esc_1
+drawable failed
+drawable glow_pink_background
 drawable ic_clock_black_24dp
 drawable ic_down
 drawable ic_keyboard_black_24dp
@@ -2481,6 +2498,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable kakaopay
 drawable login_button_background
 drawable logo
 drawable logo1943
@@ -2534,8 +2552,11 @@ drawable redbox
 drawable round_border
 drawable shop_plus
 drawable sj_feather_pen_icon
+drawable sorry_we_cant
+drawable table_img
 drawable test_custom_background
 drawable test_level_drawable
+drawable testresultofpay_custom_btn
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable torder
@@ -2637,6 +2658,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id apologized_muji
 id app_bar_main
 id arc
 id asConfigured
@@ -2658,6 +2680,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_back_space
+id btn_delete_num_all
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2685,6 +2709,7 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
+id closeButton
 id closest
 id collapseActionView
 id compress
@@ -2705,6 +2730,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id dancing_muji
 id date_picker_actions
 id day_spinner
 id decelerate
@@ -2809,6 +2835,7 @@ id itemPriceTextView
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
+id kakaopay_View
 id labeled
 id layout
 id left
@@ -2908,6 +2935,16 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id num_0
+id num_1
+id num_2
+id num_3
+id num_4
+id num_5
+id num_6
+id num_7
+id num_8
+id num_9
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -2929,6 +2966,7 @@ id pathRelative
 id paymentButton
 id peekHeight
 id percent
+id piechart
 id pin
 id plus
 id position
@@ -2950,6 +2988,7 @@ id right_side
 id rounded
 id row_index_key
 id sales
+id salesSlipbtn
 id saleslook
 id save_non_transition_alpha
 id save_overlay_view
@@ -2975,6 +3014,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id set_number
 id sharedValueSet
 id sharedValueUnset
 id shoppingcart_linear
@@ -3021,6 +3061,7 @@ id superRL
 id supportScrollUp
 id switching_zone
 id tabMode
+id table_numbering_textview
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -3045,6 +3086,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textTotalPrice
 id textView3_for_align
 id text_input_end_icon
 id text_input_error_icon
@@ -3067,6 +3109,7 @@ id topButtonMeal
 id topButtonSnack
 id topPanel
 id totalPrice
+id totalprice
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3198,10 +3241,12 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login_main
+layout activity_numbering_table
 layout activity_pay
 layout activity_pay_fail
 layout activity_pay_success
 layout activity_product_list
+layout activity_sales_slip
 layout add_menu
 layout custom_dialog
 layout custom_voice_dialog
@@ -3312,6 +3357,7 @@ layout user_for_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw bell
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

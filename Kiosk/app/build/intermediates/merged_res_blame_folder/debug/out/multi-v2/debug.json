@@ -572,6 +572,25 @@
             "outputFile": "com.teamtwo.kiosk.app-merged_res-29:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
+                    "source": "/Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/res/values-night/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "312"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "163"
+                    }
+                },
+                {
                     "source": "/Users/seungju/.gradle/caches/transforms-3/a965dbd46dad388efad08cc8f6d01086/transformed/material-1.5.0/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33",
@@ -603,25 +622,6 @@
                         "startOffsets": "168,238,322,406,502,604,706,3454",
                         "endColumns": "69,83,83,95,101,101,93,88",
                         "endOffsets": "233,317,401,497,599,701,795,3538"
-                    }
-                },
-                {
-                    "source": "/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/res/values-night/themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "312"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "163"
                     }
                 }
             ]
@@ -4204,23 +4204,6 @@
             "outputFile": "com.teamtwo.kiosk.app-merged_res-29:/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "2,5,4,6,3",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,182,139,257,97",
-                        "endColumns": "41,58,42,58,41",
-                        "endOffsets": "92,236,177,311,134"
-                    },
-                    "to": {
-                        "startLines": "586,599,645,796,820",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "29680,30612,33775,44716,46355",
-                        "endColumns": "41,58,42,58,41",
-                        "endOffsets": "29717,30666,33813,44770,46392"
-                    }
-                },
-                {
                     "source": "/Users/seungju/.gradle/caches/transforms-3/e942d7c88c17f4a036feb0bc5b62c648/transformed/jetified-glide-4.12.0/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -4238,7 +4221,7 @@
                     }
                 },
                 {
-                    "source": "/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/res/values/ids.xml",
+                    "source": "/Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/res/values/ids.xml",
                     "from": {
                         "startLines": "3,2,5,4",
                         "startColumns": "4,4,4,4",
@@ -4307,6 +4290,25 @@
                         "endLines": "86,7855,9741,9825",
                         "endColumns": "60,12,24,24",
                         "endOffsets": "4506,524650,592973,597489"
+                    }
+                },
+                {
+                    "source": "/Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "215"
+                    },
+                    "to": {
+                        "startLines": "5152",
+                        "startColumns": "4",
+                        "startOffsets": "344631",
+                        "endLines": "5154",
+                        "endColumns": "12",
+                        "endOffsets": "344773"
                     }
                 },
                 {
@@ -4437,6 +4439,23 @@
                     }
                 },
                 {
+                    "source": "/Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "42",
+                        "endOffsets": "54"
+                    },
+                    "to": {
+                        "startLines": "1597",
+                        "startColumns": "4",
+                        "startOffsets": "97054",
+                        "endColumns": "42",
+                        "endOffsets": "97092"
+                    }
+                },
+                {
                     "source": "/Users/seungju/.gradle/caches/transforms-3/98523101c9963e531757127a1e8b685c/transformed/transition-1.2.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
@@ -4473,22 +4492,20 @@
                     }
                 },
                 {
-                    "source": "/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/res/values/styles.xml",
+                    "source": "/Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/res/values/colors.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "215"
+                        "startLines": "2,5,4,6,3",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,182,139,257,97",
+                        "endColumns": "41,58,42,58,41",
+                        "endOffsets": "92,236,177,311,134"
                     },
                     "to": {
-                        "startLines": "5152",
-                        "startColumns": "4",
-                        "startOffsets": "344631",
-                        "endLines": "5154",
-                        "endColumns": "12",
-                        "endOffsets": "344773"
+                        "startLines": "586,599,645,796,820",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "29680,30612,33775,44716,46355",
+                        "endColumns": "41,58,42,58,41",
+                        "endOffsets": "29717,30666,33813,44770,46392"
                     }
                 },
                 {
@@ -4511,25 +4528,6 @@
                     }
                 },
                 {
-                    "source": "/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/res/values/themes.xml",
-                    "from": {
-                        "startLines": "2,7",
-                        "startColumns": "4,4",
-                        "startOffsets": "100,320",
-                        "endLines": "5,7",
-                        "endColumns": "12,58",
-                        "endOffsets": "314,374"
-                    },
-                    "to": {
-                        "startLines": "2077,5545",
-                        "startColumns": "4,4",
-                        "startOffsets": "136281,372703",
-                        "endLines": "2080,5545",
-                        "endColumns": "12,57",
-                        "endOffsets": "136389,372756"
-                    }
-                },
-                {
                     "source": "/Users/seungju/.gradle/caches/transforms-3/9e1d4f8f0375e8e046d4b4131d85e943/transformed/recyclerview-1.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
@@ -4546,6 +4544,25 @@
                         "endLines": "448,967,968,969,977,978,979,1452,11040",
                         "endColumns": "55,58,47,55,74,75,71,65,24",
                         "endOffsets": "22023,56100,56148,56204,56890,56966,57038,88526,641037"
+                    }
+                },
+                {
+                    "source": "/Users/seungju/Desktop/RestaurantOrderingSystem-8-20-new/Kiosk/app/src/main/res/values/themes.xml",
+                    "from": {
+                        "startLines": "2,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "100,320",
+                        "endLines": "5,7",
+                        "endColumns": "12,58",
+                        "endOffsets": "314,374"
+                    },
+                    "to": {
+                        "startLines": "2077,5545",
+                        "startColumns": "4,4",
+                        "startOffsets": "136281,372703",
+                        "endLines": "2080,5545",
+                        "endColumns": "12,57",
+                        "endOffsets": "136389,372756"
                     }
                 },
                 {
@@ -4582,23 +4599,6 @@
                         "startOffsets": "91663",
                         "endColumns": "42",
                         "endOffsets": "91701"
-                    }
-                },
-                {
-                    "source": "/Users/seungju/Desktop/github_desktop/무제/RestaurantOrderingSystem/Kiosk/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "42",
-                        "endOffsets": "54"
-                    },
-                    "to": {
-                        "startLines": "1597",
-                        "startColumns": "4",
-                        "startOffsets": "97054",
-                        "endColumns": "42",
-                        "endOffsets": "97092"
                     }
                 },
                 {

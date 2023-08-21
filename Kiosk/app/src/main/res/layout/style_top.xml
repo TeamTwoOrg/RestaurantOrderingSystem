@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#292828">
+
+    <!-- 로고 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.85"
+        android:background="@drawable/torder_logo"
+        android:layout_marginLeft="0sp"
+        android:layout_marginRight="25dp"
+        android:scaleType="centerCrop" />
+
+    <!-- 공백 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.79"/>
+
+    <!-- 버튼 -->
+
+    <Button
+        android:id="@+id/topButtonMeal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="식사"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:background="#00ff0000"
+        android:layout_weight="0.9"
+        android:onClick="clickHandler"/>
+
+    <Button
+        android:id="@+id/topButtonSnack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="안주"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:background="#00ff0000"
+        android:layout_weight="0.9"
+        android:onClick="clickHandler"/>
+    <Button
+        android:id="@+id/topButtonLiquor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="주류"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:background="#00ff0000"
+        android:layout_weight="0.9"
+        android:onClick="clickHandler"/>
+    <Button
+        android:id="@+id/topButtonBeverage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="음료"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:background="#00ff0000"
+        android:layout_weight="0.9"
+        android:onClick="clickHandler"/>
+
+    <!-- 공백 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.64"/>
+
+</LinearLayout>

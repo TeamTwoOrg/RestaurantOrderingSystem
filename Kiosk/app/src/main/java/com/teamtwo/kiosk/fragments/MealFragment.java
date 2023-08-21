@@ -69,17 +69,6 @@ public class MealFragment extends Fragment {
                 // add_menu 레이아웃 인플레이션
                 View addMenuLayout = inflater.inflate(R.layout.add_menu, null, false);
                 View detail_selecting_window_activity = inflater.inflate(R.layout.detail_seleting_window_activity, null, false);
-//                View style_top = inflater.inflate(R.layout.style_top,null,false);
-//
-//                Button topButtonSnack = style_top.findViewById(R.id.topButtonSnack);
-//                Button topButtonLiquor = style_top.findViewById(R.id.topButtonLiquor);
-//                Button topButtonBeverage = style_top.findViewById(R.id.topButtonBeverage);
-//                Button topButtonMeal = style_top.findViewById(R.id.topButtonMeal);
-//
-//                topButtonSnack.setTextColor(getResources().getColor(R.color.white));
-//                topButtonLiquor.setTextColor(getResources().getColor(R.color.white));
-//                topButtonBeverage.setTextColor(getResources().getColor(R.color.white));
-//                topButtonMeal.setTextColor(getResources().getColor(R.color.hot_pink));
 
                 ImageView menuImageView;
                 TextView menuNameTextView = addMenuLayout.findViewById(R.id.user_menu_name);

@@ -1,0 +1,23 @@
+<!-- glow_pink_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer layer: Slightly larger pink gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFA6C5" />
+            <corners android:radius="50dp" /> <!-- Half of text size -->
+        </shape>
+    </item>
+
+    <!-- Inner layer: Pink gradient with a smaller size -->
+    <item android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FFF5F9"
+                android:endColor="#FFA6C5"
+                android:type="radial" />
+            <corners android:radius="48dp" /> <!-- Slightly smaller than outer radius -->
+        </shape>
+    </item>
+
+</layer-list>

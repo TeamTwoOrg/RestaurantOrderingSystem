@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#292828">
+
+    <!--voice gif icon 이 들어갈 공백-->
+    <LinearLayout
+        android:id="@+id/voiceIconPosition"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00ff0000"
+        android:layout_weight="1.1"
+        android:orientation="vertical"/>
+
+    <!-- 음성 인식 버튼 button_special -->
+    <Button
+        android:id="@+id/voice_recognition_btn_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:text="음성 인식"
+        android:textSize="24dp"
+        android:background="#00ff0000"
+        android:textColor="#FFFFFF" />
+
+
+    <!-- 공백 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"/>
+
+
+    <Button
+        android:id="@+id/cartbutton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_background_forbottom"
+
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="3dp"
+
+        android:text="장바구니"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+
+</LinearLayout>

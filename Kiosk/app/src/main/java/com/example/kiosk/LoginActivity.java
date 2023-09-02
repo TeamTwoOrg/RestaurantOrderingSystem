@@ -1,14 +1,17 @@
-package com.teamtwo.kiosk;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
+package com.example.kiosk;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Button;
+import android.util.Log;
+
+
+import com.teamtwo.kiosk.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -67,14 +70,6 @@ public class LoginActivity extends AppCompatActivity {
         password_text.setAlpha(originAlpha);
         password_text.setEnabled(true);
 
-        // 사용자버튼 작동
-        user_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MenuForUser.class);
-                startActivity(intent);
-            }
-        });
 
         // 관리자버튼 작동
         manage_button.setOnClickListener(new View.OnClickListener() {

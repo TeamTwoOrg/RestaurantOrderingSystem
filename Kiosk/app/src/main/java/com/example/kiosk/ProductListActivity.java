@@ -1,20 +1,26 @@
-package com.teamtwo.kiosk;
+package com.example.kiosk;
 
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.Space;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
+
+import com.teamtwo.kiosk.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -22,6 +28,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import okhttp3.FormBody;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -204,7 +211,7 @@ public class ProductListActivity extends AppCompatActivity {
             // 추가 설명
             TextView subText = new TextView(this);
             subText.setLayoutParams(defaultLayout);
-            subText.setTextSize(17);
+            subText.setTextSize(28);
             subText.setTextColor(Color.WHITE);
             subText.setTypeface(customFont);
             subText.setGravity(Gravity.CENTER_HORIZONTAL);

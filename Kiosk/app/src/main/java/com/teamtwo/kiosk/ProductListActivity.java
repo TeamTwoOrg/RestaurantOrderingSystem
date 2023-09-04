@@ -7,8 +7,10 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Space;
 import android.widget.TextView;
@@ -40,6 +42,34 @@ public class ProductListActivity extends AppCompatActivity {
         new FetchProductDataTask().execute();
     }
 
+    public void remove_menu(String name) {
+        JSONObject jsonBody = new JSONObject();
+        try {
+            jsonBody.put("id", LoginActivity.cur_id);
+            jsonBody.put("password", LoginActivity.cur_pw);
+            jsonBody.put("name", name);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        ServerCommunicationHelper.sendRequest(
+                "https://sm-kiosk.kro.kr/menu/remove",
+                ServerCommunicationHelper.HttpMethod.POST,
+                jsonBody,
+                new ServerCommunicationHelper.ResultCallback() {
+                    @Override
+                    public void onSuccess(String responseBody) {
+                        System.out.println("변경됨");
+                    }
+
+                    @Override
+                    public void onFailure(Exception e) {
+                        System.out.println("xxx");
+                    }
+                }
+        );
+    }
+
     private class FetchProductDataTask extends AsyncTask<Void, Void, String> {
 
         @Override
@@ -53,7 +83,6 @@ public class ProductListActivity extends AppCompatActivity {
             try {
                 jsonBody.put("id", LoginActivity.cur_id);
                 jsonBody.put("password", LoginActivity.cur_pw);
-
 
                 // 필요한 다른 데이터도 추가
             } catch (JSONException e) {
@@ -72,7 +101,6 @@ public class ProductListActivity extends AppCompatActivity {
                     .build();
 
             try {
-
                 Response response = client.newCall(request).execute();
                 return response.body().string();
             } catch (Exception e) {
@@ -113,16 +141,9 @@ public class ProductListActivity extends AppCompatActivity {
                 }
 
                 spreadOrderData(menuList);
-//                 테스트 출력 코드
-//                for (JSONObject menuItem : menuList) {
-//                    // JSONObject를 보기 좋게 로그에 출력
-//                    String jsonMenuItem = menuItem.toString(4); // 들여쓰기 4칸으로 출력
-//                    Log.d("test", jsonMenuItem);
-////                                System.out.println(menuItem.getString("imageURL"));
-//                }
 
             } catch (JSONException e) {
-//                            System.err.println("실패");
+
                 e.printStackTrace();
             }
         }
@@ -135,6 +156,7 @@ public class ProductListActivity extends AppCompatActivity {
         Typeface customFont = ResourcesCompat.getFont(this, R.font.gmarketsanslight);
 
         for(int i=0; i<menuList.size(); i++) {
+
             LinearLayout newLayOut = new LinearLayout(this);
             newLayOut.setLayoutParams(new LinearLayout.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT,
@@ -148,7 +170,7 @@ public class ProductListActivity extends AppCompatActivity {
                     0,
                     ViewGroup.LayoutParams.WRAP_CONTENT
             );
-            defaultLayout.weight = 1; // weight를 1로 설정
+            defaultLayout.weight = 0.5f; // weight를 1로 설정
 
             LinearLayout.LayoutParams spaceLayout = new LinearLayout.LayoutParams(
                     0,
@@ -160,13 +182,15 @@ public class ProductListActivity extends AppCompatActivity {
             space1.setLayoutParams(spaceLayout);
             newLayOut.addView(space1);
 
+
+
             // 번호
             TextView numText = new TextView(this);
             numText.setLayoutParams(defaultLayout);
             numText.setTextSize(28);
             numText.setTextColor(Color.WHITE);
             numText.setTypeface(customFont);
-            numText.setGravity(Gravity.CENTER_HORIZONTAL);
+            numText.setGravity(Gravity.CENTER_VERTICAL);
             numText.setText(String.valueOf(i+1));
             newLayOut.addView(numText);
 
@@ -177,18 +201,26 @@ public class ProductListActivity extends AppCompatActivity {
             cateText.setTextSize(28);
             cateText.setTextColor(Color.WHITE);
             cateText.setTypeface(customFont);
-            cateText.setGravity(Gravity.CENTER_HORIZONTAL);
+            cateText.setGravity(Gravity.CENTER_VERTICAL | Gravity.START);
             cateText.setText(menuList.get(i).getString("category1"));
             newLayOut.addView(cateText);
 
+
+
             // 이름
+            LinearLayout.LayoutParams nameTextLayoutParams = new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.WRAP_CONTENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+            );
             TextView nameText = new TextView(this);
             nameText.setLayoutParams(defaultLayout);
-            nameText.setTextSize(28);
+            nameText.setTextSize(24);
             nameText.setTextColor(Color.WHITE);
             nameText.setTypeface(customFont);
-            nameText.setGravity(Gravity.CENTER_HORIZONTAL);
+            nameText.setGravity(Gravity.CENTER_VERTICAL | Gravity.START);
             nameText.setText(menuList.get(i).getString("name"));
+            nameTextLayoutParams.setMargins(0, 0, 100, 0); // 오른쪽 마진 설정
+            nameText.setPadding(0, 0, 100, 0); // 오른쪽 패딩 설정
             newLayOut.addView(nameText);
 
             // 가격
@@ -197,7 +229,7 @@ public class ProductListActivity extends AppCompatActivity {
             timeText.setTextSize(28);
             timeText.setTextColor(Color.WHITE);
             timeText.setTypeface(customFont);
-            timeText.setGravity(Gravity.CENTER_HORIZONTAL);
+            timeText.setGravity(Gravity.CENTER_VERTICAL | Gravity.START);
             timeText.setText(menuList.get(i).getString("price"));
             newLayOut.addView(timeText);
 
@@ -207,13 +239,55 @@ public class ProductListActivity extends AppCompatActivity {
             subText.setTextSize(17);
             subText.setTextColor(Color.WHITE);
             subText.setTypeface(customFont);
-            subText.setGravity(Gravity.CENTER_HORIZONTAL);
+            subText.setGravity(Gravity.CENTER_VERTICAL | Gravity.START);
             subText.setText(menuList.get(i).getString("text"));
             newLayOut.addView(subText);
 
             Space space2 = new Space(this);
             space2.setLayoutParams(spaceLayout);
             newLayOut.addView(space2);
+
+            // 메뉴 삭제 버튼
+            Button deleteButton = new Button(this);
+            deleteButton.setLayoutParams(new LinearLayout.LayoutParams(
+                    80,
+                    15
+            ));
+
+
+            deleteButton.setText("삭제");  // 버튼 텍스트 설정
+            deleteButton.setTextSize(20); // 버튼 텍스트 크기 설정
+            deleteButton.setTextColor(Color.WHITE);
+            deleteButton.setBackgroundColor(Color.RED);
+            int finalI = i;
+            deleteButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        String menuName = menuList.get(finalI).getString("name"); // 삭제할 메뉴 이름 가져오기
+                        remove_menu(menuName); // 메뉴 삭제 함수 호출
+
+                        // 메뉴 항목을 menuList에서 삭제하고 UI를 업데이트합니다.
+                        if (finalI >= 0 && finalI < menuList.size()) {
+                            menuList.remove(finalI);
+                            spreadOrderData(menuList);
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+
+
+            LinearLayout.LayoutParams deleteButtonLayoutParams = new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.WRAP_CONTENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+            );
+            deleteButtonLayoutParams.setMargins(0, 0, 130, 0); // 왼쪽 마진 설정
+            deleteButton.setLayoutParams(deleteButtonLayoutParams);
+
+
+            newLayOut.addView(deleteButton);
 
             // 마무리
             allOrderView.addView(newLayOut);

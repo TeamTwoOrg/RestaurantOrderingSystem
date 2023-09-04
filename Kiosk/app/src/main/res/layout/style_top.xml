@@ -5,11 +5,11 @@
     android:orientation="horizontal"
     android:background="#292828">
 
-    <!-- 로고 (광)-->
+    <!-- 로고 -->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.879"
+        android:layout_weight="0.85"
         android:background="@drawable/torder_logo"
         android:layout_marginLeft="0sp"
         android:layout_marginRight="25dp"

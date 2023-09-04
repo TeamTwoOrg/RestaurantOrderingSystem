@@ -9,31 +9,39 @@
         android:layout_height="600dp"
         android:orientation="vertical"
         android:background="#292828">
+        <!-- 광 -->
         <ImageView
             android:id="@+id/voiceIcon_ImageView"
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_marginLeft="90dp"
             android:src="@drawable/voice_recognition_img"
             android:scaleType="centerCrop"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:orientation="vertical">
-            <TextView
-                android:id="@+id/dialogTextView"
-                android:layout_width="wrap_content"
+            <ScrollView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:padding="16dp"
-                android:text="음성 인식 결과가 여기에 표시 됩니다."
-                android:textSize="30dp"
-                android:textColor="@color/white"/>
-
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/dialogTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:text="음성 인식 결과가 여기에 표시 됩니다.\n
+                    ex) ''사용법''  "
+                    android:textSize="30dp"
+                    android:textColor="@color/white"/>
+            </ScrollView>
             <Button
                 android:id="@+id/dialogStartButton"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="30dp"
                 android:layout_width="200dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center_horizontal"

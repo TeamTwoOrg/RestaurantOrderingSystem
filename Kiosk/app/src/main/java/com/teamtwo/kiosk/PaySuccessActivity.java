@@ -3,25 +3,18 @@ package com.teamtwo.kiosk;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.bumptech.glide.Glide;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class PaySuccessActivity extends AppCompatActivity {
-    ImageView dancing_muji;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay_success);
-
-        dancing_muji = findViewById(R.id.dancing_muji);
-        Glide.with(this).load(R.drawable.dancing_muji).into(dancing_muji);
 
         for(String key : ShoppingCartDialog.addInfo.keySet()) {
             int cnt = ShoppingCartDialog.addInfo.get(key)[1];
@@ -39,7 +32,7 @@ public class PaySuccessActivity extends AppCompatActivity {
             jsonBody.put("id", LoginActivity.cur_id);
             jsonBody.put("password", LoginActivity.cur_pw);
             jsonBody.put("name", name);
-            jsonBody.put("tableNum", TableNumberActivity.set_table_number_string);
+            jsonBody.put("tableNum", 1);
         } catch (JSONException e) {
             e.printStackTrace();
         }

@@ -2,7 +2,6 @@ package com.teamtwo.kiosk;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -10,8 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-
-import com.bumptech.glide.Glide;
 
 public class SelectedMenuDetailActivity extends Dialog {
     private ImageView detail_popup_image;
@@ -78,27 +75,12 @@ public class SelectedMenuDetailActivity extends Dialog {
         detail_popup_image.setImageDrawable(menuImageVIew.getDrawable());
     }
 
-    public void setDetailPopupImage(String menuImageVIew) {
-        ImageView detailPopupImage = findViewById(R.id.detail_popup_image); // 이미지를 표시할 ImageView 찾기
-
-        Glide.with(getContext())
-                .load(menuImageVIew)
-                .into(detailPopupImage); // Glide를 사용하여 이미지 설정
-    }
-
     public void setDetail_popup_name(TextView detail_popup_name){
         this.detail_popup_name.setText(detail_popup_name.getText().toString());
     }
 
-    public void setDetail_popup_name(String detail_popup_name){
-        this.detail_popup_name.setText(detail_popup_name);
-    }
-
     public void setDetail_popup_script(TextView detail_popup_script){
         this.detail_popup_script.setText(detail_popup_script.getText().toString());
-    }
-    public void setDetail_popup_script(String detail_popup_script){
-        this.detail_popup_script.setText(detail_popup_script);
     }
 
 }

@@ -130,8 +130,8 @@ public class CustomVoiceRecognitionDialog extends Dialog {
         @Override
         public void onError(int error) {
             // 네트워크 또는 인식 오류가 발생했을 때 호출
-            String message;
-
+//            String message;
+//
 //            switch (error) {
 //                case SpeechRecognizer.ERROR_AUDIO:
 //                    message = "오디오 에러";
@@ -164,9 +164,8 @@ public class CustomVoiceRecognitionDialog extends Dialog {
 //                    message = "알 수 없는 오류임";
 //                    break;
 //            }
-
+//
 //            Toast.makeText(context.getApplicationContext(), "에러 발생 : " + message,Toast.LENGTH_SHORT).show();
-            Toast.makeText(context.getApplicationContext(), "잠시 후 다시 시도해 보세요",Toast.LENGTH_SHORT).show();
         }
 
         @Override
@@ -190,6 +189,7 @@ public class CustomVoiceRecognitionDialog extends Dialog {
             String[] rs = new String[matches.size()];
             matches.toArray(rs);
             FuncVoiceOrderCheck(rs[0]);
+            mRecognizer.startListening(intent);
 
             mRecognizer.stopListening(); // 음성인식 중지
 
@@ -294,7 +294,7 @@ public class CustomVoiceRecognitionDialog extends Dialog {
         protected String doInBackground(Void... voids) {
             try {
                 // 서버 URL 설정
-                URL url = new URL("https://port-0-kiosk-server-euegqv2blnemb8x8.sel5.cloudtype.app/menu/name");
+                URL url = new URL("https://sm-kiosk.kro.kr/menu/name");
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
                 // POST 요청 설정
@@ -363,19 +363,22 @@ public class CustomVoiceRecognitionDialog extends Dialog {
             FuncVoiceOut("그런 메뉴는 없어요~ 다시 주문해 주세요.");
         }
 
-        // "사용법" 음성 출력 부분 (광)
-        if(VoiceMsg.indexOf("사용법")>-1){
-            FuncVoiceOut("안녕하세요. 사용법을 알려 드리겠습니다." +
-                    "먼저 음성 인식 시작 버튼을 누른 후 원하는 음식을 말하면 음식이 장바구니에 넣어집니다." + " " +
-                    "다음으로 장바구니 버튼을 눌러서 장바구니에 넣어진 음식을 휴대전화를 통해 카카오 페이로 음식을 결제하면 됩니다." + " " +
-                    "카카오 페이 사용법을 알고 싶으시다면 음성인식 버튼을 다시 누르고 카카오 페이라고 말씀하세요.");
-        }
-        if(VoiceMsg.indexOf("카카오 페이")>-1 || VoiceMsg.indexOf("카카오페이")>-1){
-            FuncVoiceOut("안녕하세요. 카카오페이 사용법을 알려 드리겠습니다." + " " +
-                    "먼저 휴대전화의 카메라를 실행합니다." + " " +
-                    "Qr 코드를 카메라에 담고 카메라 밑에 나오는 링크에 들어가서 결제를 진행합니다." + " " +
-                    "휴대전화에서 카카오 페이 결제가 완료되었다고 뜨면 결제가 완료된 것입니다.");
-        }
+
+
+
+//        if(VoiceMsg.indexOf("김치찌개")>-1 || VoiceMsg.indexOf("김치")>-1){
+//            //Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.kakao.talk");
+//            //이름과 일치할 때 shopping cart 에 주문 추가
+//            FuncVoiceOut("주문이 완료 되었 습니다.");// 음성 출력
+//        }
+//
+//        if(VoiceMsg.indexOf("취소")>-1 || VoiceMsg.indexOf("삭제")>-1){
+//            FuncVoiceOut("메뉴를 취소 할까요?");// 음성 출력
+//        }
+//
+//        if(VoiceMsg.indexOf("사랑해")>-1 || VoiceMsg.indexOf("이스터 에그")>-1){
+//            FuncVoiceOut("이스터 에그! 더욱 노력 하는 1943이 되겠 습니다.");
+//        }
     }
     //음성 메세지 출력용
     private void FuncVoiceOut(String OutMsg){

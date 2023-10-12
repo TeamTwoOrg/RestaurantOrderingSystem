@@ -71,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
         user_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MenuForUser.class);
+                Intent intent = new Intent(getApplicationContext(), TableNumberActivity.class);
                 startActivity(intent);
             }
         });
@@ -396,4 +396,3 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 }
-

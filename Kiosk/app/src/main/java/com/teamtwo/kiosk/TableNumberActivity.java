@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.kiosk.ProductActivity;
+
 public class TableNumberActivity extends AppCompatActivity {
 
     public static String set_table_number_string;

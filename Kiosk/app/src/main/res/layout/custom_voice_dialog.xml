@@ -33,8 +33,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:padding="16dp"
-                    android:text="음성 인식 결과가 여기에 표시 됩니다.\n
-                    ex) ''사용법''  "
+                    android:text="음성 인식 결과가 여기에 표시 됩니다."
                     android:textSize="30dp"
                     android:textColor="@color/white"/>
             </ScrollView>

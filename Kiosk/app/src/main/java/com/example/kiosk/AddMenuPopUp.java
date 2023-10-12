@@ -40,7 +40,7 @@ import okhttp3.Response;
 
 
 public class AddMenuPopUp extends AppCompatActivity {
-
+//이게 최신 파일
     private static final String BASE_URL = "https://sm-kiosk.kro.kr/menu/add";
 //private static final String BASE_URL = "http://192.168.3.49:4000/menu/add";
 

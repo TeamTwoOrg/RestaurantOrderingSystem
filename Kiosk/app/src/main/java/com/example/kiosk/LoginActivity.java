@@ -233,6 +233,7 @@ public class LoginActivity extends AppCompatActivity {
                             id_text.setEnabled(true);
                             password_text.setAlpha(originAlpha);
                             password_text.setEnabled(true);
+
                         }
                     });
                 }

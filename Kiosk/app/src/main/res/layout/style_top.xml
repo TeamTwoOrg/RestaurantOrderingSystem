@@ -9,10 +9,11 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.879"
-        android:background="@drawable/torder_logo"
+        android:layout_weight="0.900"
+        android:background="@drawable/logo"
         android:layout_marginLeft="0sp"
         android:layout_marginRight="25dp"
+        android:layout_marginStart="20dp"
         android:scaleType="centerCrop" />
 
     <!-- 공백 -->

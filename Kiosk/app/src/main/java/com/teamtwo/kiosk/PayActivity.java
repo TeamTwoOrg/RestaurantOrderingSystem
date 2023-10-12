@@ -68,7 +68,7 @@ public class PayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay);
 //        baseURL = "http://192.168.3.49:4000";
-        baseURL = "https://sm-kiosk.kro.kr";
+        baseURL = "https://port-0-kiosk-server-euegqv2blnemb8x8.sel5.cloudtype.app";
         // 초기화
         requestQueue = Volley.newRequestQueue(getApplicationContext());
         myWebViewClient = new MyWebViewClient();

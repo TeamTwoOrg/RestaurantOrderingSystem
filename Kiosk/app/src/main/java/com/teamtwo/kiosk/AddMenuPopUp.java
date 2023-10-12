@@ -34,7 +34,7 @@ import okhttp3.Response;
 
 public class AddMenuPopUp extends AppCompatActivity {
 
-    private static final String BASE_URL = "https://sm-kiosk.kro.kr/menu/add";
+    private static final String BASE_URL = "https://port-0-kiosk-server-euegqv2blnemb8x8.sel5.cloudtype.app/menu/add";
 //private static final String BASE_URL = "http://192.168.3.49:4000/menu/add";
 
     EditText menuNameEditText;

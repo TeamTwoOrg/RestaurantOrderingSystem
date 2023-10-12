@@ -229,7 +229,7 @@ public class SalesActivity extends AppCompatActivity {
         }
 
         ServerCommunicationHelper.sendRequest(
-                "https://sm-kiosk.kro.kr/order/dayOrder",
+                "https://port-0-kiosk-server-euegqv2blnemb8x8.sel5.cloudtype.app/order/dayOrder",
                 ServerCommunicationHelper.HttpMethod.POST,
                 jsonBody,
                 new ServerCommunicationHelper.ResultCallback() {
@@ -287,7 +287,7 @@ public class SalesActivity extends AppCompatActivity {
         }
 
         ServerCommunicationHelper.sendRequest(
-                "https://sm-kiosk.kro.kr/order/monthOrder",
+                "https://port-0-kiosk-server-euegqv2blnemb8x8.sel5.cloudtype.app/order/monthOrder",
                 ServerCommunicationHelper.HttpMethod.POST,
                 jsonBody,
                 new ServerCommunicationHelper.ResultCallback() {

@@ -174,7 +174,7 @@ public class MenuForUser extends AppCompatActivity {
             );
 
             Request request = new Request.Builder()
-                    .url("https://sm-kiosk.kro.kr/menu")
+                    .url("https://port-0-kiosk-server-euegqv2blnemb8x8.sel5.cloudtype.app/menu")
                     .post(requestBody)
                     .build();
 

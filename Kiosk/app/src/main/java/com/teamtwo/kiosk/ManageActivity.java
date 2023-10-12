@@ -241,7 +241,7 @@ public class ManageActivity extends AppCompatActivity {
             );
 
             Request request = new Request.Builder()
-                    .url("https://sm-kiosk.kro.kr/order")
+                    .url("https://port-0-kiosk-server-euegqv2blnemb8x8.sel5.cloudtype.app/order")
                     .post(requestBody)
                     .build();
 
@@ -502,7 +502,7 @@ public class ManageActivity extends AppCompatActivity {
         }
 
         ServerCommunicationHelper.sendRequest(
-                "https://sm-kiosk.kro.kr/order/changeStatus",
+                "https://port-0-kiosk-server-euegqv2blnemb8x8.sel5.cloudtype.app/order/changeStatus",
                 ServerCommunicationHelper.HttpMethod.POST,
                 jsonBody,
                 new ServerCommunicationHelper.ResultCallback() {

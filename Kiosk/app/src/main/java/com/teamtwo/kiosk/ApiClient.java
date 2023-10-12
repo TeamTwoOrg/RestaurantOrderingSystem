@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class ApiClient {
 
-    private static final String BASE_URL = "https://sm-kiosk.kro.kr/";
+    private static final String BASE_URL = "https://port-0-kiosk-server-euegqv2blnemb8x8.sel5.cloudtype.app/";
 
     public static void sendPostRequest(JSONObject jsonBody) {
         OkHttpClient client = new OkHttpClient();

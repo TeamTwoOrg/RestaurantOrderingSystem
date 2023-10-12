@@ -27,7 +27,7 @@ import okhttp3.Response;
 
 
 public class LoginActivity extends AppCompatActivity {
-    private static final String BASE_URL = "https://sm-kiosk.kro.kr/user/login";
+    private static final String BASE_URL = "https://port-0-kiosk-server-euegqv2blnemb8x8.sel5.cloudtype.app/user/login";
 
     public static String cur_id = "";
     public static String cur_pw = "";

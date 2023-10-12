@@ -3,8 +3,11 @@ package com.teamtwo.kiosk;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.bumptech.glide.Glide;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -13,8 +16,15 @@ public class PaySuccessActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        ImageView dancing_muji;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay_success);
+
+        dancing_muji = findViewById(R.id.dancing_muji);
+        Glide.with(this).load(R.drawable.dancing_muji).into(dancing_muji);
+
 
         for(String key : ShoppingCartDialog.addInfo.keySet()) {
             int cnt = ShoppingCartDialog.addInfo.get(key)[1];
@@ -38,7 +48,7 @@ public class PaySuccessActivity extends AppCompatActivity {
         }
 
         ServerCommunicationHelper.sendRequest(
-                "https://sm-kiosk.kro.kr/order/add",
+                "https://port-0-kiosk-server-euegqv2blnemb8x8.sel5.cloudtype.app/order/add",
                 ServerCommunicationHelper.HttpMethod.POST,
                 jsonBody,
                 new ServerCommunicationHelper.ResultCallback() {

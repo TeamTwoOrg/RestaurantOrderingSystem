@@ -148,7 +148,7 @@ public class SalesSlipActivity extends AppCompatActivity {
         final ArrayList<MenuData> menuDataList = new ArrayList<>();
 
         ServerCommunicationHelper.sendRequest(
-                "https://sm-kiosk.kro.kr/order/monthOrder",
+                "https://port-0-kiosk-server-euegqv2blnemb8x8.sel5.cloudtype.app/order/monthOrder",
                 ServerCommunicationHelper.HttpMethod.POST,
                 jsonBody,
                 new ServerCommunicationHelper.ResultCallback() {
